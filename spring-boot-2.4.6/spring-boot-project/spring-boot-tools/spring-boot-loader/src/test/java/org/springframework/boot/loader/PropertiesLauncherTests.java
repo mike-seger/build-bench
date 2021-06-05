@@ -232,17 +232,6 @@ class PropertiesLauncherTests {
 	}
 
 	@Test
-	void testUserSpecifiedNestedJarPath() throws Exception {
-		System.setProperty("loader.path", "nested-jars/nested-jar-app.jar!/BOOT-INF/classes/");
-		System.setProperty("loader.main", "demo.Application");
-		this.launcher = new PropertiesLauncher();
-		assertThat(ReflectionTestUtils.getField(this.launcher, "paths").toString())
-				.isEqualTo("[nested-jars/nested-jar-app.jar!/BOOT-INF/classes/]");
-		this.launcher.launch(new String[0]);
-		waitFor("Hello World");
-	}
-
-	@Test
 	void testUserSpecifiedDirectoryContainingJarFileWithNestedArchives() throws Exception {
 		System.setProperty("loader.path", "nested-jars");
 		System.setProperty("loader.main", "demo.Application");
