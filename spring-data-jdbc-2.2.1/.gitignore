@@ -1,0 +1,13 @@
+target/
+.idea/
+.settings/
+*.iml
+.project
+.classpath
+.springBeans
+.sonar4clipse
+*.sonar4clipseExternals
+*.graphml
+
+#prevent license accepting file to get accidentially commited to git
+container-license-acceptance.txt

@@ -1,0 +1,81 @@
+image:https://spring.io/badges/spring-data-jdbc/ga.svg["Spring Data JDBC", link="https://spring.io/projects/spring-data-jdbc#learn"]
+image:https://spring.io/badges/spring-data-jdbc/snapshot.svg["Spring Data JDBC", link="https://spring.io/projects/spring-data-jdbc#learn"]
+
+= Spring Data JDBC
+
+The primary goal of the https://projects.spring.io/spring-data[Spring Data] project is to make it easier to build Spring-powered applications that use data access technologies. *Spring Data JDBC* offers the popular Repository abstraction based on JDBC.
+
+It aims at being conceptually easy.
+In order to achieve this it does NOT offer caching, lazy loading, write behind or many other features of JPA.
+This makes Spring Data JDBC a simple, limited, opinionated ORM.
+
+== Features
+
+* Implementation of CRUD methods for Aggregates.
+* `@Query` annotation
+* Support for transparent auditing (created, last changed)
+* Events for persistence events
+* Possibility to integrate custom repository code
+* JavaConfig based repository configuration by introducing `EnableJdbcRepository`
+* Integration with MyBatis
+
+== Getting Help
+
+If you are new to Spring Data JDBC read the following two articles https://spring.io/blog/2018/09/17/introducing-spring-data-jdbc["Introducing Spring Data JDBC"] and https://spring.io/blog/2018/09/24/spring-data-jdbc-references-and-aggregates["Spring Data JDBC, References, and Aggregates"]
+
+There are also examples in the https://github.com/spring-projects/spring-data-examples/tree/master/jdbc[Spring Data Examples] project.
+
+A very good source of information is the source code in this repository.
+Especially the integration tests (if you are reading this on github, type `t` and then `IntegrationTests.java`)
+
+We are keeping an eye on the (soon to be created) https://stackoverflow.com/questions/tagged/spring-data-jdbc[spring-data-jdbc tag on stackoverflow].
+
+If you think you found a bug, or have a feature request please https://github.com/spring-projects/spring-data-jdbc/issues[create a ticket in our issue tracker].
+
+== Execute Tests
+
+=== Fast running tests
+
+Fast running tests can be executed with a simple
+
+[source]
+----
+mvn test
+----
+
+This will execute unit tests and integration tests using an in-memory database.
+
+=== Running tests with a real database
+
+In order to run the integration tests against a specific database you need to have a local Docker installation available, and then execute.
+
+[source]
+----
+mvn test -Dspring.profiles.active=<databasetype>
+----
+
+This will also execute the unit tests.
+
+Currently the following _databasetypes_ are available:
+
+* hsql (default, does not require a running database)
+* mysql
+* postgres
+* mariadb
+* mssql
+
+Testing with Microsoft SQL Server requires you to accept the EULA of the Microsoft SQL Server Docker image, so the build may download and run it for you.
+In order to accept the EULA please add a file named `container-license-acceptance.txt` to the classpath, i.e. `src/test/resources` with the content:
+
+```
+microsoft/mssql-server-linux:2017-CU6
+```
+
+=== Run tests with all databases
+
+[source]
+----
+mvn test -Pall-dbs
+----
+
+This will execute the unit tests, and all the integration tests with all the databases we currently support for testing. Running the integration-tests depends on Docker.

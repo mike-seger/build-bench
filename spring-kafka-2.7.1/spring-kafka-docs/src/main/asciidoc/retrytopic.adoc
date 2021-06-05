@@ -1,0 +1,636 @@
+[[retry-topic]]
+=== Non-Blocking Retries
+
+IMPORTANT: This is an experimental feature and the usual rule of no breaking API changes does not apply to this feature until the experimental designation is removed.
+Users are encouraged to try out the feature and provide feedback via GitHub Issues or GitHub discussions.
+This is regarding the API only; the feature is considered to be complete, and robust.
+
+Achieving non-blocking retry / dlt functionality with Kafka usually requires setting up extra topics and creating and configuring the corresponding listeners.
+Since 2.7 Spring for Apache Kafka offers support for that via the `@RetryableTopic` annotation and `RetryTopicConfiguration` class to simplify that bootstrapping.
+
+==== How The Pattern Works
+
+If message processing fails, the message is forwarded to a retry topic with a back off timestamp.
+The retry topic consumer then checks the timestamp and if it's not due it pauses the consumption for that topic's partition.
+When it is due the partition consumption is resumed, and the message is consumed again.
+If the message processing fails again the message will be forwarded to the next retry topic, and the pattern is repeated until a successful processing occurs, or the attempts are exhausted, and the message is sent to the Dead Letter Topic (if configured).
+
+To illustrate, if you have a "main-topic" topic, and want to setup non-blocking retry with an exponential backoff of 1000ms with a multiplier of 2 and 4 max attempts, it will create the main-topic-retry-1000, main-topic-retry-2000, main-topic-retry-4000 and main-topic-dlt topics and configure the respective consumers.
+The framework also takes care of creating the topics and setting up and configuring the listeners.
+
+IMPORTANT: By using this strategy you lose Kafka's ordering guarantees for that topic.
+
+IMPORTANT: You can set the `AckMode` mode you prefer, but `RECORD` is suggested.
+
+IMPORTANT: At this time this functionality doesn't support class level `@KafkaListener` annotations
+
+==== Back Off Delay Precision
+
+===== Overview and Guarantees
+
+All message processing and backing off is handled by the consumer thread, and, as such, delay precision is guaranteed on a best-effort basis.
+If one message's processing takes longer than the next message's back off period for that consumer, the next message's delay will be higher than expected.
+Also, for short delays (about 1s or less), the maintenance work the thread has to do, such as committing offsets, may delay the message processing execution.
+The precision can also be affected if the retry topic's consumer is handling more than one partition, because we rely on waking up the consumer from polling and having full pollTimeouts to make timing adjustments.
+
+That being said, for consumers handling a single partition the message's processing should happen under 100ms after it's exact due time for most situations.
+
+IMPORTANT: It is guaranteed that a message will never be processed before its due time.
+
+===== Tuning the Delay Precision
+
+The message's processing delay precision relies on two `ContainerProperties`: `ContainerProperties.pollTimeout` and `ContainerProperties.idlePartitionEventInterval`.
+Both properties will be automatically set in the retry topic and dlt's `ListenerContainerFactory` to one quarter of the smallest delay value for that topic, with a minimum value of 250ms and a maximum value of 5000ms.
+These values will only be set if the property has its default values - if you change either value yourself your change will not be overridden.
+This way you can tune the precision and performance for the retry topics if you need to.
+
+NOTE: You can have separate `ListenerContainerFactory` instances for the main and retry topics - this way you can have different settings to better suit your needs, such as having a higher polling timeout setting for the main topics and a lower one for the retry topics.
+
+==== Configuration
+
+===== Using the `@RetryableTopic` annotation
+
+To configure the retry topic and dlt for a `@KafkaListener` annotated method, you just have to add the `@RetryableTopic` annotation to it and Spring for Apache Kafka will bootstrap all the necessary topics and consumers with the default configurations.
+
+====
+[source, java]
+----
+@RetryableTopic(kafkaTemplate = "myRetryableTopicKafkaTemplate")
+@KafkaListener(topics = "my-annotated-topic", groupId = "myGroupId")
+public void processMessage(MyPojo message) {
+        // ... message processing
+}
+----
+====
+
+You can specify a method in the same class to process the dlt messages by annotating it with the `@DltHandler` annotation.
+If no DltHandler method is provided a default consumer is created which only logs the consumption.
+
+====
+[source, java]
+----
+@DltHandler
+public void processMessage(MyPojo message) {
+// ... message processing, persistence, etc
+}
+----
+====
+
+NOTE: If you don't specify a kafkaTemplate name a bean with name `retryTopicDefaultKafkaTemplate` will be looked up.
+If no bean is found an exception is thrown.
+
+===== Using `RetryTopicConfiguration` beans
+
+You can also configure the non-blocking retry support by creating `RetryTopicConfiguration` beans in a `@Configuration` annotated class.
+
+====
+[source,    java]
+----
+@Bean
+public RetryTopicConfiguration myRetryTopic(KafkaTemplate<String, Object> template) {
+    return RetryTopicConfigurationBuilder
+            .newInstance()
+            .create(template);
+}
+----
+====
+
+This will create retry topics and a dlt, as well as the corresponding consumers, for all topics in methods annotated with '@KafkaListener' using the default configurations. The `KafkaTemplate` instance is required for message forwarding.
+
+To achieve more fine-grained control over how to handle non-blocking retrials for each topic, more than one `RetryTopicConfiguration` bean can be provided.
+
+====
+[source, java]
+----
+@Bean
+public RetryTopicConfiguration myRetryTopic(KafkaTemplate<String, MyPojo> template) {
+    return RetryTopicConfigurationBuilder
+            .newInstance()
+            .fixedBackoff(3000)
+            .maxAttempts(5)
+            .includeTopics("my-topic", "my-other-topic")
+            .create(template);
+}
+
+@Bean
+public RetryTopicConfiguration myOtherRetryTopic(KafkaTemplate<String, MyOtherPojo> template) {
+    return RetryTopicConfigurationBuilder
+            .newInstance()
+            .exponentialBackoff(1000, 2, 5000)
+            .maxAttempts(4)
+            .excludeTopics("my-topic", "my-other-topic")
+            .retryOn(MyException.class)
+            .create(template);
+}
+----
+====
+
+NOTE: The retry topics' and dlt's consumers will be assigned to a consumer group with a group id that is the combination of the one with you provide in the `groupId` parameter of the `@KafkaListener` annotation with the topic's suffix. If you don't provide any they'll all belong to the same group, and rebalance on a retry topic will cause an unnecessary rebalance on the main topic.
+
+==== Features
+
+Most of the features are available both for the `@RetryableTopic` annotation and the `RetryTopicConfiguration` beans.
+
+===== BackOff Configuration
+
+The BackOff configuration relies on the `BackOffPolicy` interface from the `Spring Retry` project.
+
+It includes:
+
+* Fixed Back Off
+* Exponential Back Off
+* Random Exponential Back Off
+* Uniform Random Back Off
+* No Back Off
+* Custom Back Off
+
+====
+[source, java]
+----
+@RetryableTopic(attempts = 5,
+    backoff = @Backoff(delay = 1000, multiplier = 2, maxDelay = 5000))
+@KafkaListener(topics = "my-annotated-topic")
+public void processMessage(MyPojo message) {
+        // ... message processing
+}
+----
+
+[source, java]
+----
+@Bean
+public RetryTopicConfiguration myRetryTopic(KafkaTemplate<String, MyPojo> template) {
+    return RetryTopicConfigurationBuilder
+            .newInstance()
+            .fixedBackoff(3000)
+            .maxAttempts(4)
+            .build();
+}
+----
+====
+
+You can also provide a custom implementation of Spring Retry's `SleepingBackOffPolicy`:
+
+====
+[source, java]
+----
+@Bean
+public RetryTopicConfiguration myRetryTopic(KafkaTemplate<String, MyPojo> template) {
+    return RetryTopicConfigurationBuilder
+            .newInstance()
+            .customBackOff(new MyCustomBackOffPolicy())
+            .maxAttempts(5)
+            .build();
+}
+----
+====
+
+NOTE: The default backoff policy is FixedBackOffPolicy with a maximum of 3 attempts and 1000ms intervals.
+
+IMPORTANT: The first attempt counts against the maxAttempts, so if you provide a maxAttempts value of 4 there'll be the original attempt plus 3 retries.
+
+===== Single Topic Fixed Delay Retries
+
+If you're using fixed delay policies such as `FixedBackOffPolicy` or `NoBackOffPolicy` you can use a single topic to accomplish the non-blocking retries.
+This topic will be suffixed with the provided or default suffix, and will not have either the index or the delay values appended.
+
+====
+[source, java]
+----
+@RetryableTopic(backoff = @Backoff(2000), fixedDelayTopicStrategy = FixedDelayStrategy.SINGLE_TOPIC)
+@KafkaListener(topics = "my-annotated-topic")
+public void processMessage(MyPojo message) {
+        // ... message processing
+}
+----
+====
+
+====
+[source, java]
+----
+@Bean
+public RetryTopicConfiguration myRetryTopic(KafkaTemplate<String, MyPojo> template) {
+    return RetryTopicConfigurationBuilder
+            .newInstance()
+            .fixedBackoff(3000)
+            .maxAttempts(5)
+            .useSingleTopicForFixedDelays()
+            .build();
+}
+----
+====
+
+NOTE: The default behavior is creating separate retry topics for each attempt, appended with their index value: retry-0, retry-1, ...
+
+===== Global timeout
+
+You can set the global timeout for the retrying process.
+If that time is reached, the next time the consumer throws an exception the message goes straight to the DLT, or just ends the processing if no DLT is available.
+
+====
+[source, java]
+----
+@RetryableTopic(backoff = @Backoff(2000), timeout = 5000)
+@KafkaListener(topics = "my-annotated-topic")
+public void processMessage(MyPojo message) {
+        // ... message processing
+}
+----
+====
+
+====
+[source, java]
+----
+@Bean
+public RetryTopicConfiguration myRetryTopic(KafkaTemplate<String, MyPojo> template) {
+    return RetryTopicConfigurationBuilder
+            .newInstance()
+            .fixedBackoff(2000)
+            .timeoutAfter(5000)
+            .build();
+}
+----
+====
+
+NOTE: The default is having no timeout set, which can also be achieved by providing -1 as the timout value.
+
+===== Exception Classifier
+
+You can specify which exceptions you want to retry on and which not to.
+You can also set it to traverse the causes to lookup nested exceptions.
+
+====
+[source, java]
+----
+@RetryableTopic(include = {MyRetryException.class, MyOtherRetryException.class}, traversingCauses = true)
+@KafkaListener(topics = "my-annotated-topic")
+public void processMessage(MyPojo message) {
+        throw new RuntimeException(new MyRetryException()); // Will retry
+}
+----
+====
+
+
+====
+[source, java]
+----
+@Bean
+public RetryTopicConfiguration myRetryTopic(KafkaTemplate<String, MyOtherPojo> template) {
+    return RetryTopicConfigurationBuilder
+            .newInstance()
+            .notRetryOn(MyDontRetryException.class)
+            .create(template);
+}
+----
+====
+
+NOTE: The default behavior is retrying on all exceptions and not traversing causes.
+
+===== Include and Exclude Topics
+
+You can decide which topics will and will not be handled by a `RetryTopicConfiguration` bean via the .includeTopic(String topic), .includeTopics(Collection<String> topics) .excludeTopic(String topic) and .excludeTopics(Collection<String> topics) methods.
+
+====
+[source, java]
+----
+@Bean
+public RetryTopicConfiguration myRetryTopic(KafkaTemplate<Integer, MyPojo> template) {
+    return RetryTopicConfigurationBuilder
+            .newInstance()
+            .includeTopics(List.of("my-included-topic", "my-other-included-topic"))
+            .create(template);
+}
+
+@Bean
+public RetryTopicConfiguration myOtherRetryTopic(KafkaTemplate<Integer, MyPojo> template) {
+    return RetryTopicConfigurationBuilder
+            .newInstance()
+            .excludeTopic("my-excluded-topic")
+            .create(template);
+}
+----
+====
+
+NOTE: The default behavior is to include all topics.
+
+
+===== Topics AutoCreation
+
+Unless otherwise specified the framework will auto create the required topics using `NewTopic` beans that are consumed by the `KafkaAdmin` bean.
+You can specify the number of partitions and the replication factor with which the topics will be created, and you can turn this feature off.
+
+IMPORTANT: Note that if you're not using Spring Boot you'll have to provide a KafkaAdmin bean in order to use this feature.
+
+====
+[source, java]
+----
+@RetryableTopic(numPartitions = 2, replicationFactor = 3)
+@KafkaListener(topics = "my-annotated-topic")
+public void processMessage(MyPojo message) {
+        // ... message processing
+}
+
+@RetryableTopic(autoCreateTopics = false)
+@KafkaListener(topics = "my-annotated-topic")
+public void processMessage(MyPojo message) {
+        // ... message processing
+}
+----
+[source, java]
+----
+@Bean
+public RetryTopicConfiguration myRetryTopic(KafkaTemplate<Integer, MyPojo> template) {
+    return RetryTopicConfigurationBuilder
+            .newInstance()
+            .autoCreateTopicsWith(2, 3)
+            .create(template);
+}
+
+@Bean
+public RetryTopicConfiguration myOtherRetryTopic(KafkaTemplate<Integer, MyPojo> template) {
+    return RetryTopicConfigurationBuilder
+            .newInstance()
+            .doNotAutoCreateRetryTopics()
+            .create(template);
+}
+----
+====
+
+NOTE: By default the topics are autocreated with one partition and a replication factor of one.
+
+
+==== Topic Naming
+
+Retry topics and DLT are named by suffixing the main topic with a provided or default value, appended by either the delay or index for that topic.
+
+Examples:
+
+"my-topic" -> "my-topic-retry-0", "my-topic-retry-1", ..., "my-topic-dlt"
+
+"my-other-topic" -> "my-topic-myRetrySuffix-1000", "my-topic-myRetrySuffix-2000", ..., "my-topic-myDltSuffix".
+
+===== Retry Topics and Dlt Suffixes
+
+You can specify the suffixes that will be used by the retry and dlt topics.
+
+====
+[source, java]
+----
+@RetryableTopic(retryTopicSuffix = "-my-retry-suffix", dltTopicSuffix = "-my-dlt-suffix")
+@KafkaListener(topics = "my-annotated-topic")
+public void processMessage(MyPojo message) {
+        // ... message processing
+}
+----
+====
+
+====
+[source, java]
+----
+@Bean
+public RetryTopicConfiguration myRetryTopic(KafkaTemplate<String, MyOtherPojo> template) {
+    return RetryTopicConfigurationBuilder
+            .newInstance()
+            .retryTopicSuffix("-my-retry-suffix")
+            .dltTopicSuffix("-my-dlt-suffix")
+            .create(template);
+}
+----
+====
+
+NOTE: The default suffixes are "-retry" and "-dlt", for retry topics and dlt respectively.
+
+===== Appending the Topic's Index or Delay
+
+You can either append the topic's index or delay values after the suffix.
+
+====
+[source, java]
+----
+@RetryableTopic(topicSuffixingStrategy = TopicSuffixingStrategy.SUFFIX_WITH_INDEX_VALUE)
+@KafkaListener(topics = "my-annotated-topic")
+public void processMessage(MyPojo message) {
+        // ... message processing
+}
+----
+====
+
+====
+[source, java]
+----
+@Bean
+public RetryTopicConfiguration myRetryTopic(KafkaTemplate<String, MyPojo> template) {
+    return RetryTopicConfigurationBuilder
+            .newInstance()
+            .suffixTopicsWithIndexValues()
+            .create(template);
+    }
+----
+====
+
+NOTE: The default behavior is to suffix with the delay values, except for fixed delay configurations with multiple topics, in which case the topics are suffixed with the topic's index.
+
+===== Custom naming strategies
+
+More complex naming strategies can be accomplished by registering a bean that implements `RetryTopicNamesProviderFactory`. The default implementation is `SuffixingRetryTopicNamesProviderFactory` and a different implementation can be registered in the following way:
+
+====
+[source, java]
+----
+@Bean
+public RetryTopicNamesProviderFactory myRetryNamingProviderFactory() {
+    return new CustomRetryTopicNamesProviderFactory();
+}
+----
+====
+
+As an example the following implementation, in addition to the standard suffix, adds a prefix to retry/dl topics names:
+
+====
+[source, java]
+----
+public class CustomRetryTopicNamesProviderFactory implements RetryTopicNamesProviderFactory {
+
+	@Override
+    public RetryTopicNamesProvider createRetryTopicNamesProvider(
+                DestinationTopic.Properties properties) {
+
+        if(properties.isMainEndpoint()) {
+            return new SuffixingRetryTopicNamesProvider(properties);
+        }
+        else {
+            return new SuffixingRetryTopicNamesProvider(properties) {
+
+                @Override
+                public String getTopicName(String topic) {
+                    return "my-prefix-" + super.getTopicName(topic);
+                }
+
+            };
+        }
+    }
+
+}
+----
+====
+
+==== Dlt Strategies
+
+The framework provides a few strategies for working with DLTs. You can provide a method for DLT processing, use the default logging method, or have no DLT at all. Also you can choose what happens if DLT processing fails.
+
+===== Dlt Processing Method
+
+You can specify the method used to process the Dlt for the topic, as well as the behavior if that processing fails.
+
+To do that you can use the `@DltHandler` annotation in a method of the class with the `@RetryableTopic` annotation(s).
+Note that the same method will be used for all the `@RetryableTopic` annotated methods within that class.
+
+====
+[source, java]
+----
+@RetryableTopic
+@KafkaListener(topics = "my-annotated-topic")
+public void processMessage(MyPojo message) {
+        // ... message processing
+}
+
+@DltHandler
+public void processMessage(MyPojo message) {
+// ... message processing, persistence, etc
+}
+----
+====
+
+The DLT handler method can also be provided through the RetryTopicConfigurationBuilder.dltHandlerMethod(Class, String) method, passing as arguments the class and method name that should process the DLT's messages.
+If a bean instance of the provided class is found in the application context that bean is used for Dlt processing, otherwise an instance is created with full dependency injection support.
+
+====
+[source, java]
+----
+@Bean
+public RetryTopicConfiguration myRetryTopic(KafkaTemplate<Integer, MyPojo> template) {
+    return RetryTopicConfigurationBuilder
+            .newInstance()
+            .dltProcessor(MyCustomDltProcessor.class, "processDltMessage")
+            .create(template);
+}
+
+@Component
+public class MyCustomDltProcessor {
+
+    private final MyDependency myDependency;
+
+    public MyCustomDltProcessor(MyDependency myDependency) {
+        this.myDependency = myDependency;
+    }
+
+    public void processDltMessage(MyPojo message) {
+       // ... message processing, persistence, etc
+    }
+}
+----
+====
+
+NOTE: If no DLT handler is provided, the default RetryTopicConfigurer.LoggingDltListenerHandlerMethod is used.
+
+===== Dlt Failure Behavior
+
+Should the Dlt processing fail, there are two possible behaviors available: `ALWAYS_RETRY_ON_ERROR` and `FAIL_ON_ERROR`.
+
+In the former the message is forwarded back to the dlt topic so it doesn't block other dlt messages' processing.
+In the latter the consumer ends the execution without forwarding the message.
+
+====
+[source,java]
+----
+
+@RetryableTopic(dltProcessingFailureStrategy =
+			DltStrategy.FAIL_ON_ERROR)
+@KafkaListener(topics = "my-annotated-topic")
+public void processMessage(MyPojo message) {
+        // ... message processing
+}
+----
+
+[source, java]
+----
+@Bean
+public RetryTopicConfiguration myRetryTopic(KafkaTemplate<Integer, MyPojo> template) {
+    return RetryTopicConfigurationBuilder
+            .newInstance()
+            .dltProcessor(MyCustomDltProcessor.class, "processDltMessage")
+            .doNotRetryOnDltFailure()
+            .create(template);
+}
+----
+====
+
+NOTE: The default behavior is to `ALWAYS_RETRY_ON_ERROR`.
+
+===== Configuring No Dlt
+
+The framework also provides the possibility of not configuring a DLT for the topic.
+In this case after retrials are exhausted the processing simply ends.
+
+====
+[source, java]
+----
+
+@RetryableTopic(dltProcessingFailureStrategy =
+			DltStrategy.NO_DLT)
+@KafkaListener(topics = "my-annotated-topic")
+public void processMessage(MyPojo message) {
+        // ... message processing
+}
+----
+
+[source, java]
+----
+@Bean
+public RetryTopicConfiguration myRetryTopic(KafkaTemplate<Integer, MyPojo> template) {
+    return RetryTopicConfigurationBuilder
+            .newInstance()
+            .doNotConfigureDlt()
+            .create(template);
+}
+----
+====
+
+
+==== Specifying a ListenerContainerFactory
+
+By default the RetryTopic configuration will use the provided factory from the `@KafkaListener` annotation, but you can specify a different one to be used to create the retry topic and dlt listener containers.
+
+IMPORTANT: The provided factory will be configured for the retry topic functionality, so you should not use the same factory for both retrying and non-retrying topics. You can however share the same factory between many retry topic configurations.
+
+For the `@RetryableTopic` annotation you can provide the factory's bean name, and using the `RetryTopicConfiguration` bean you can either provide the bean name or the instance itself.
+
+====
+[source, java]
+----
+@RetryableTopic(listenerContainerFactory = "my-retry-topic-factory")
+@KafkaListener(topics = "my-annotated-topic")
+public void processMessage(MyPojo message) {
+        // ... message processing
+}
+----
+[source, java]
+----
+@Bean
+public RetryTopicConfiguration myRetryTopic(KafkaTemplate<Integer, MyPojo> template,
+        ConcurrentKafkaListenerContainerFactory<Integer, MyPojo> factory) {
+
+    return RetryTopicConfigurationBuilder
+            .newInstance()
+            .listenerFactory(factory)
+            .create(template);
+}
+
+@Bean
+public RetryTopicConfiguration myOtherRetryTopic(KafkaTemplate<Integer, MyPojo> template) {
+    return RetryTopicConfigurationBuilder
+            .newInstance()
+            .listenerFactory("my-retry-topic-factory")
+            .create(template);
+}
+----
+====

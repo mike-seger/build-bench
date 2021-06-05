@@ -1,0 +1,206 @@
+image:https://spring.io/badges/spring-data-jdbc/ga.svg["Spring Data JDBC", link="https://spring.io/projects/spring-data-jdbc#learn"]
+image:https://spring.io/badges/spring-data-jdbc/snapshot.svg["Spring Data JDBC", link="https://spring.io/projects/spring-data-jdbc#learn"]
+
+= Spring Data JDBC image:https://jenkins.spring.io/buildStatus/icon?job=spring-data-jdbc%2Fmaster&subject=Build[link=https://jenkins.spring.io/view/SpringData/job/spring-data-jdbc/] https://gitter.im/spring-projects/spring-data[image:https://badges.gitter.im/spring-projects/spring-data.svg[Gitter]]
+
+The primary goal of the https://projects.spring.io/spring-data[Spring Data] project is to make it easier to build Spring-powered applications that use new data access technologies such as non-relational databases, map-reduce frameworks, and cloud based data services.
+
+Spring Data JDBC, part of the larger Spring Data family, makes it easy to implement JDBC based repositories. This module deals with enhanced support for JDBC based data access layers. It makes it easier to build Spring powered applications that use data access technologies.
+
+It aims at being conceptually easy.
+In order to achieve this it does NOT offer caching, lazy loading, write behind or many other features of JPA.
+This makes Spring Data JDBC a simple, limited, opinionated ORM.
+
+== Features
+
+* Implementation of CRUD methods for Aggregates.
+* `@Query` annotation
+* Support for transparent auditing (created, last changed)
+* Events for persistence events
+* Possibility to integrate custom repository code
+* JavaConfig based repository configuration by introducing `EnableJdbcRepository`
+* Integration with MyBatis
+
+== Code of Conduct
+
+This project is governed by the https://github.com/spring-projects/.github/blob/e3cc2ff230d8f1dca06535aa6b5a4a23815861d4/CODE_OF_CONDUCT.md[Spring Code of Conduct]. By participating, you are expected to uphold this code of conduct. Please report unacceptable behavior to spring-code-of-conduct@pivotal.io.
+
+== Getting Started
+
+Here is a quick teaser of an application using Spring Data Repositories in Java:
+
+[source,java]
+----
+public interface PersonRepository extends CrudRepository<Person, Long> {
+
+  @Query("SELECT * FROM person WHERE lastname = :lastname")
+  List<Person> findByLastname(String lastname);
+
+  @Query("SELECT * FROM person WHERE firstname LIKE :firstname")
+  List<Person> findByFirstnameLike(String firstname);
+}
+
+@Service
+public class MyService {
+
+  private final PersonRepository repository;
+
+  public MyService(PersonRepository repository) {
+    this.repository = repository;
+  }
+
+  public void doWork() {
+
+    repository.deleteAll();
+
+    Person person = new Person();
+    person.setFirstname("Jens");
+    person.setLastname("Schauder");
+    repository.save(person);
+
+    List<Person> lastNameResults = repository.findByLastname("Schauder");
+    List<Person> firstNameResults = repository.findByFirstnameLike("Je%");
+ }
+}
+
+@Configuration
+@EnableJdbcRepositories
+class ApplicationConfig extends AbstractJdbcConfiguration {
+
+  @Bean
+  public DataSource dataSource() {
+    return …;
+  }
+
+  @Bean
+  public NamedParameterJdbcTemplate namedParameterJdbcTemplate(DataSource dataSource) {
+    return new NamedParameterJdbcTemplate(dataSource);
+  }
+}
+----
+
+=== Maven configuration
+
+Add the Maven dependency:
+
+[source,xml]
+----
+<dependency>
+  <groupId>org.springframework.data</groupId>
+  <artifactId>spring-data-jdbc</artifactId>
+  <version>${version}.RELEASE</version>
+</dependency>
+----
+
+If you'd rather like the latest snapshots of the upcoming major version, use our Maven snapshot repository and declare the appropriate dependency version.
+
+[source,xml]
+----
+<dependency>
+  <groupId>org.springframework.data</groupId>
+  <artifactId>spring-data-jdbc</artifactId>
+  <version>${version}.BUILD-SNAPSHOT</version>
+</dependency>
+
+<repository>
+  <id>spring-libs-snapshot</id>
+  <name>Spring Snapshot Repository</name>
+  <url>https://repo.spring.io/libs-snapshot</url>
+</repository>
+----
+
+== Getting Help
+
+Having trouble with Spring Data? We’d love to help!
+
+* If you are new to Spring Data JDBC read the following two articles https://spring.io/blog/2018/09/17/introducing-spring-data-jdbc["Introducing Spring Data JDBC"] and https://spring.io/blog/2018/09/24/spring-data-jdbc-references-and-aggregates["Spring Data JDBC, References, and Aggregates"].
+* Check the
+https://docs.spring.io/spring-data/jdbc/docs/current/reference/html/[reference documentation], and https://docs.spring.io/spring-data/jdbc/docs/current/api/[Javadocs].
+* Learn the Spring basics – Spring Data builds on Spring Framework, check the https://spring.io[spring.io] web-site for a wealth of reference documentation.
+If you are just starting out with Spring, try one of the https://spring.io/guides[guides].
+* If you are upgrading, check out the https://docs.spring.io/spring-data/jdbc/docs/current/changelog.txt[changelog] for "`new and noteworthy`" features.
+* Ask a question - we monitor https://stackoverflow.com[stackoverflow.com] for questions tagged with https://stackoverflow.com/tags/spring-data[`spring-data-jdbc`].
+You can also chat with the community on https://gitter.im/spring-projects/spring-data[Gitter].
+* Report bugs with Spring Data JDBC at Spring Data issue].
+
+== Reporting Issues
+
+Spring Data uses GitHub as issue tracking system to record bugs and feature requests. If you want to raise an issue, please follow the recommendations below:
+
+* Before you log a bug, please search the
+Spring Data issue[issue tracker] to see if someone has already reported the problem.
+* If the issue doesn’t already exist, Spring Data issue[create a new issue].
+* Please provide as much information as possible with the issue report, we like to know the version of Spring Data that you are using and JVM version. Please include full stack traces when applicable.
+* If you need to paste code, or include a stack trace use triple backticks before and after your text.
+* If possible try to create a test-case or project that replicates the issue. Attach a link to your code or a compressed file containing your code. Use an in-memory database when possible. If you need a different database include the setup using https://github.com/testcontainers[Testcontainers] in your test.
+
+== Building from Source
+
+You don’t need to build from source to use Spring Data (binaries in https://repo.spring.io[repo.spring.io]), but if you want to try out the latest and greatest, Spring Data can be easily built with the https://github.com/takari/maven-wrapper[maven wrapper].
+You also need JDK 1.8.
+
+[source,bash]
+----
+ $ ./mvnw clean install
+----
+
+If you want to build with the regular `mvn` command, you will need https://maven.apache.org/run-maven/index.html[Maven v3.5.0 or above].
+
+_Also see link:CONTRIBUTING.adoc[CONTRIBUTING.adoc] if you wish to submit pull requests, and in particular please sign the https://cla.pivotal.io/sign/spring[Contributor’s Agreement] before your first non-trivial change._
+
+=== Running Integration Tests
+
+[source,bash]
+----
+ $ ./mvnw clean install
+----
+
+Runs integration test against a single in memory database.
+
+To run integration tests against all supported databases specify the Maven Profile `all-dbs`.
+
+[source,bash]
+----
+./mvnw clean install -Pall-dbs
+----
+
+This requires an appropriate `container-license-acceptance.txt` to be on the classpath, signaling that you accept the license of the databases used.
+
+If you don't want to accept these licences you may add the Maven Profile `ignore-missing-license`.
+This will ignore the tests that require an explicit license acceptance.
+
+[source,bash]
+----
+./mvnw clean install -Pall-dbs,ignore-missing-license
+----
+
+If you want to run an integration tests against a different database you can do so by activating an apropriate Spring Profile.
+Available are the following Spring Profiles:
+
+`db2`, `h2`, `hsql` (default), `mariadb`, `mssql`, `mysql`, `oracle`, `postgres`
+
+=== Building reference documentation
+
+Building the documentation builds also the project without running tests.
+
+[source,bash]
+----
+ $ ./mvnw clean install -Pdistribute
+----
+
+The generated documentation is available from `target/site/reference/html/index.html`.
+
+== Modules
+
+There are a number of modules in this project, here is a quick overview:
+
+* Spring Data Relational: Common infrastructure abstracting general aspects of relational database access.
+* link:spring-data-jdbc[Spring Data JDBC]: Repository support for JDBC-based datasources.
+
+== Examples
+
+* https://github.com/spring-projects/spring-data-examples/[Spring Data Examples] contains example projects that explain specific features in more detail.
+
+== License
+
+Spring Data JDBC is Open Source software released under the https://www.apache.org/licenses/LICENSE-2.0.html[Apache 2.0 license].

@@ -1,0 +1,88 @@
+[[update-deps]]
+== Override Spring Boot Dependencies
+
+When using Spring for Apache Kafka in a Spring Boot application, the Apache Kafka dependency versions are determined by Spring Boot's dependency management.
+If you wish to use a different version of `kafka-clients` or `kafka-streams`, such as 2.8.0, you need to override all of the associated dependencies.
+This is especially true when using the embedded Kafka broker in `spring-kafka-test`.
+
+IMPORTANT: Backwards compatibility is not supported for all Boot versions; Spring for Apache Kafka 2.7 has been tested with Spring Boot 2.4 and 2.5.
+
+====
+[source, xml, subs="+attributes", role="primary"]
+.Maven
+----
+<dependency>
+    <groupId>org.springframework.kafka</groupId>
+    <artifactId>spring-kafka</artifactId>
+    <version>{project-version}</version>
+</dependency>
+
+<dependency>
+    <groupId>org.springframework.kafka</groupId>
+    <artifactId>spring-kafka-test</artifactId>
+    <version>{project-version}</version>
+    <scope>test</scope>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.kafka</groupId>
+    <artifactId>kafka-clients</artifactId>
+    <version>{kafka-version}</version>
+</dependency>
+
+<!-- optional - only needed when using kafka-streams -->
+<dependency>
+    <groupId>org.apache.kafka</groupId>
+    <artifactId>kafka-streams</artifactId>
+    <version>{kafka-version}</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.kafka</groupId>
+    <artifactId>kafka-clients</artifactId>
+    <version>{kafka-version}</version>
+    <classifier>test</classifier>
+    <scope>test</scope>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.kafka</groupId>
+    <artifactId>kafka_2.13</artifactId>
+    <version>{kafka-version}</version>
+    <scope>test</scope>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.kafka</groupId>
+    <artifactId>kafka_2.13</artifactId>
+    <version>{kafka-version}</version>
+    <classifier>test</classifier>
+    <scope>test</scope>
+</dependency>
+----
+
+[source, groovy, subs="+attributes", role="secondary"]
+.Gradle
+----
+dependencies {
+
+    implementation 'org.springframework.kafka:spring-kafka:{project-version}'
+
+    implementation "org.apache.kafka:kafka-clients:$kafkaVersion"
+    implementation "org.apache.kafka:kafka-streams:$kafkaVersion" // optional - only needed when using kafka-streams
+    testImplementation 'org.springframework.kafka:spring-kafka-test:{project-version}'
+    testImplementation "org.apache.kafka:kafka-clients:$kafkaVersion:test"
+    testImplementation "org.apache.kafka:kafka_2.13:$kafkaVersion"
+    testImplementation "org.apache.kafka:kafka_2.13:$kafkaVersion:test"
+
+}
+----
+====
+
+The test scope dependencies are only needed if you are using the embedded Kafka broker in tests.
+
+[appendix]
+[[history]]
+== Change History
+
+include::./changes-since-1.0.adoc[]
