@@ -138,15 +138,6 @@ class ExplodedArchiveTests {
 		}
 	}
 
-	@Test
-	void getNonRecursiveManifestEvenIfNonRecursive() throws Exception {
-		try (ExplodedArchive explodedArchive = new ExplodedArchive(new File("src/test/resources/root"), false)) {
-			assertThat(explodedArchive.getManifest()).isNotNull();
-			Map<String, Archive.Entry> entries = getEntriesMap(explodedArchive);
-			assertThat(entries.size()).isEqualTo(3);
-		}
-	}
-
 	private Map<String, Archive.Entry> getEntriesMap(Archive archive) {
 		Map<String, Archive.Entry> entries = new HashMap<>();
 		for (Archive.Entry entry : archive) {
