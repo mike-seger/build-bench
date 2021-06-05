@@ -24,14 +24,16 @@ function runIt() {
 	echo $d |tee -a $f
 	echo $id |tee -a $f
 	echo $project |tee -a $f
-	
+
 	gcacheopts="--project-cache-dir=$(pwd)/gradlecache"
 	if [ "$dldeps" == "1" ] ; then
 		echo "Purging cache" |tee -a $f
 		if [[ "$buildcmd" == *"./gradlew"* ]] ; then
+			export GRADLE_OPTS="$GRADLE_OPTS -Dorg.gradle.daemon=false"
+		
 			buildcmd="$buildcmd "
 			buildcmd="${buildcmd/ test / test --fail-fast }"
-			buildcmd="${buildcmd/ build / build --refresh-dependencies --scan }"
+			buildcmd="${buildcmd/ build / build --refresh-dependencies --no-daemon }"
 			buildcmd="$buildcmd $gcacheopts"
 			./gradlew $gcacheopts --stop
 			./gradlew --status $gcacheopts |\
@@ -67,8 +69,8 @@ function runIt() {
 #runIt junit5-r5.7.2 "./gradlew clean"
 #runIt spring-boot-2.4.6 "./gradlew clean"
 #runIt junit5-r5.7.2 "./gradlew clean test build"
-runIt spring-boot-2.4.6 "./gradlew clean test build"
-exit 0
+#runIt spring-boot-2.4.6 "./gradlew clean test build"
+#exit 0
 
 runIt maven-maven-3.8.1 "./mvnw -Drat.skip=true clean package"
 runIt dropwizard-2.0.22 "./mvnw clean package"
