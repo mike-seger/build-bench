@@ -1,0 +1,685 @@
+20210605T042023
+linux-5.4.0-73-generic-x86-64-x86-64
+junit5-r5.7.2
+./gradlew clean test build
+Downloading https://services.gradle.org/distributions/gradle-7.0.1-bin.zip
+..........10%...........20%...........30%..........40%...........50%...........60%..........70%...........80%...........90%..........100%
+
+Welcome to Gradle 7.0.1!
+
+Here are the highlights of this release:
+ - File system watching enabled by default
+ - Support for running with and building Java 16 projects
+ - Native support for Apple Silicon processors
+ - Dependency catalog feature preview
+
+For more details see https://docs.gradle.org/7.0.1/release-notes.html
+
+Starting a Gradle Daemon, 1 stopped Daemon could not be reused, use --status for details
+Type-safe dependency accessors is an incubating feature.
+Type-safe project accessors is an incubating feature.
+> Task :buildSrc:extractPrecompiledScriptPluginPlugins UP-TO-DATE
+> Task :buildSrc:generateExternalPluginSpecBuilders UP-TO-DATE
+> Task :buildSrc:compilePluginsBlocks UP-TO-DATE
+> Task :buildSrc:generatePrecompiledScriptPluginAccessors UP-TO-DATE
+> Task :buildSrc:configurePrecompiledScriptDependenciesResolver
+> Task :buildSrc:generateScriptPluginAdapters UP-TO-DATE
+> Task :buildSrc:compileKotlin UP-TO-DATE
+> Task :buildSrc:compileJava NO-SOURCE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:pluginDescriptors UP-TO-DATE
+> Task :buildSrc:processResources UP-TO-DATE
+> Task :buildSrc:classes UP-TO-DATE
+> Task :buildSrc:inspectClassesForKotlinIC UP-TO-DATE
+> Task :buildSrc:jar UP-TO-DATE
+> Task :buildSrc:assemble UP-TO-DATE
+> Task :buildSrc:compileTestKotlin NO-SOURCE
+> Task :buildSrc:pluginUnderTestMetadata UP-TO-DATE
+> Task :buildSrc:compileTestJava NO-SOURCE
+> Task :buildSrc:compileTestGroovy NO-SOURCE
+> Task :buildSrc:processTestResources NO-SOURCE
+> Task :buildSrc:testClasses UP-TO-DATE
+> Task :buildSrc:test NO-SOURCE
+> Task :buildSrc:validatePlugins UP-TO-DATE
+> Task :buildSrc:check UP-TO-DATE
+> Task :buildSrc:build UP-TO-DATE
+> Task :clean
+> Task :junit-bom:clean
+> Task :junit-platform-commons:clean
+> Task :junit-jupiter:clean
+> Task :junit-platform-console-standalone:clean
+> Task :junit-platform-console:clean
+> Task :junit-jupiter-migrationsupport:clean
+> Task :junit-platform-jfr:clean
+> Task :junit-platform-engine:clean
+> Task :junit-platform-launcher:clean
+> Task :junit-platform-reporting:clean
+> Task :documentation:clean
+> Task :junit-platform-runner:clean
+> Task :junit-platform-suite-api:clean
+> Task :junit-jupiter-api:clean
+> Task :junit-jupiter-params:clean
+> Task :junit-platform-suite-commons:clean
+> Task :junit-platform-suite-engine:clean
+> Task :junit-platform-suite:clean
+> Task :platform-tooling-support-tests:clean
+> Task :junit-jupiter-api:processResources NO-SOURCE
+> Task :junit-jupiter-params:processResources NO-SOURCE
+> Task :documentation:processResources NO-SOURCE
+> Task :junit-platform-engine:processResources NO-SOURCE
+> Task :junit-platform-launcher:processResources NO-SOURCE
+> Task :junit-platform-reporting:processResources NO-SOURCE
+> Task :junit-platform-suite-api:processResources NO-SOURCE
+> Task :junit-vintage-engine:clean
+> Task :junit-platform-suite-commons:processResources NO-SOURCE
+> Task :junit-jupiter-migrationsupport:processResources NO-SOURCE
+> Task :junit-jupiter-engine:clean
+> Task :junit-platform-testkit:clean
+> Task :junit-jupiter:processResources NO-SOURCE
+> Task :junit-platform-runner:processResources NO-SOURCE
+> Task :junit-platform-suite:processResources NO-SOURCE
+> Task :junit-platform-testkit:processResources NO-SOURCE
+> Task :junit-jupiter:processTestResources NO-SOURCE
+> Task :junit-jupiter-api:processTestResources NO-SOURCE
+> Task :junit-jupiter-api:processTestFixturesResources NO-SOURCE
+> Task :junit-platform-console:processResources
+> Task :junit-vintage-engine:processResources
+> Task :junit-jupiter-engine:processResources
+> Task :junit-platform-console:processMainRelease9Resources NO-SOURCE
+> Task :documentation:processTestResources
+> Task :junit-platform-suite-engine:processResources
+> Task :platform-tests:clean
+> Task :junit-platform-console:processTestResources NO-SOURCE
+> Task :junit-jupiter-migrationsupport:processTestResources
+> Task :junit-jupiter-engine:processTestResources
+> Task :junit-platform-jfr:processResources
+> Task :junit-platform-engine:processTestResources NO-SOURCE
+> Task :junit-platform-console-standalone:processResources NO-SOURCE
+> Task :junit-platform-launcher:processTestResources NO-SOURCE
+> Task :junit-platform-console-standalone:processTestResources NO-SOURCE
+> Task :junit-platform-reporting:processTestResources NO-SOURCE
+> Task :junit-platform-jfr:processTestResources NO-SOURCE
+> Task :junit-platform-engine:processTestFixturesResources NO-SOURCE
+> Task :junit-platform-runner:processTestResources NO-SOURCE
+> Task :junit-platform-suite:processTestResources NO-SOURCE
+> Task :junit-platform-suite-api:processTestResources NO-SOURCE
+> Task :junit-platform-suite-commons:processTestResources NO-SOURCE
+> Task :junit-platform-launcher:processTestFixturesResources NO-SOURCE
+> Task :junit-platform-suite-engine:processTestResources NO-SOURCE
+> Task :junit-platform-testkit:processTestResources NO-SOURCE
+> Task :junit-vintage-engine:processTestFixturesResources NO-SOURCE
+> Task :junit-jupiter-params:processTestResources
+> Task :platform-tests:compileJava NO-SOURCE
+> Task :assemble UP-TO-DATE
+> Task :junit-vintage-engine:processTestResources
+> Task :junit-bom:assemble UP-TO-DATE
+> Task :junit-bom:spotlessCheck UP-TO-DATE
+> Task :junit-bom:check UP-TO-DATE
+> Task :junit-bom:build UP-TO-DATE
+> Task :platform-tests:processResources NO-SOURCE
+> Task :platform-tests:classes UP-TO-DATE
+> Task :junit-jupiter:sourcesJar
+> Task :junit-jupiter:osgiProperties
+> Task :junit-jupiter-migrationsupport:sourcesJar
+> Task :junit-jupiter-migrationsupport:osgiProperties
+> Task :junit-jupiter-api:sourcesJar
+> Task :junit-jupiter-engine:sourcesJar
+> Task :junit-jupiter-engine:osgiProperties
+> Task :junit-jupiter-api:osgiProperties
+> Task :junit-jupiter-params:sourcesJar
+> Task :junit-jupiter-params:osgiProperties
+> Task :junit-platform-console-standalone:sourcesJar
+> Task :junit-platform-console:sourcesJar
+> Task :junit-platform-console:osgiProperties
+> Task :junit-platform-console-standalone:osgiProperties
+> Task :platform-tests:processTestResources
+> Task :junit-platform-jfr:sourcesJar
+> Task :junit-platform-jfr:osgiProperties
+> Task :junit-platform-reporting:sourcesJar
+> Task :junit-platform-reporting:osgiProperties
+> Task :junit-platform-runner:sourcesJar
+> Task :junit-platform-runner:osgiProperties
+> Task :junit-platform-launcher:sourcesJar
+> Task :junit-platform-launcher:osgiProperties
+> Task :junit-platform-suite-api:sourcesJar
+> Task :junit-platform-engine:sourcesJar
+> Task :junit-platform-suite:sourcesJar
+> Task :junit-platform-suite-api:osgiProperties
+> Task :junit-platform-engine:osgiProperties
+> Task :junit-platform-suite-engine:sourcesJar
+> Task :junit-platform-suite-engine:osgiProperties
+> Task :platform-tests:allMainClasses UP-TO-DATE
+> Task :platform-tests:compileModule NO-SOURCE
+> Task :platform-tests:jar SKIPPED
+> Task :platform-tests:assemble UP-TO-DATE
+> Task :platform-tests:processJmhResources NO-SOURCE
+> Task :platform-tests:checkstyleMain NO-SOURCE
+> Task :junit-platform-suite-commons:sourcesJar
+> Task :junit-platform-suite:osgiProperties
+> Task :junit-platform-suite-commons:osgiProperties
+> Task :junit-vintage-engine:sourcesJar
+> Task :junit-vintage-engine:osgiProperties
+> Task :junit-platform-testkit:sourcesJar
+> Task :junit-platform-testkit:osgiProperties
+> Task :platform-tooling-support-tests:compileJava
+> Task :platform-tooling-support-tests:processResources NO-SOURCE
+> Task :platform-tooling-support-tests:classes
+> Task :platform-tooling-support-tests:processTestResources
+> Task :platform-tooling-support-tests:allMainClasses
+> Task :platform-tooling-support-tests:compileModule NO-SOURCE
+> Task :platform-tooling-support-tests:jar SKIPPED
+> Task :platform-tooling-support-tests:assemble UP-TO-DATE
+> Task :junit-platform-commons:compileJava
+> Task :junit-platform-commons:processResources NO-SOURCE
+> Task :junit-platform-commons:classes
+> Task :junit-platform-commons:compileMainRelease9Java
+> Task :junit-platform-commons:processMainRelease9Resources NO-SOURCE
+> Task :junit-platform-commons:mainRelease9Classes
+> Task :junit-platform-commons:allMainClasses
+> Task :checkstyleNohttp
+> Task :junit-platform-commons:compileModule
+> Task :spotlessDocumentation
+> Task :spotlessDocumentationCheck
+> Task :spotlessMisc
+> Task :spotlessMiscCheck
+> Task :spotlessCheck
+> Task :check
+> Task :build
+> Task :platform-tooling-support-tests:checkstyleMain
+> Task :junit-platform-commons:jar
+> Task :junit-platform-suite-api:compileJava
+> Task :junit-platform-suite-api:classes
+> Task :junit-platform-suite-api:allMainClasses
+> Task :junit-platform-suite-api:compileModule
+> Task :junit-platform-suite-api:jar
+> Task :junit-platform-suite-api:compileTestJava NO-SOURCE
+> Task :junit-platform-suite-api:testClasses UP-TO-DATE
+> Task :junit-platform-suite-api:test NO-SOURCE
+> Task :junit-platform-engine:compileJava
+> Task :junit-platform-engine:classes
+> Task :junit-platform-engine:allMainClasses
+> Task :junit-platform-engine:compileModule
+> Task :junit-platform-engine:jar
+> Task :junit-platform-commons:compileTestFixturesJava
+> Task :junit-platform-commons:processTestFixturesResources NO-SOURCE
+> Task :junit-platform-commons:testFixturesClasses
+> Task :junit-platform-commons:testFixturesJar
+> Task :junit-platform-commons:compileTestJava NO-SOURCE
+> Task :junit-platform-commons:processTestResources NO-SOURCE
+> Task :junit-platform-commons:testClasses UP-TO-DATE
+> Task :junit-platform-commons:test NO-SOURCE
+> Task :junit-vintage-engine:compileJava
+> Task :junit-vintage-engine:compileGroovy NO-SOURCE
+> Task :junit-vintage-engine:classes
+> Task :junit-vintage-engine:allMainClasses
+> Task :junit-platform-launcher:compileJava
+> Task :junit-platform-launcher:classes
+> Task :junit-platform-launcher:allMainClasses
+> Task :junit-platform-suite-api:javadoc
+> Task :junit-platform-suite-api:javadocJar
+> Task :junit-platform-suite-api:assemble
+> Task :junit-vintage-engine:compileModule
+> Task :junit-platform-launcher:compileModule
+> Task :junit-vintage-engine:jar
+> Task :junit-platform-launcher:jar
+> Task :junit-platform-engine:compileTestFixturesJava
+> Task :junit-platform-suite-commons:compileJava
+> Task :junit-platform-suite-api:checkstyleMain
+> Task :junit-platform-suite-commons:classes
+> Task :junit-platform-suite-commons:allMainClasses
+> Task :junit-platform-jfr:compileJava
+> Task :junit-platform-jfr:classes
+> Task :junit-platform-jfr:allMainClasses
+> Task :junit-platform-reporting:compileJava
+> Task :junit-platform-reporting:classes
+> Task :junit-platform-reporting:allMainClasses
+> Task :junit-platform-suite-commons:compileModule
+> Task :junit-platform-commons:javadoc
+> Task :junit-platform-jfr:compileModule
+> Task :junit-platform-testkit:compileJava
+> Task :junit-platform-testkit:classes
+> Task :junit-platform-testkit:allMainClasses
+> Task :junit-platform-jfr:jar
+> Task :junit-platform-engine:compileTestJava NO-SOURCE
+> Task :junit-platform-engine:testClasses UP-TO-DATE
+> Task :junit-platform-engine:testFixturesClasses
+> Task :junit-platform-jfr:compileTestJava NO-SOURCE
+> Task :junit-platform-jfr:testClasses UP-TO-DATE
+> Task :junit-platform-suite-commons:jar
+> Task :junit-platform-jfr:test NO-SOURCE
+> Task :junit-platform-engine:testFixturesJar
+> Task :junit-platform-engine:test NO-SOURCE
+> Task :junit-platform-launcher:compileTestFixturesJava
+> Task :junit-platform-launcher:compileTestJava NO-SOURCE
+> Task :junit-platform-launcher:testClasses UP-TO-DATE
+> Task :junit-platform-launcher:testFixturesClasses
+> Task :junit-platform-launcher:testFixturesJar
+> Task :junit-platform-launcher:test NO-SOURCE
+> Task :junit-platform-suite-commons:compileTestJava NO-SOURCE
+> Task :junit-platform-suite-commons:testClasses UP-TO-DATE
+> Task :junit-platform-suite-commons:test NO-SOURCE
+> Task :junit-platform-suite-engine:compileJava
+> Task :junit-platform-suite-engine:classes
+> Task :junit-platform-suite-engine:allMainClasses
+> Task :junit-platform-commons:javadocJar
+> Task :junit-vintage-engine:javadoc
+> Task :junit-platform-runner:compileJava
+> Task :junit-platform-runner:classes
+> Task :junit-platform-runner:allMainClasses
+> Task :junit-platform-reporting:compileModule
+> Task :junit-platform-commons:sourcesJar
+> Task :junit-platform-commons:assemble
+> Task :junit-platform-reporting:jar
+> Task :junit-platform-console:compileJava
+> Task :junit-platform-console:classes
+> Task :junit-platform-console:compileMainRelease9Java
+> Task :junit-platform-console:mainRelease9Classes
+> Task :junit-platform-console:allMainClasses
+> Task :junit-platform-testkit:compileModule
+> Task :junit-platform-testkit:jar
+> Task :junit-platform-reporting:compileTestJava NO-SOURCE
+> Task :junit-platform-reporting:testClasses UP-TO-DATE
+> Task :junit-platform-reporting:test NO-SOURCE
+> Task :junit-platform-testkit:compileTestJava NO-SOURCE
+> Task :junit-platform-testkit:testClasses UP-TO-DATE
+> Task :junit-platform-testkit:test NO-SOURCE
+> Task :junit-platform-runner:compileModule
+> Task :junit-platform-suite-engine:compileModule
+> Task :junit-platform-commons:checkstyleMain
+> Task :junit-platform-suite-engine:jar
+> Task :junit-platform-suite:compileJava NO-SOURCE
+> Task :junit-platform-suite:classes UP-TO-DATE
+> Task :junit-platform-suite:allMainClasses UP-TO-DATE
+> Task :junit-platform-runner:jar
+> Task :junit-platform-console:compileModule
+> Task :junit-platform-suite:compileModule
+> Task :junit-platform-jfr:javadoc
+> Task :junit-platform-suite:jar
+> Task :junit-platform-runner:compileTestJava NO-SOURCE
+> Task :junit-platform-runner:testClasses UP-TO-DATE
+> Task :junit-platform-runner:test NO-SOURCE
+> Task :junit-platform-suite:compileTestJava NO-SOURCE
+> Task :junit-platform-suite:testClasses UP-TO-DATE
+> Task :junit-platform-suite:test NO-SOURCE
+> Task :junit-platform-suite-engine:compileTestJava NO-SOURCE
+> Task :junit-platform-suite-engine:testClasses UP-TO-DATE
+> Task :junit-platform-suite-engine:test NO-SOURCE
+> Task :junit-platform-jfr:javadocJar
+> Task :junit-platform-jfr:assemble
+> Task :junit-platform-commons:checkstyleMainRelease9
+> Task :junit-platform-commons:checkstyleTest NO-SOURCE
+> Task :junit-platform-jfr:checkstyleMain
+> Task :junit-platform-jfr:checkstyleTest NO-SOURCE
+> Task :junit-platform-commons:checkstyleTestFixtures
+> Task :junit-platform-commons:osgiProperties
+> Task :junit-platform-engine:javadoc
+> Task :junit-platform-engine:javadocJar
+> Task :junit-platform-engine:assemble
+> Task :junit-jupiter-api:compileKotlin
+> Task :junit-platform-commons:verifyOSGi
+> Task :junit-platform-jfr:verifyOSGi
+> Task :spotlessInternalRegisterDependencies
+> Task :junit-vintage-engine:compileTestFixturesJava
+> Task :junit-jupiter-api:compileJava
+> Task :junit-jupiter-api:classes
+> Task :junit-jupiter-api:allMainClasses
+> Task :junit-jupiter-api:compileModule
+> Task :junit-jupiter-api:inspectClassesForKotlinIC
+> Task :junit-platform-console:shadowJar
+> Task :junit-platform-console:compileTestJava NO-SOURCE
+> Task :junit-platform-console:testClasses UP-TO-DATE
+> Task :junit-platform-console:test NO-SOURCE
+> Task :junit-jupiter:spotlessJava
+> Task :junit-jupiter:spotlessJavaCheck
+> Task :junit-jupiter:spotlessKotlin
+> Task :junit-jupiter:spotlessKotlinCheck
+> Task :junit-jupiter:spotlessCheck
+> Task :junit-jupiter-api:jar
+> Task :junit-platform-engine:checkstyleMain
+> Task :junit-platform-runner:javadoc
+> Task :junit-jupiter-api:compileTestFixturesKotlin
+> Task :junit-platform-reporting:javadoc
+> Task :junit-jupiter-migrationsupport:compileJava
+> Task :junit-jupiter-migrationsupport:classes
+> Task :junit-jupiter-migrationsupport:allMainClasses
+> Task :junit-jupiter-api:compileTestFixturesJava
+> Task :junit-jupiter-api:compileTestKotlin NO-SOURCE
+> Task :junit-jupiter-api:compileTestJava NO-SOURCE
+> Task :junit-jupiter-api:testClasses UP-TO-DATE
+> Task :junit-jupiter-api:testFixturesClasses
+> Task :junit-jupiter-api:testFixturesJar
+> Task :junit-jupiter-api:test NO-SOURCE
+> Task :junit-jupiter-migrationsupport:compileModule
+> Task :documentation:spotlessJava
+> Task :documentation:compileKotlin
+> Task :junit-jupiter-migrationsupport:jar
+> Task :documentation:compileJava
+> Task :documentation:classes
+> Task :documentation:allMainClasses
+> Task :documentation:compileModule NO-SOURCE
+> Task :documentation:inspectClassesForKotlinIC
+> Task :documentation:jar SKIPPED
+> Task :documentation:assemble UP-TO-DATE
+> Task :documentation:checkstyleMain
+> Task :documentation:spotlessJavaCheck
+> Task :junit-platform-commons:spotlessJava
+> Task :junit-platform-commons:spotlessJavaCheck
+> Task :junit-platform-commons:spotlessKotlin
+> Task :junit-platform-commons:spotlessKotlinCheck
+> Task :junit-platform-commons:spotlessCheck
+> Task :junit-platform-commons:check
+> Task :junit-platform-commons:build
+> Task :junit-jupiter-params:compileKotlin
+> Task :junit-platform-launcher:javadoc
+> Task :junit-platform-console-standalone:spotlessJava
+> Task :junit-platform-console-standalone:spotlessJavaCheck
+> Task :junit-platform-console-standalone:spotlessKotlin
+> Task :junit-platform-console-standalone:spotlessKotlinCheck
+> Task :junit-platform-console-standalone:spotlessCheck
+> Task :junit-platform-engine:checkstyleTest NO-SOURCE
+> Task :junit-platform-engine:checkstyleTestFixtures
+> Task :junit-jupiter-params:compileJava
+> Task :junit-jupiter-params:classes
+> Task :junit-jupiter-params:allMainClasses
+> Task :junit-jupiter-params:compileModule
+> Task :junit-vintage-engine:compileTestFixturesGroovy
+> Task :junit-vintage-engine:testFixturesClasses
+> Task :junit-platform-engine:spotlessJava
+> Task :junit-platform-engine:spotlessJavaCheck
+> Task :junit-vintage-engine:testFixturesJar
+> Task :junit-platform-engine:spotlessKotlin
+> Task :junit-platform-engine:spotlessKotlinCheck
+> Task :junit-platform-engine:spotlessCheck
+> Task :junit-platform-jfr:spotlessJava
+> Task :junit-platform-jfr:spotlessJavaCheck
+> Task :junit-platform-jfr:spotlessKotlin
+> Task :junit-platform-jfr:spotlessKotlinCheck
+> Task :junit-platform-jfr:spotlessCheck
+> Task :junit-platform-jfr:check
+> Task :junit-platform-jfr:build
+> Task :junit-platform-engine:verifyOSGi
+> Task :junit-platform-engine:check
+> Task :junit-platform-engine:build
+> Task :junit-platform-launcher:javadocJar
+> Task :junit-platform-launcher:assemble
+> Task :junit-platform-reporting:javadocJar
+> Task :junit-platform-reporting:assemble
+> Task :junit-platform-reporting:checkstyleMain
+> Task :junit-platform-reporting:checkstyleTest NO-SOURCE
+> Task :junit-jupiter-engine:spotlessJava
+> Task :junit-platform-reporting:spotlessJava
+> Task :junit-platform-reporting:spotlessJavaCheck
+> Task :junit-jupiter-engine:compileKotlin
+> Task :junit-platform-reporting:spotlessKotlin
+> Task :junit-platform-reporting:spotlessKotlinCheck
+> Task :junit-platform-reporting:spotlessCheck
+> Task :junit-platform-reporting:verifyOSGi
+> Task :junit-platform-reporting:check
+> Task :junit-platform-reporting:build
+> Task :junit-platform-runner:javadocJar
+> Task :junit-platform-runner:assemble
+> Task :junit-jupiter-params:shadowJar
+> Task :junit-jupiter:compileJava NO-SOURCE
+> Task :junit-jupiter:classes UP-TO-DATE
+> Task :junit-jupiter:allMainClasses UP-TO-DATE
+> Task :junit-platform-runner:checkstyleMain
+> Task :junit-jupiter-migrationsupport:javadoc
+> Task :documentation:spotlessKotlin
+> Task :junit-jupiter-migrationsupport:javadocJar
+> Task :junit-jupiter-migrationsupport:assemble
+> Task :junit-platform-launcher:checkstyleMain
+> Task :junit-platform-console:javadoc
+> Task :junit-jupiter-migrationsupport:checkstyleMain
+> Task :junit-platform-console:javadocJar
+> Task :junit-jupiter-migrationsupport:spotlessJava
+> Task :junit-jupiter-migrationsupport:spotlessJavaCheck
+> Task :junit-jupiter-migrationsupport:spotlessKotlin
+> Task :junit-jupiter-migrationsupport:spotlessKotlinCheck
+> Task :junit-jupiter-migrationsupport:spotlessCheck
+> Task :junit-platform-console:assemble
+> Task :junit-jupiter-engine:compileJava
+> Task :junit-jupiter-engine:compileGroovy NO-SOURCE
+> Task :junit-jupiter-engine:classes
+> Task :junit-jupiter-engine:allMainClasses
+> Task :junit-jupiter-migrationsupport:verifyOSGi
+> Task :junit-platform-console:checkstyleMain
+> Task :junit-jupiter-engine:compileModule
+> Task :junit-jupiter-engine:inspectClassesForKotlinIC
+> Task :junit-jupiter-engine:jar
+> Task :junit-jupiter-migrationsupport:compileTestJava
+> Task :junit-jupiter-migrationsupport:testClasses
+> Task :documentation:compileTestKotlin
+> Task :junit-jupiter:compileModule
+> Task :junit-jupiter:jar
+> Task :junit-jupiter:compileTestJava NO-SOURCE
+> Task :junit-jupiter:testClasses UP-TO-DATE
+> Task :junit-jupiter:test NO-SOURCE
+> Task :junit-platform-console-standalone:compileJava NO-SOURCE
+> Task :junit-platform-console-standalone:classes UP-TO-DATE
+> Task :junit-platform-console-standalone:allMainClasses UP-TO-DATE
+> Task :junit-platform-console-standalone:compileModule NO-SOURCE
+> Task :documentation:compileTestJava
+> Task :junit-jupiter-params:javadoc
+> Task :documentation:testClasses
+> Task :junit-jupiter-api:javadoc
+> Task :platform-tooling-support-tests:compileTestJava
+> Task :platform-tooling-support-tests:testClasses
+> Task :platform-tooling-support-tests:test SKIPPED
+> Task :junit-jupiter:javadoc NO-SOURCE
+> Task :junit-jupiter:javadocJar
+> Task :junit-jupiter:assemble
+> Task :junit-jupiter:checkstyleMain NO-SOURCE
+> Task :junit-jupiter:checkstyleTest NO-SOURCE
+> Task :junit-jupiter:verifyOSGi
+> Task :junit-jupiter:check
+> Task :junit-jupiter:build
+> Task :junit-jupiter-api:javadocJar
+> Task :junit-jupiter-api:assemble
+> Task :junit-jupiter-params:compileTestKotlin
+> Task :junit-vintage-engine:compileTestJava
+> Task :junit-vintage-engine:compileTestGroovy NO-SOURCE
+> Task :junit-vintage-engine:testClasses
+> Task :junit-platform-console-standalone:shadowJar
+> Task :junit-platform-console-standalone:compileTestJava NO-SOURCE
+> Task :junit-platform-console-standalone:testClasses UP-TO-DATE
+> Task :junit-platform-console-standalone:test NO-SOURCE
+> Task :junit-platform-console:checkstyleMainRelease9
+> Task :junit-platform-console:checkstyleTest NO-SOURCE
+> Task :junit-platform-console:spotlessJava
+> Task :junit-platform-console:spotlessJavaCheck
+> Task :junit-platform-console:spotlessKotlin
+> Task :junit-platform-console:spotlessKotlinCheck
+> Task :junit-platform-console:spotlessCheck
+> Task :junit-platform-console:verifyOSGi
+> Task :junit-platform-console:check
+> Task :junit-platform-console:build
+> Task :junit-platform-console-standalone:javadoc NO-SOURCE
+> Task :junit-platform-console-standalone:javadocJar
+> Task :junit-platform-console-standalone:assemble
+> Task :junit-platform-console-standalone:checkstyleMain NO-SOURCE
+> Task :junit-platform-console-standalone:checkstyleTest NO-SOURCE
+> Task :junit-platform-console-standalone:verifyOSGi
+> Task :junit-platform-console-standalone:check
+> Task :junit-platform-console-standalone:build
+> Task :junit-platform-launcher:checkstyleTest NO-SOURCE
+> Task :junit-jupiter-params:compileTestJava
+> Task :junit-jupiter-params:testClasses
+> Task :junit-platform-launcher:checkstyleTestFixtures
+> Task :junit-jupiter-api:checkstyleMain
+> Task :junit-jupiter-api:checkstyleTest NO-SOURCE
+> Task :junit-jupiter-api:checkstyleTestFixtures
+> Task :junit-platform-launcher:spotlessJava
+> Task :junit-platform-launcher:spotlessJavaCheck
+> Task :junit-platform-launcher:spotlessKotlin
+> Task :junit-platform-launcher:spotlessKotlinCheck
+> Task :junit-platform-launcher:spotlessCheck
+> Task :junit-platform-launcher:verifyOSGi
+> Task :junit-platform-launcher:check
+> Task :junit-platform-launcher:build
+> Task :junit-platform-runner:checkstyleTest NO-SOURCE
+> Task :junit-platform-runner:spotlessJava
+> Task :junit-platform-runner:spotlessJavaCheck
+> Task :junit-platform-runner:spotlessKotlin
+> Task :junit-platform-runner:spotlessKotlinCheck
+> Task :junit-platform-runner:spotlessCheck
+> Task :junit-platform-runner:test_4_12 NO-SOURCE
+> Task :junit-jupiter-migrationsupport:test
+> Task :junit-platform-runner:verifyOSGi
+> Task :junit-platform-runner:check
+> Task :junit-platform-runner:build
+> Task :junit-platform-suite:javadoc NO-SOURCE
+> Task :junit-platform-suite:javadocJar
+> Task :junit-platform-suite:assemble
+> Task :junit-platform-suite:checkstyleMain NO-SOURCE
+> Task :junit-platform-suite:checkstyleTest NO-SOURCE
+> Task :junit-platform-suite:spotlessJava
+> Task :junit-platform-suite:spotlessJavaCheck
+> Task :junit-platform-suite:spotlessKotlin
+> Task :junit-platform-suite:spotlessKotlinCheck
+> Task :junit-platform-suite:spotlessCheck
+> Task :junit-jupiter-api:spotlessJava
+> Task :junit-jupiter-api:spotlessJavaCheck
+> Task :junit-jupiter-migrationsupport:checkstyleTest
+> Task :junit-platform-suite:verifyOSGi
+> Task :junit-platform-suite:check
+> Task :junit-platform-suite:build
+> Task :junit-platform-suite-api:checkstyleTest NO-SOURCE
+> Task :junit-platform-suite-api:spotlessJava
+> Task :junit-platform-suite-api:spotlessJavaCheck
+> Task :junit-platform-suite-api:spotlessKotlin
+> Task :junit-platform-suite-api:spotlessKotlinCheck
+> Task :junit-platform-suite-api:spotlessCheck
+> Task :junit-platform-suite-api:verifyOSGi
+> Task :junit-platform-suite-api:check
+> Task :junit-platform-suite-api:build
+> Task :junit-jupiter-api:spotlessKotlin
+> Task :junit-jupiter-api:spotlessKotlinCheck
+> Task :junit-jupiter-api:spotlessCheck
+> Task :junit-jupiter-api:verifyOSGi
+> Task :junit-jupiter-api:check
+> Task :junit-jupiter-api:build
+> Task :junit-jupiter-engine:compileTestKotlin
+> Task :documentation:consoleLauncherTest
+> Task :documentation:test NO-SOURCE
+> Task :documentation:checkstyleTest
+> Task :documentation:spotlessKotlinCheck
+> Task :documentation:spotlessCheck
+> Task :documentation:check
+> Task :documentation:build
+> Task :junit-platform-suite-commons:javadoc
+> Task :junit-platform-suite-commons:javadocJar
+> Task :junit-platform-suite-commons:assemble
+> Task :junit-platform-suite-commons:checkstyleMain
+> Task :junit-platform-suite-commons:checkstyleTest NO-SOURCE
+> Task :junit-platform-suite-commons:spotlessJava
+> Task :junit-platform-suite-commons:spotlessJavaCheck
+> Task :junit-platform-suite-commons:spotlessKotlin
+> Task :junit-platform-suite-commons:spotlessKotlinCheck
+> Task :junit-platform-suite-commons:spotlessCheck
+> Task :junit-platform-suite-commons:verifyOSGi
+> Task :junit-platform-suite-commons:check
+> Task :junit-platform-suite-commons:build
+> Task :junit-platform-suite-engine:javadoc
+> Task :junit-platform-suite-engine:javadocJar
+> Task :junit-platform-suite-engine:assemble
+> Task :junit-platform-suite-engine:checkstyleMain
+> Task :junit-platform-suite-engine:checkstyleTest NO-SOURCE
+> Task :junit-platform-suite-engine:spotlessJava
+> Task :junit-platform-suite-engine:spotlessJavaCheck
+> Task :junit-platform-suite-engine:spotlessKotlin
+> Task :junit-platform-suite-engine:spotlessKotlinCheck
+> Task :junit-platform-suite-engine:spotlessCheck
+> Task :platform-tooling-support-tests:checkstyleTest
+> Task :junit-platform-suite-engine:verifyOSGi
+> Task :junit-platform-suite-engine:check
+> Task :junit-platform-suite-engine:build
+> Task :platform-tooling-support-tests:spotlessJava
+> Task :platform-tooling-support-tests:spotlessJavaCheck
+> Task :platform-tooling-support-tests:spotlessKotlin
+> Task :platform-tooling-support-tests:spotlessKotlinCheck
+> Task :platform-tooling-support-tests:spotlessCheck
+> Task :platform-tooling-support-tests:check
+> Task :platform-tooling-support-tests:build
+> Task :junit-jupiter-migrationsupport:test_4_12
+> Task :junit-jupiter-migrationsupport:check
+> Task :junit-jupiter-migrationsupport:build
+> Task :junit-vintage-engine:test
+> Task :platform-tests:compileTestJava
+> Task :platform-tests:testClasses
+> Task :junit-vintage-engine:javadocJar
+> Task :junit-vintage-engine:assemble
+> Task :junit-vintage-engine:checkstyleMain
+> Task :junit-platform-testkit:javadoc
+> Task :junit-platform-testkit:javadocJar
+> Task :junit-platform-testkit:assemble
+> Task :junit-vintage-engine:checkstyleTest
+> Task :junit-vintage-engine:checkstyleTestFixtures
+> Task :junit-platform-testkit:checkstyleMain
+> Task :junit-platform-testkit:checkstyleTest NO-SOURCE
+> Task :junit-platform-testkit:spotlessJava
+> Task :junit-platform-testkit:spotlessJavaCheck
+> Task :junit-platform-testkit:spotlessKotlin
+> Task :junit-platform-testkit:spotlessKotlinCheck
+> Task :junit-platform-testkit:spotlessCheck
+> Task :junit-jupiter-engine:compileTestJava
+> Task :junit-vintage-engine:spotlessJava
+> Task :junit-vintage-engine:spotlessJavaCheck
+> Task :junit-platform-testkit:verifyOSGi
+> Task :junit-platform-testkit:check
+> Task :junit-platform-testkit:build
+> Task :junit-vintage-engine:spotlessKotlin
+> Task :junit-vintage-engine:spotlessKotlinCheck
+> Task :junit-vintage-engine:spotlessCheck
+> Task :junit-jupiter-params:test
+> Task :junit-jupiter-params:javadocJar
+> Task :junit-jupiter-params:assemble
+> Task :junit-jupiter-params:checkstyleMain
+> Task :junit-jupiter-params:checkstyleTest
+> Task :junit-jupiter-params:spotlessJava
+> Task :junit-jupiter-params:spotlessJavaCheck
+> Task :junit-jupiter-params:spotlessKotlin
+> Task :junit-jupiter-params:spotlessKotlinCheck
+> Task :junit-jupiter-params:spotlessCheck
+> Task :junit-jupiter-params:verifyOSGi
+> Task :junit-jupiter-params:check
+> Task :junit-jupiter-params:build
+> Task :junit-vintage-engine:testWithoutJUnit4
+> Task :junit-jupiter-engine:compileTestGroovy
+> Task :junit-jupiter-engine:testClasses
+> Task :junit-vintage-engine:test_4_12
+> Task :junit-vintage-engine:verifyOSGi
+> Task :junit-vintage-engine:check
+> Task :junit-vintage-engine:build
+> Task :junit-jupiter-engine:test
+> Task :junit-jupiter-engine:javadoc
+> Task :junit-jupiter-engine:javadocJar
+> Task :junit-jupiter-engine:assemble
+> Task :junit-jupiter-engine:checkstyleMain
+> Task :junit-jupiter-engine:checkstyleTest
+> Task :junit-jupiter-engine:spotlessJavaCheck
+> Task :junit-jupiter-engine:spotlessKotlin
+> Task :junit-jupiter-engine:spotlessKotlinCheck
+> Task :junit-jupiter-engine:spotlessCheck
+> Task :junit-jupiter-engine:verifyOSGi
+> Task :junit-jupiter-engine:check
+> Task :junit-jupiter-engine:build
+> Task :platform-tests:test
+> Task :platform-tests:compileJmhJava
+> Task :platform-tests:jmhClasses
+> Task :platform-tests:checkstyleJmh
+> Task :platform-tests:checkstyleTest
+> Task :platform-tests:spotlessJava
+> Task :platform-tests:spotlessJavaCheck
+> Task :platform-tests:spotlessKotlin
+> Task :platform-tests:spotlessKotlinCheck
+> Task :platform-tests:spotlessCheck
+> Task :platform-tests:test_4_12
+> Task :platform-tests:check
+> Task :platform-tests:build
+
+BUILD SUCCESSFUL in 2m 51s
+353 actionable tasks: 353 executed
+
+A build scan was not published as you have not authenticated with server 'ge.junit.org'.
+20210605T042315
+ELAPSED TIME: 172 s
