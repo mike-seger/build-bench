@@ -17,7 +17,6 @@ configurations {
 	configurationProperties
 	gradlePluginDocumentation
 	mavenPluginDocumentation
-	testSlices
 }
 
 repositories {
@@ -105,8 +104,6 @@ dependencies {
 	testRuntimeOnly(project(":spring-boot-project:spring-boot-starters:spring-boot-starter-web"))
 	testRuntimeOnly("com.h2database:h2")
 	testRuntimeOnly("org.springframework:spring-jdbc")
-
-	testSlices(project(path: ":spring-boot-project:spring-boot-test-autoconfigure", configuration: "testSliceMetadata"))
 }
 
 task dependencyVersions(type: org.springframework.boot.build.constraints.ExtractVersionConstraints) {
@@ -152,11 +149,6 @@ task aggregatedJavadoc(type: Javadoc) {
 			] as String[]
 		}
 	}
-}
-
-task documentTestSlices(type: org.springframework.boot.build.test.autoconfigure.DocumentTestSlices) {
-	testSlices = configurations.testSlices
-	outputFile = file("${buildDir}/docs/generated/test-slice-auto-configuration.adoc")
 }
 
 task documentStarters(type: org.springframework.boot.build.starters.DocumentStarters) {
@@ -235,7 +227,6 @@ task asciidoctorMultipage(type: org.asciidoctor.gradle.jvm.AsciidoctorTask) {
 }
 
 syncDocumentationSourceForAsciidoctor {
-	dependsOn documentTestSlices
 	dependsOn documentStarters
 	dependsOn documentAutoConfigurationClasses
 	dependsOn documentDependencyVersions
@@ -253,7 +244,6 @@ syncDocumentationSourceForAsciidoctor {
 }
 
 syncDocumentationSourceForAsciidoctorMultipage {
-	dependsOn documentTestSlices
 	dependsOn documentStarters
 	dependsOn documentAutoConfigurationClasses
 	dependsOn documentDependencyVersions
@@ -271,7 +261,6 @@ syncDocumentationSourceForAsciidoctorMultipage {
 }
 
 syncDocumentationSourceForAsciidoctorPdf {
-	dependsOn documentTestSlices
 	dependsOn documentStarters
 	dependsOn documentAutoConfigurationClasses
 	dependsOn documentDependencyVersions
