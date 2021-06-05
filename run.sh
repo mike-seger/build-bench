@@ -25,16 +25,15 @@ function runIt() {
 	echo $id |tee -a $f
 	echo $project |tee -a $f
 	
+	gcacheopts="--project-cache-dir=$(pwd)/gradlecache"
 	if [ "$dldeps" == "1" ] ; then
 		echo "Purging cache" |tee -a $f
 		if [[ "$buildcmd" == *"./gradlew"* ]] ; then
-			buildcmd="$buildcmd --refresh-dependencies --project-cache-dir=$(pwd)/gradlecache"
+			buildcmd="$buildcmd --refresh-dependencies $gcacheopts"
 			buildcmd="${buildcmd/ test / test --fail-fast }"
-			./gradlew --status | grep -v PID|sed -e "s/^ *//;s/ .*//"|grep "^[0-9]" |xargs kill -9
-#			rm -fR .gradle/caches .gradle/checksums .gradle/buildOutputCleanup  \
-#				 ~/.gradle/caches ~/.gradle/build-scan-data ~/.gradle/daemon \
-#				~/.gradle/workers ~/.gradle/wrapper  ~/.gradle/notifications 
-			rm -fR .gradle/caches ~/.gradle/caches $(pwd)/gradlecache
+			./gradlew --status $gcacheopts --refresh-dependencies |\
+				 grep -v PID|sed -e "s/^ *//;s/ .*//"|grep "^[0-9]" |\
+				 xargs kill -9 >/dev/null 2>&1
 		elif [[ "$buildcmd" ==  *"./mvnw"* ]] ; then
 			buildcmd="$buildcmd -U --fail-fast -Dsurefire.skipAfterFailureCount=1"
 			./mvnw dependency:purge-local-repository
@@ -42,7 +41,7 @@ function runIt() {
 		fi
 	else
 		if [[ "$buildcmd" == *"./gradlew"* ]] ; then
-			buildcmd="$buildcmd --project-cache-dir=$(pwd)/gradlecache"
+			buildcmd="$buildcmd $gcacheopts"
 			buildcmd="${buildcmd/ test / test --fail-fast }"
 		elif [[ "$buildcmd" ==  *"./mvnw"* ]] ; then
 			buildcmd="$buildcmd -fail-fast -Dsurefire.skipAfterFailureCount=1"
@@ -58,9 +57,11 @@ function runIt() {
 	)
 }
 
+#runIt junit5-r5.7.2 "./gradlew clean"
+runIt spring-boot-2.4.6 "./gradlew clean"
 #runIt junit5-r5.7.2 "./gradlew clean test build"
 #runIt spring-boot-2.4.6 "./gradlew clean test build"
-#exit 0
+exit 0
 
 runIt maven-maven-3.8.1 "./mvnw -Drat.skip=true clean package"
 runIt dropwizard-2.0.22 "./mvnw clean package"
