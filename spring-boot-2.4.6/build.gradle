@@ -15,10 +15,6 @@ nohttp {
 	source.exclude "**/target/**"
 }
 
-task build {
-	dependsOn checkstyleNohttp
-}
-
 allprojects {
 	group "org.springframework.boot"
 
