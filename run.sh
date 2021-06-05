@@ -32,7 +32,8 @@ function runIt() {
 		if [[ "$buildcmd" ==  *"./gradlew"* ]] ; then
 			buildcmd="$buildcmd $gradle_depcacheargs"
 			./gradlew --stop
-			rm -fR .gradle/caches ~/.gradle/caches
+			rm -fR .gradle/caches ~/.gradle/caches ~/.gradle/build-scan-data ~/.gradle/daemon \
+				~/.gradle/workers ~/.gradle/wrapper  ~/.gradle/notifications 
 		elif [[ "$buildcmd" ==  *"./mvnw"* ]] ; then
 			buildcmd="$buildcmd $mvn_depcacheargs"
 			./mvnw dependency:purge-local-repository
@@ -49,13 +50,14 @@ function runIt() {
 	)
 }
 
-runIt maven-maven-3.8.1 "./mvnw -Drat.skip=true clean package"
+runIt junit5-r5.7.2 "./gradlew clean test build"
+runIt spring-boot-2.4.6 "./gradlew clean test build"
 exit 0
 
 runIt maven-maven-3.8.1 "./mvnw -Drat.skip=true clean package"
 runIt dropwizard-2.0.22 "./mvnw clean package"
 runIt metrics-4.1.22 "./mvnw clean package"
 runIt junit5-r5.7.2 "./gradlew clean test build"
+runIt spring-data-jdbc-2.2.1 "./mvnw clean package"
 runIt spring-boot-2.4.6 "./gradlew clean test build"
-runIt spring-data-jdbc-2.2.1 "./gradlew clean test build"
 runIt spring-kafka-2.7.1 "./gradlew clean test build"
