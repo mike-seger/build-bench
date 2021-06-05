@@ -100,8 +100,3 @@ artifacts {
 test {
 	include "**/*Tests.class"
 }
-
-task testSliceMetadata(type: org.springframework.boot.build.test.autoconfigure.TestSliceMetadata) {
-	sourceSet = sourceSets.main
-	outputFile = file("${buildDir}/test-slice-metadata.properties")
-}
