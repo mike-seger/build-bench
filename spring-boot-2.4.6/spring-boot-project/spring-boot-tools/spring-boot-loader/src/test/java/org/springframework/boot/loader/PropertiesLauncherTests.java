@@ -160,16 +160,6 @@ class PropertiesLauncherTests {
 	}
 
 	@Test
-	void testUserSpecifiedSlashPathf() throws Exception {
-		System.setProperty("loader.path", "jars/");
-		this.launcher = new PropertiesLauncher();
-		assertThat(ReflectionTestUtils.getField(this.launcher, "paths").toString()).isEqualTo("[jars/]");
-		List<Archive> archives = new ArrayList<>();
-		this.launcher.getClassPathArchivesIterator().forEachRemaining(archives::add);
-		assertThat(archives).areExactly(1, endingWith("app.jar"));
-	}
-
-	@Test
 	void testUserSpecifiedWildcardPath() throws Exception {
 		System.setProperty("loader.path", "jars/*");
 		System.setProperty("loader.main", "demo.Application");
@@ -336,13 +326,6 @@ class PropertiesLauncherTests {
 		this.launcher = new PropertiesLauncher();
 		assertThat((List<String>) ReflectionTestUtils.getField(this.launcher, "paths")).containsExactly("/foo.jar",
 				"/bar/");
-	}
-
-	@Test
-	void testManifestWithPlaceholders() throws Exception {
-		System.setProperty("loader.home", "src/test/resources/placeholders");
-		this.launcher = new PropertiesLauncher();
-		assertThat(this.launcher.getMainClass()).isEqualTo("demo.FooApplication");
 	}
 
 	@Test
