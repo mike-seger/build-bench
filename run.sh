@@ -35,13 +35,13 @@ function runIt() {
 			buildcmd="$buildcmd $gradle_depcacheargs"
 			./gradlew --stop
 			sleep 2
-			rm -fR .gradle/caches .gradle/checksums .gradle/buildOutputCleanup .gradle/?.?* \
+			rm -fR .gradle/caches .gradle/checksums .gradle/buildOutputCleanup  \
 				 ~/.gradle/caches ~/.gradle/build-scan-data ~/.gradle/daemon \
 				~/.gradle/workers ~/.gradle/wrapper  ~/.gradle/notifications 
 		elif [[ "$buildcmd" ==  *"./mvnw"* ]] ; then
 			buildcmd="$buildcmd $mvn_depcacheargs"
 			./mvnw dependency:purge-local-repository
-			rm -fR~/.m2/repository .m2/repository
+			rm -fR ~/.m2/repository .m2/repository
 		fi
 	fi
 
