@@ -29,6 +29,7 @@ function runIt() {
 		echo "Purging cache" |tee -a $f
 		if [[ "$buildcmd" == *"./gradlew"* ]] ; then
 			buildcmd="$buildcmd --refresh-dependencies --project-cache-dir=$(pwd)/gradlecache"
+			buildcmd="${buildcmd/ test / test --fail-fast }"
 			./gradlew --status | grep -v PID|sed -e "s/^ *//;s/ .*//"|grep "^[0-9]" |xargs kill -9
 #			rm -fR .gradle/caches .gradle/checksums .gradle/buildOutputCleanup  \
 #				 ~/.gradle/caches ~/.gradle/build-scan-data ~/.gradle/daemon \
@@ -42,12 +43,11 @@ function runIt() {
 	else
 		if [[ "$buildcmd" == *"./gradlew"* ]] ; then
 			buildcmd="$buildcmd --project-cache-dir=$(pwd)/gradlecache"
+			buildcmd="${buildcmd/ test / test --fail-fast }"
 		elif [[ "$buildcmd" ==  *"./mvnw"* ]] ; then
 			buildcmd="$buildcmd -fail-fast -Dsurefire.skipAfterFailureCount=1"
 		fi
 	fi
-	
-
 
 	echo ${buildcmd} |tee -a $f
 	STARTTIME=$(date +%s)
