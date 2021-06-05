@@ -1,11 +1,7 @@
 #!/bin/bash
 
-gradle_depcacheargs=""
-mvn_depcacheargs=""
 dldeps=0
 if [ "$1" == "dl" ] ; then
-	gradle_depcacheargs=" --refresh-dependencies"
-	mvn_depcacheargs=" -U"
 	dldeps=1
 fi
 
@@ -31,15 +27,15 @@ function runIt() {
 	
 	if [ "$dldeps" == "1" ] ; then
 		echo "Purging cache" |tee -a $f
-		if [[ "$buildcmd" ==  *"./gradlew"* ]] ; then
-			buildcmd="$buildcmd $gradle_depcacheargs"
-			./gradlew --stop
-			sleep 2
-			rm -fR .gradle/caches .gradle/checksums .gradle/buildOutputCleanup  \
-				 ~/.gradle/caches ~/.gradle/build-scan-data ~/.gradle/daemon \
-				~/.gradle/workers ~/.gradle/wrapper  ~/.gradle/notifications 
+		if [[ "$buildcmd" == *"./gradlew"* ]] ; then
+			buildcmd="$buildcmd --fail-fast --refresh-dependencies"
+			./gradlew --status | grep -v PID|sed -e "s/^ *//;s/ .*//"|grep "^[0-9]" |xargs kill -9
+#			rm -fR .gradle/caches .gradle/checksums .gradle/buildOutputCleanup  \
+#				 ~/.gradle/caches ~/.gradle/build-scan-data ~/.gradle/daemon \
+#				~/.gradle/workers ~/.gradle/wrapper  ~/.gradle/notifications 
+			rm -fR .gradle/caches ~/.gradle/caches
 		elif [[ "$buildcmd" ==  *"./mvnw"* ]] ; then
-			buildcmd="$buildcmd $mvn_depcacheargs"
+			buildcmd="$buildcmd -U --fail-fast -Dsurefire.skipAfterFailureCount=1"
 			./mvnw dependency:purge-local-repository
 			rm -fR ~/.m2/repository .m2/repository
 		fi
