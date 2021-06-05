@@ -20,6 +20,7 @@ function runIt() {
 	
 	(
 	cd "${workdir}"
+	git checkout . # restore original source because of rogue build projects like spring-boot
 	d=$(isodate)
 	id=$(uname -prsm | tr "A-Z_ " a-z\-\-)
 	f=../run_${id}_${project}_c${dldeps}_${d}.txt
