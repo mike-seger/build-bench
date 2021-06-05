@@ -29,11 +29,15 @@ function runIt() {
 	if [ "$dldeps" == "1" ] ; then
 		echo "Purging cache" |tee -a $f
 		if [[ "$buildcmd" == *"./gradlew"* ]] ; then
-			buildcmd="$buildcmd --refresh-dependencies $gcacheopts"
+			buildcmd="$buildcmd "
 			buildcmd="${buildcmd/ test / test --fail-fast }"
-			./gradlew --status $gcacheopts --refresh-dependencies |\
+			buildcmd="${buildcmd/ build / build --refresh-dependencies --scan }"
+			buildcmd="$buildcmd $gcacheopts"
+			./gradlew $gcacheopts --stop
+			./gradlew --status $gcacheopts |\
 				 grep -v PID|sed -e "s/^ *//;s/ .*//"|grep "^[0-9]" |\
 				 xargs kill -9 >/dev/null 2>&1
+			rm -fR ~/.gradle/cache ~/.gradle/wrapper .gradle/cache gradlecache 
 		elif [[ "$buildcmd" ==  *"./mvnw"* ]] ; then
 			buildcmd="$buildcmd -U --fail-fast -Dsurefire.skipAfterFailureCount=1"
 			./mvnw dependency:purge-local-repository
@@ -54,13 +58,16 @@ function runIt() {
 	ENDTIME=$(date +%s)
 	isodate >>$f
 	echo "ELAPSED TIME: $(($ENDTIME - $STARTTIME)) s"|tee -a $f
+
+	git checkout . # restore original source because of rogue build projects like spring-boot
+	git clean -fd
 	)
 }
 
 #runIt junit5-r5.7.2 "./gradlew clean"
-runIt spring-boot-2.4.6 "./gradlew clean"
+#runIt spring-boot-2.4.6 "./gradlew clean"
 #runIt junit5-r5.7.2 "./gradlew clean test build"
-#runIt spring-boot-2.4.6 "./gradlew clean test build"
+runIt spring-boot-2.4.6 "./gradlew clean test build"
 exit 0
 
 runIt maven-maven-3.8.1 "./mvnw -Drat.skip=true clean package"
