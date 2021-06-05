@@ -160,7 +160,7 @@ class PropertiesLauncherTests {
 	}
 
 	@Test
-	void testUserSpecifiedSlashPath() throws Exception {
+	void testUserSpecifiedSlashPathf() throws Exception {
 		System.setProperty("loader.path", "jars/");
 		this.launcher = new PropertiesLauncher();
 		assertThat(ReflectionTestUtils.getField(this.launcher, "paths").toString()).isEqualTo("[jars/]");
@@ -258,17 +258,6 @@ class PropertiesLauncherTests {
 		assertThat(ReflectionTestUtils.getField(this.launcher, "paths").toString()).isEqualTo("[jars/app.jar]");
 		this.launcher.launch(new String[0]);
 		waitFor("Hello World");
-	}
-
-	@Test
-	void testUserSpecifiedClassPathOrder() throws Exception {
-		System.setProperty("loader.path", "more-jars/app.jar,jars/app.jar");
-		System.setProperty("loader.classLoader", URLClassLoader.class.getName());
-		this.launcher = new PropertiesLauncher();
-		assertThat(ReflectionTestUtils.getField(this.launcher, "paths").toString())
-				.isEqualTo("[more-jars/app.jar, jars/app.jar]");
-		this.launcher.launch(new String[0]);
-		waitFor("Hello Other World");
 	}
 
 	@Test
