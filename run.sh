@@ -20,7 +20,7 @@ function runIt() {
 	git clean -fd
 	d=$(isodate)
 	id=$(uname -prsm | tr "A-Z_ " a-z\-\-)
-	f=../run_${id}_${project}_c${dldeps}_${d}.txt
+	f=../reports/run_${id}_${project}_c${dldeps}_${d}.txt
 	echo $d |tee -a $f
 	echo $id |tee -a $f
 	echo $project |tee -a $f
