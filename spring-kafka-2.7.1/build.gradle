@@ -199,6 +199,8 @@ subprojects { subproject ->
 		if (System.properties['sonar.host.url']) {
 			finalizedBy jacocoTestReport
 		}
+		
+		failFast = true
 	}
 
 	checkstyle {

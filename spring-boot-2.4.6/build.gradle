@@ -36,3 +36,5 @@ allprojects {
 		resolutionStrategy.cacheChangingModulesFor 0, "minutes"
 	}
 }
+
+test { failFast = true }

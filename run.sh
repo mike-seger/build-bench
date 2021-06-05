@@ -28,18 +28,26 @@ function runIt() {
 	if [ "$dldeps" == "1" ] ; then
 		echo "Purging cache" |tee -a $f
 		if [[ "$buildcmd" == *"./gradlew"* ]] ; then
-			buildcmd="$buildcmd --fail-fast --refresh-dependencies"
+			buildcmd="$buildcmd --refresh-dependencies --project-cache-dir=$(pwd)/gradlecache"
 			./gradlew --status | grep -v PID|sed -e "s/^ *//;s/ .*//"|grep "^[0-9]" |xargs kill -9
 #			rm -fR .gradle/caches .gradle/checksums .gradle/buildOutputCleanup  \
 #				 ~/.gradle/caches ~/.gradle/build-scan-data ~/.gradle/daemon \
 #				~/.gradle/workers ~/.gradle/wrapper  ~/.gradle/notifications 
-			rm -fR .gradle/caches ~/.gradle/caches
+			rm -fR .gradle/caches ~/.gradle/caches $(pwd)/gradlecache
 		elif [[ "$buildcmd" ==  *"./mvnw"* ]] ; then
 			buildcmd="$buildcmd -U --fail-fast -Dsurefire.skipAfterFailureCount=1"
 			./mvnw dependency:purge-local-repository
 			rm -fR ~/.m2/repository .m2/repository
 		fi
+	else
+		if [[ "$buildcmd" == *"./gradlew"* ]] ; then
+			buildcmd="$buildcmd --project-cache-dir=$(pwd)/gradlecache"
+		elif [[ "$buildcmd" ==  *"./mvnw"* ]] ; then
+			buildcmd="$buildcmd -fail-fast -Dsurefire.skipAfterFailureCount=1"
+		fi
 	fi
+	
+
 
 	echo ${buildcmd} |tee -a $f
 	STARTTIME=$(date +%s)
