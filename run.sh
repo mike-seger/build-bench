@@ -34,7 +34,9 @@ function runIt() {
 		if [[ "$buildcmd" ==  *"./gradlew"* ]] ; then
 			buildcmd="$buildcmd $gradle_depcacheargs"
 			./gradlew --stop
-			rm -fR .gradle/caches ~/.gradle/caches ~/.gradle/build-scan-data ~/.gradle/daemon \
+			sleep 2
+			rm -fR .gradle/caches .gradle/checksums .gradle/buildOutputCleanup .gradle/?.?* \
+				 ~/.gradle/caches ~/.gradle/build-scan-data ~/.gradle/daemon \
 				~/.gradle/workers ~/.gradle/wrapper  ~/.gradle/notifications 
 		elif [[ "$buildcmd" ==  *"./mvnw"* ]] ; then
 			buildcmd="$buildcmd $mvn_depcacheargs"
@@ -45,7 +47,7 @@ function runIt() {
 
 	echo ${buildcmd} |tee -a $f
 	STARTTIME=$(date +%s)
-	${buildcmd} 2>&1|tee -a $f
+	eval "${buildcmd}" 2>&1|tee -a $f
 	ENDTIME=$(date +%s)
 	isodate >>$f
 	echo "ELAPSED TIME: $(($ENDTIME - $STARTTIME)) s"|tee -a $f
