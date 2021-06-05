@@ -18,8 +18,6 @@ package org.springframework.boot.loader.archive;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.net.URL;
-import java.net.URLClassLoader;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
