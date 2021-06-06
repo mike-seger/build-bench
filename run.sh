@@ -66,7 +66,7 @@ function runIt() {
 
 	echo ${buildcmd} |tee -a $f
 	STARTTIME=$(date +%s)
-	eval "${buildcmd}" 2>&1|tr -d "\r"|tee -a $f
+	eval "${buildcmd}" 2>&1|tee -a $f
 	ENDTIME=$(date +%s)
 	isodate >>$f
 	echo "ELAPSED TIME: $(($ENDTIME - $STARTTIME)) s"|tee -a $f
