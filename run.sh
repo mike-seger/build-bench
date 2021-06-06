@@ -38,7 +38,7 @@ function runIt() {
 			buildcmd="$buildcmd "
 			buildcmd="${buildcmd/ test / test --fail-fast }"
 			[ -f doformat.txt ] && buildcmd="${buildcmd/ build / build -x checkstyleMain }"
-			buildcmd="${buildcmd/ build / build --refresh-dependencies --no-daemon }"
+			buildcmd="${buildcmd/ build / build -x checkstyleNohttp -x buildSrc:checkFormatMain -x checkstyleMain -x checkstyleTest --refresh-dependencies --no-daemon }"
 			buildcmd="$buildcmd $gcacheopts"
 			./gradlew $gcacheopts --stop
 			if [[ "$OS" == *Windows*  ]] ; then
@@ -58,6 +58,7 @@ function runIt() {
 		if [[ "$buildcmd" == *"./gradlew"* ]] ; then
 			buildcmd="$buildcmd $gcacheopts"
 			[ -f doformat.txt ] && buildcmd="${buildcmd/ build / build -x checkstyleMain }"
+			buildcmd="${buildcmd/ build / build -x checkstyleNohttp -x buildSrc:checkFormatMain -x checkstyleMain -x checkstyleTest }"
 			buildcmd="${buildcmd/ test / test --fail-fast }"
 		elif [[ "$buildcmd" ==  *"./mvnw"* ]] ; then
 			buildcmd="$buildcmd -fail-fast -Dsurefire.skipAfterFailureCount=1"
@@ -79,9 +80,9 @@ function runIt() {
 #runIt junit5-r5.7.2 "./gradlew clean"
 #runIt spring-boot-2.4.6 "./gradlew clean"
 #runIt junit5-r5.7.2 "./gradlew clean test build"
-#runIt spring-boot-2.4.6 "./gradlew clean test build"
+runIt spring-boot-2.4.6 "./gradlew clean test build"
 #runIt maven-maven-3.8.1 "echo hello"
-#exit 0
+exit 0
 
 runIt maven-maven-3.8.1 "./mvnw -Drat.skip=true clean package"
 runIt dropwizard-2.0.22 "./mvnw clean package"

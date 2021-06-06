@@ -122,24 +122,6 @@ class ParallelExecutionIntegrationTests {
 		assertThat(ThreadReporter.getThreadNames(events)).hasSize(1);
 	}
 
-	@Test
-	void customContextClassLoader() {
-		var currentThread = Thread.currentThread();
-		var currentLoader = currentThread.getContextClassLoader();
-		var smilingLoader = new URLClassLoader("(-:", new URL[0], ClassLoader.getSystemClassLoader());
-		currentThread.setContextClassLoader(smilingLoader);
-		try {
-			var events = executeConcurrently(3, SuccessfulWithMethodLockTestCase.class);
-
-			assertThat(events.stream().filter(event(test(), finishedSuccessfully())::matches)).hasSize(3);
-			assertThat(ThreadReporter.getThreadNames(events)).hasSize(3);
-			assertThat(ThreadReporter.getLoaderNames(events)).containsExactly("(-:");
-		}
-		finally {
-			currentThread.setContextClassLoader(currentLoader);
-		}
-	}
-
 	@RepeatedTest(10)
 	void mixingClassAndMethodLevelLocks() {
 		var events = executeConcurrently(4, TestCaseWithSortedLocks.class, TestCaseWithUnsortedLocks.class);
