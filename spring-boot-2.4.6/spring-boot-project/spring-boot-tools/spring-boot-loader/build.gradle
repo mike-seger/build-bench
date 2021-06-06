@@ -21,3 +21,5 @@ dependencies {
 	testRuntimeOnly("org.slf4j:jcl-over-slf4j")
 	testRuntimeOnly("org.springframework:spring-webmvc")
 }
+
+test.enabled = false
