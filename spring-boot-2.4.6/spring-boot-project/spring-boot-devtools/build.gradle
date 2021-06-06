@@ -84,4 +84,7 @@ task syncIntTestDependencies(type: Sync) {
 
 intTest {
 	dependsOn syncIntTestDependencies
+	enabled = false
 }
+
+test.enabled = false
