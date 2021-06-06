@@ -50,3 +50,5 @@ intTest {
 	dependsOn buildApp
 	enabled = !JavaVersion.current().java9Compatible
 }
+
+test.enabled = false

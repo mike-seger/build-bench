@@ -38,3 +38,5 @@ dependencies {
 	testRuntimeOnly("org.hibernate.validator:hibernate-validator")
 	testRuntimeOnly("org.mockito:mockito-core")
 }
+
+test.enabled = false

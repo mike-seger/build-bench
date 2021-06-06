@@ -121,3 +121,5 @@ prepareMavenBinaries {
 artifacts {
 	"documentation" zip
 }
+
+test.enabled = false

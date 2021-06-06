@@ -129,3 +129,5 @@ task zip(type: Zip) {
 artifacts {
 	"documentation" zip
 }
+
+test.enabled = false
