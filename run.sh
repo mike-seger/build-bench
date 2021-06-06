@@ -35,9 +35,13 @@ function runIt() {
 			buildcmd="${buildcmd/ build / build --refresh-dependencies --no-daemon }"
 			buildcmd="$buildcmd $gcacheopts"
 			./gradlew $gcacheopts --stop
-			./gradlew --status $gcacheopts |\
-				 grep -v PID|sed -e "s/^ *//;s/ .*//"|grep "^[0-9]" |\
-				 xargs kill -9 >/dev/null 2>&1
+			if [[ "$OS" == *Windows*  ]] ; then
+				taskkill /IM java.exe /F
+			else
+				./gradlew --status $gcacheopts |\
+					grep -v PID|sed -e "s/^ *//;s/ .*//"|grep "^[0-9]" |\
+					xargs kill -9 >/dev/null 2>&1
+			fi
 			rm -fR ~/.gradle/cache ~/.gradle/wrapper .gradle/cache gradlecache 
 		elif [[ "$buildcmd" ==  *"./mvnw"* ]] ; then
 			buildcmd="$buildcmd -U --fail-fast -Dsurefire.skipAfterFailureCount=1"
@@ -55,7 +59,7 @@ function runIt() {
 
 	echo ${buildcmd} |tee -a $f
 	STARTTIME=$(date +%s)
-	eval "${buildcmd}" 2>&1|tee -a $f
+	eval "${buildcmd}" 2>&1|tr -d "\r"|tee -a $f
 	ENDTIME=$(date +%s)
 	isodate >>$f
 	echo "ELAPSED TIME: $(($ENDTIME - $STARTTIME)) s"|tee -a $f
