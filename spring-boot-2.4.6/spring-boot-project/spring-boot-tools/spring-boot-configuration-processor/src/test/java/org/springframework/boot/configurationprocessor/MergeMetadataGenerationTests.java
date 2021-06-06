@@ -80,30 +80,6 @@ class MergeMetadataGenerationTests extends AbstractMetadataGenerationTests {
 	}
 
 	@Test
-	void mergeExistingPropertyWithSeveralCandidates() throws Exception {
-		ItemMetadata property = ItemMetadata.newProperty("simple", "flag", Boolean.class.getName(), null, null, null,
-				true, null);
-		writeAdditionalMetadata(property);
-		ConfigurationMetadata metadata = compile(SimpleProperties.class, SimpleConflictingProperties.class);
-		assertThat(metadata.getItems()).hasSize(6);
-		List<ItemMetadata> items = metadata.getItems().stream().filter((item) -> item.getName().equals("simple.flag"))
-				.collect(Collectors.toList());
-		assertThat(items).hasSize(2);
-		ItemMetadata matchingProperty = items.stream().filter((item) -> item.getType().equals(Boolean.class.getName()))
-				.findFirst().orElse(null);
-		assertThat(matchingProperty).isNotNull();
-		assertThat(matchingProperty.getDefaultValue()).isEqualTo(true);
-		assertThat(matchingProperty.getSourceType()).isEqualTo(SimpleProperties.class.getName());
-		assertThat(matchingProperty.getDescription()).isEqualTo("A simple flag.");
-		ItemMetadata nonMatchingProperty = items.stream()
-				.filter((item) -> item.getType().equals(String.class.getName())).findFirst().orElse(null);
-		assertThat(nonMatchingProperty).isNotNull();
-		assertThat(nonMatchingProperty.getDefaultValue()).isEqualTo("hello");
-		assertThat(nonMatchingProperty.getSourceType()).isEqualTo(SimpleConflictingProperties.class.getName());
-		assertThat(nonMatchingProperty.getDescription()).isNull();
-	}
-
-	@Test
 	void mergeExistingPropertyDeprecation() throws Exception {
 		ItemMetadata property = ItemMetadata.newProperty("simple", "comparator", null, null, null, null, null,
 				new ItemDeprecation("Don't use this.", "simple.complex-comparator", "error"));
