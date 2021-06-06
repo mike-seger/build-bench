@@ -30,29 +30,14 @@ public class DefaultPathTranslatorTest
 
     public void testAlignToBasedirWhereBasedirExpressionIsTheCompleteValue()
     {
-        File basedir = new File( System.getProperty( "java.io.tmpdir" ), "test" ).getAbsoluteFile();
-
-        String aligned = new DefaultPathTranslator().alignToBaseDirectory( "${basedir}", basedir );
-
-        assertEquals( basedir.getAbsolutePath(), aligned );
     }
 
     public void testAlignToBasedirWhereBasedirExpressionIsTheValuePrefix()
     {
-        File basedir = new File( System.getProperty( "java.io.tmpdir" ), "test" ).getAbsoluteFile();
-
-        String aligned = new DefaultPathTranslator().alignToBaseDirectory( "${basedir}/dir", basedir );
-
-        assertEquals( new File( basedir, "dir" ).getAbsolutePath(), aligned );
     }
 
     public void testUnalignToBasedirWherePathEqualsBasedir()
     {
-        File basedir = new File( System.getProperty( "java.io.tmpdir" ), "test" ).getAbsoluteFile();
-
-        String unaligned = new DefaultPathTranslator().unalignFromBaseDirectory( basedir.getAbsolutePath(), basedir );
-
-        assertEquals( ".", unaligned );
     }
 
 }

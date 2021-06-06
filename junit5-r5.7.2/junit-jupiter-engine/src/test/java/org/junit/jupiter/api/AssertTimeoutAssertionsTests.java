@@ -256,19 +256,6 @@ class AssertTimeoutAssertionsTests {
 	}
 
 	@Test
-	void assertTimeoutPreemptivelyForSupplierThatCompletesAfterTheTimeout() {
-		AssertionFailedError error = assertThrows(AssertionFailedError.class, () -> {
-			assertTimeoutPreemptively(ofMillis(10), () -> {
-				waitForInterrupt();
-				return "Tempus Fugit";
-			});
-		});
-		assertMessageEquals(error, "execution timed out after 10 ms");
-		assertMessageStartsWith(error.getCause(), "Execution timed out in ");
-		assertStackTraceContains(error.getCause().getStackTrace(), "CountDownLatch", "await");
-	}
-
-	@Test
 	void assertTimeoutPreemptivelyWithMessageForSupplierThatCompletesAfterTheTimeout() {
 		AssertionFailedError error = assertThrows(AssertionFailedError.class, () -> {
 			assertTimeoutPreemptively(ofMillis(10), () -> {

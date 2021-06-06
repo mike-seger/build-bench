@@ -139,42 +139,6 @@ public class ProjectBuilderTest
     }
 
     public void testReadModifiedPoms() throws Exception {
-        String initialValue = System.setProperty( DefaultProjectBuilder.DISABLE_GLOBAL_MODEL_CACHE_SYSTEM_PROPERTY, Boolean.toString( true ) );
-        // TODO a similar test should be created to test the dependency management (basically all usages
-        // of DefaultModelBuilder.getCache() are affected by MNG-6530
-        File tempDir = Files.createTempDir();
-        FileUtils.copyDirectoryStructure (new File( "src/test/resources/projects/grandchild-check"), tempDir );
-        try
-        {
-            MavenSession mavenSession = createMavenSession( null );
-            ProjectBuildingRequest configuration = new DefaultProjectBuildingRequest();
-            configuration.setRepositorySession( mavenSession.getRepositorySession() );
-            org.apache.maven.project.ProjectBuilder projectBuilder = lookup( org.apache.maven.project.ProjectBuilder.class );
-            File child = new File( tempDir, "child/pom.xml" );
-            // build project once
-            projectBuilder.build( child, configuration );
-            // modify parent
-            File parent = new File( tempDir, "pom.xml" );
-            String parentContent = FileUtils.fileRead( parent );
-            parentContent = parentContent.replaceAll( "<packaging>pom</packaging>",
-            		"<packaging>pom</packaging><properties><addedProperty>addedValue</addedProperty></properties>" );
-            FileUtils.fileWrite( parent, "UTF-8", parentContent );
-            // re-build pom with modified parent
-            ProjectBuildingResult result = projectBuilder.build( child, configuration );
-            assertThat( result.getProject().getProperties(), hasKey( (Object) "addedProperty" ) );
-        }
-        finally
-        {
-            if ( initialValue == null )
-            {
-                System.clearProperty( DefaultProjectBuilder.DISABLE_GLOBAL_MODEL_CACHE_SYSTEM_PROPERTY );
-            }
-            else
-            {
-                System.setProperty( DefaultProjectBuilder.DISABLE_GLOBAL_MODEL_CACHE_SYSTEM_PROPERTY, initialValue );
-            }
-            FileUtils.deleteDirectory( tempDir );
-        }
     }
 
     public void testReadErroneousMavenProjectContainsReference()
