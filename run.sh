@@ -58,7 +58,7 @@ function runIt() {
 		if [[ "$buildcmd" == *"./gradlew"* ]] ; then
 			buildcmd="$buildcmd $gcacheopts"
 			[ -f doformat.txt ] && ./gradlew -p buildSrc format && ./gradlew format
-			buildcmd="${buildcmd/ build / build -x checkstyleNohttp -x checkstyleMain -x checkstyleTest }"
+			buildcmd="${buildcmd/ build / build -i -x checkstyleNohttp -x checkstyleMain -x checkstyleTest }"
 			buildcmd="${buildcmd/ test / test --fail-fast }"
 		elif [[ "$buildcmd" ==  *"./mvnw"* ]] ; then
 			buildcmd="$buildcmd -fail-fast -Dsurefire.skipAfterFailureCount=1"
