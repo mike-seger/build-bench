@@ -98,5 +98,5 @@ artifacts {
 }
 
 test {
-	include "**/*Tests.class"
+	enabled = false
 }
