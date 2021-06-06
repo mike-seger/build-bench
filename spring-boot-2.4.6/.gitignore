@@ -3,7 +3,7 @@
 *.ipr
 *.iws
 *.jar
-!.mvn/wrapper/maven-wrapper.jar
+!gradle/wrapper/*.jar
 *.sw?
 *~
 .#*
