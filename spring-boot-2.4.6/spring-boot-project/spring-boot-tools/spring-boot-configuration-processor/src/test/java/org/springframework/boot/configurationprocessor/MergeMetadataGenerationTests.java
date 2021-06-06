@@ -60,16 +60,6 @@ class MergeMetadataGenerationTests extends AbstractMetadataGenerationTests {
 	}
 
 	@Test
-	void mergingOfAdditionalPropertyMatchingGroup() throws Exception {
-		ItemMetadata property = ItemMetadata.newProperty(null, "simple", "java.lang.String", null, null, null, null,
-				null);
-		writeAdditionalMetadata(property);
-		ConfigurationMetadata metadata = compile(SimpleProperties.class);
-		assertThat(metadata).has(Metadata.withGroup("simple").fromSource(SimpleProperties.class));
-		assertThat(metadata).has(Metadata.withProperty("simple", String.class));
-	}
-
-	@Test
 	void mergeExistingPropertyDefaultValue() throws Exception {
 		ItemMetadata property = ItemMetadata.newProperty("simple", "flag", null, null, null, null, true, null);
 		writeAdditionalMetadata(property);
