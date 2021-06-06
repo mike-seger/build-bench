@@ -38,7 +38,7 @@ function runIt() {
 			buildcmd="$buildcmd "
 			buildcmd="${buildcmd/ test / test --fail-fast }"
 			[ -f doformat.txt ] && buildcmd="${buildcmd/ build / build -x checkstyleMain }"
-			buildcmd="${buildcmd/ build / build -x checkstyleNohttp -x buildSrc:checkFormatMain -x checkstyleMain -x checkstyleTest --refresh-dependencies --no-daemon }"
+			buildcmd="${buildcmd/ build / build -x checkstyleNohttp -x checkstyleMain -x checkstyleTest --refresh-dependencies --no-daemon }"
 			buildcmd="$buildcmd $gcacheopts"
 			./gradlew $gcacheopts --stop
 			if [[ "$OS" == *Windows*  ]] ; then
@@ -57,8 +57,8 @@ function runIt() {
 	else
 		if [[ "$buildcmd" == *"./gradlew"* ]] ; then
 			buildcmd="$buildcmd $gcacheopts"
-			[ -f doformat.txt ] && buildcmd="${buildcmd/ build / build -x checkstyleMain }"
-			buildcmd="${buildcmd/ build / build -x checkstyleNohttp -x buildSrc:checkFormatMain -x checkstyleMain -x checkstyleTest }"
+			[ -f doformat.txt ] && ./gradlew -p buildSrc format && ./gradlew format
+			buildcmd="${buildcmd/ build / build -x checkstyleNohttp -x checkstyleMain -x checkstyleTest }"
 			buildcmd="${buildcmd/ test / test --fail-fast }"
 		elif [[ "$buildcmd" ==  *"./mvnw"* ]] ; then
 			buildcmd="$buildcmd -fail-fast -Dsurefire.skipAfterFailureCount=1"
