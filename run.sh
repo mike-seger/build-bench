@@ -19,12 +19,11 @@ function runIt() {
 	git checkout . # restore original source because of rogue build projects like spring-boot
 	git clean -fd
 	d=$(isodate)
-	id=$(uname -prsm | tr "A-Z_ " a-z\-\-)
+	id=$(uname -prsm | tr "A-Z_ " a-z\-\-| tr -d "()/" | sed -e "s/-x86-64-unknown//")
 	f=../reports/run_${id}_${project}_c${dldeps}_${d}.txt
 	echo $d |tee -a $f
 	echo $id |tee -a $f
 	echo $project |tee -a $f
-
 	gcacheopts="--project-cache-dir=$(pwd)/gradlecache"
 	if [ "$dldeps" == "1" ] ; then
 		echo "Purging cache" |tee -a $f
@@ -70,6 +69,7 @@ function runIt() {
 #runIt spring-boot-2.4.6 "./gradlew clean"
 #runIt junit5-r5.7.2 "./gradlew clean test build"
 #runIt spring-boot-2.4.6 "./gradlew clean test build"
+#runIt maven-maven-3.8.1 "echo hello"
 #exit 0
 
 runIt maven-maven-3.8.1 "./mvnw -Drat.skip=true clean package"
