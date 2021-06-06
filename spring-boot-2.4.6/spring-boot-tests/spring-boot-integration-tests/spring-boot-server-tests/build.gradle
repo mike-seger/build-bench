@@ -47,5 +47,5 @@ task syncTestRepository(type: Sync) {
 }
 
 test {
-	dependsOn prepareMavenBinaries, syncTestRepository
+	enabled = false
 }
