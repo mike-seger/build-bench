@@ -13,8 +13,13 @@ function runIt() {
 	local project=$1
 	local workdir=$(dirname "$0")/$project
 	local buildcmd=$2
-	
+        local maven="./mvnw"
 	(
+	if [[ "$OS" == *Windows*  ]] ; then
+		export JAVA_HOME=$(cygpath -w $JAVA_HOME)
+		maven="./mvnw.cmd"
+		buildcmd="${buildcmd/mvnw/mvnw.cmd}"
+	fi
 	cd "${workdir}"
 	git checkout . # restore original source because of rogue build projects like spring-boot
 	git clean -fd
@@ -45,7 +50,7 @@ function runIt() {
 			rm -fR ~/.gradle/cache ~/.gradle/wrapper .gradle/cache gradlecache 
 		elif [[ "$buildcmd" ==  *"./mvnw"* ]] ; then
 			buildcmd="$buildcmd -U --fail-fast -Dsurefire.skipAfterFailureCount=1"
-			./mvnw dependency:purge-local-repository
+			$maven dependency:purge-local-repository
 			rm -fR ~/.m2/repository .m2/repository
 		fi
 	else
