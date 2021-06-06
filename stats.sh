@@ -1,4 +1,12 @@
-find reports/*.txt | sort |while read f ; do 
+#!/bin/bash
+
+(
+	if [ "$1" == "r"  ]; then
+		git status reports |grep reports/ | tr -d " \t"
+	else
+		find reports/*.txt
+	fi
+) | sort |while read f ; do 
 	printf "%s: " "$f"
 	tail -20 $f | egrep -i \
 		"(fail|BUILD SUCCESSFUL in|^.INFO. BUILD SUCCESS$|ELAPSED TIME)"|\
