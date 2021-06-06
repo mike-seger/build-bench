@@ -48,7 +48,7 @@ function runIt() {
 					xargs kill -9 >/dev/null 2>&1
 			fi
 			rm -fR ~/.gradle/cache ~/.gradle/wrapper .gradle/cache gradlecache 
-			./gradlew -p buildSrc format $gcacheopts
+			[ -f doformat.txt ] && ./gradlew -p buildSrc format $gcacheopts
 		elif [[ "$buildcmd" ==  *"./mvnw"* ]] ; then
 			buildcmd="$buildcmd -U --fail-fast -Dsurefire.skipAfterFailureCount=1"
 			$maven dependency:purge-local-repository
@@ -58,7 +58,7 @@ function runIt() {
 		if [[ "$buildcmd" == *"./gradlew"* ]] ; then
 			buildcmd="$buildcmd $gcacheopts"
 			buildcmd="${buildcmd/ test / test --fail-fast }"
-			./gradlew -p buildSrc format $gcacheopts
+			[ -f doformat.txt ] && ./gradlew -p buildSrc format $gcacheopts
 		elif [[ "$buildcmd" ==  *"./mvnw"* ]] ; then
 			buildcmd="$buildcmd -fail-fast -Dsurefire.skipAfterFailureCount=1"
 		fi
