@@ -2,3 +2,5 @@ build/
 *~
 caffe*txt
 gradlecache
+/reports/*
+!/reports/.keep
