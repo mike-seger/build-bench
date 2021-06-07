@@ -22,4 +22,5 @@ dependencies {
 	testRuntimeOnly("org.springframework:spring-webmvc")
 }
 
+intTest.enabled = false
 test.enabled = false

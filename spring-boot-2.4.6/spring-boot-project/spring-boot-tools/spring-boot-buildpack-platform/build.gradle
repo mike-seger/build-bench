@@ -25,4 +25,5 @@ dependencies {
 	testImplementation("org.skyscreamer:jsonassert")
 }
 
+intTest.enabled = false
 test.enabled = false

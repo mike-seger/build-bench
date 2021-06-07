@@ -122,4 +122,5 @@ artifacts {
 	"documentation" zip
 }
 
+intTest.enabled = false
 test.enabled = false

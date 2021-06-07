@@ -187,4 +187,5 @@ dependencies {
 	testRuntimeOnly("org.jetbrains.kotlin:kotlin-reflect")
 }
 
+intTest.enabled = false
 test.enabled = false

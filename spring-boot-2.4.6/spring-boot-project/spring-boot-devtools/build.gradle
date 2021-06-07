@@ -87,4 +87,5 @@ intTest {
 	enabled = false
 }
 
+intTest.enabled = false
 test.enabled = false
