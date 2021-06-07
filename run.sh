@@ -85,6 +85,8 @@ function runIt() {
 #runIt maven-maven-3.8.1 "echo hello"
 #exit 0
 
+runIt micronaut-core-2.5.5 "./gradlew clean test build"
+exit 0
 runIt maven-maven-3.8.1 "./mvnw -Drat.skip=true clean test package"
 runIt dropwizard-2.0.22 "./mvnw clean test package"
 runIt metrics-4.1.22 "./mvnw clean test package"
