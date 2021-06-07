@@ -1,7 +1,0 @@
-run_linux-5.4.0-73-generic-x86-64-x86-64_dropwizard-2.0.22_c0_20210605T041508.txt: ELAPSED TIME: 230 s
-run_linux-5.4.0-73-generic-x86-64-x86-64_junit5-r5.7.2_c0_20210605T042023.txt: ELAPSED TIME: 172 s
-run_linux-5.4.0-73-generic-x86-64-x86-64_maven-maven-3.8.1_c0_20210605T041438.txt: ELAPSED TIME: 30 s
-run_linux-5.4.0-73-generic-x86-64-x86-64_metrics-4.1.22_c0_20210605T041858.txt: ELAPSED TIME: 85 s
-run_linux-5.4.0-73-generic-x86-64-x86-64_spring-boot-2.4.6_c0_20210605T042339.txt: ELAPSED TIME: 907 s
-run_linux-5.4.0-73-generic-x86-64-x86-64_spring-data-jdbc-2.2.1_c0_20210605T042315.txt: ELAPSED TIME: 24 s
-run_linux-5.4.0-73-generic-x86-64-x86-64_spring-kafka-2.7.1_c0_20210605T043847.txt: ELAPSED TIME: 342 s
