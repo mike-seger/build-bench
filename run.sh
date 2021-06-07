@@ -81,9 +81,9 @@ function runIt() {
 #runIt junit5-r5.7.2 "./gradlew clean"
 #runIt spring-boot-2.4.6 "./gradlew clean"
 #runIt junit5-r5.7.2 "./gradlew clean test build"
-runIt spring-boot-2.4.6 "./gradlew clean test build"
+#runIt spring-boot-2.4.6 "./gradlew clean test build"
 #runIt maven-maven-3.8.1 "echo hello"
-exit 0
+#exit 0
 
 runIt maven-maven-3.8.1 "./mvnw -Drat.skip=true clean test package"
 runIt dropwizard-2.0.22 "./mvnw clean test package"
