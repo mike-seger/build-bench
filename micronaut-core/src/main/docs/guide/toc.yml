@@ -1,0 +1,276 @@
+introduction:
+  title: Introduction
+  whatsNew: What's New?
+  upgrading: Upgrading to Micronaut 2.x
+quickStart:
+  title: Quick Start
+  buildCLI: Build/Install the CLI
+  creatingServer: Creating a Server Application
+  ideSetup:
+    title: Setting up an IDE
+    ideaSetup: IntelliJ IDEA
+    eclipseSetup: Eclipse
+    vsCodeSetup: Visual Studio Code
+  creatingClient: Creating a Client
+  deployingApp: Deploying the Application
+ioc:
+  title: Inversion of Control
+  beans: Defining Beans
+  how: How Does it Work?
+  beanContext: The BeanContext
+  types: Injectable Container Types
+  qualifiers: Bean Qualifiers
+  scopes:
+    title: Scopes
+    builtInScopes:
+      title: Built-In Scopes
+      eagerInit: Eager Initialization of Singletons
+    refreshable: Refreshable Scope
+    metaScopes: Scopes on Meta Annotations
+  factories: Bean Factories
+  conditionalBeans: Conditional Beans
+  replaces: Bean Replacement
+  beanConfigurations: Bean Configurations
+  lifecycle: Life-Cycle Methods
+  contextEvents: Context Events
+  events: Bean Events
+  introspection: Bean Introspection
+  beanValidation: Bean Validation
+  annotationMetadata: Bean Annotation Metadata
+  springBeans: Micronaut Beans And Spring
+  android: Android Support
+config:
+  title: Application Configuration
+  environments: The Environment
+  propertySource: Externalized Configuration with PropertySources
+  valueAnnotation: Configuration Injection
+  configurationProperties: Configuration Properties
+  customTypeConverter: Custom Type Converters
+  eachProperty: Using @EachProperty to Drive Configuration
+  eachBean: Using @EachBean to Drive Configuration
+  immutableConfig: Immutable Configuration
+  # validation: Validating Configuration
+  jmx:
+    title: JMX Support
+aop:
+  title: Aspect Oriented Programming
+  aroundAdvice: Around Advice
+  introductionAdvice: Introduction Advice
+  adapterAdvice: Method Adapter Advice
+  validation:
+    title: Validation Advice
+  caching:
+    title: Cache Advice
+  retry:
+    title: Retry Advice
+  scheduling:
+    title: Scheduled Tasks
+  springAop:
+    title: Bridging Spring AOP
+httpServer:
+  title: The HTTP Server
+  runningServer: Running the Embedded Server
+  runningSpecificPort: Running Server on a Specific Port
+  routing: HTTP Routing
+  binding: Simple Request Binding
+  customArgumentBinding: Custom Argument Binding
+  hostResolution: Host Resolution
+  localeResolution: Locale Resolution
+  clientIpAddress: Client IP Address
+  requestResponse: The HttpRequest and HttpResponse
+  statusAnnotation: Response Status
+  producesAnnotation: Response Content-Type
+  consumesAnnotation: Accepted Request Content-Type
+  reactiveServer:
+    title: Reactive HTTP Request Processing
+    bodyAnnotation: Using the @Body Annotation
+    reactiveResponses: Reactive Responses
+  jsonBinding: JSON Binding with Jackson
+  datavalidation: Data Validation
+  staticResources: Serving Static Resources
+  errorHandling:
+    title: Error Handling
+    statusHandlers: Status Handlers
+    localErrorHandling: Local Error Handling
+    globalErrorHandling: Global Error Handling
+    exceptionHandler:
+      title: ExceptionHandler
+      builtInExceptionHandlers: Built-In Exception Handlers
+      customExceptionHandler: Custom Exception Handler
+    errorFormatting: Error Formatting
+  apiVersioning: API Versioning
+  formData: Handling Form Data
+  serverIO: Writing Response Data
+  uploads: File Uploads
+  transfers: File Transfers
+  filters: HTTP Filters
+  sessions: HTTP Sessions
+  sse: Server Sent Events
+  websocket:
+    title: WebSocket Support
+    websocketServer: Using @ServerWebSocket
+    websocketClient: Using @ClientWebSocket
+  http2Server: HTTP/2 Support
+  serverEvents: Server Events
+  serverConfiguration:
+    title: Configuring the HTTP Server
+    threadPools: Configuring Server Thread Pools
+    nettyPipeline: Configuring the Netty Pipeline
+    cors: Configuring CORS
+    https: Securing the Server with HTTPS
+    dualProtocol: Enabling HTTP and HTTPS
+    accessLogger: Enabling Access Logger
+  views:
+    title: Server Side View Rendering
+  openapi: OpenAPI / Swagger Support
+  graphql: GraphQL Support
+httpClient:
+  title: The HTTP Client
+  lowLevelHttpClient:
+    title: Using the Low-Level HTTP Client
+    clientBasics: Sending your first HTTP request
+    clientPostRequests: Posting a Request Body
+    clientUploads: Multipart Client Uploads
+    clientStreaming: Streaming JSON over HTTP
+    clientConfiguration: Configuring HTTP clients
+    lowLevelClientError: Error Responses
+    bindErrors: Bind Errors
+  proxyClient: Proxying Requests with ProxyHttpClient
+  clientAnnotation:
+    title: Declarative HTTP Clients with @Client
+    clientParameters: Customizing Parameter Binding
+    clientAnnotationStreaming: Streaming with @Client
+    clientError: Error Responses
+    clientHeaders: Customizing Request Headers
+    clientJackson: Customizing Jackson Settings
+    clientRetry: Retry and Circuit Breaker
+    clientFallback: Client Fallbacks
+    netflixHystrix: Netflix Hystrix Support
+  clientFilter: HTTP Client Filters
+  clientSample: HTTP Client Sample
+cloud:
+  title: Cloud Native Features
+  cloudConfiguration:
+    title: Cloud Configuration
+    distributedConfiguration: Distributed Configuration
+    distributedConfigurationConsul: HashiCorp Consul Support
+    distributedConfigurationVault: HashiCorp Vault Support
+    distributedConfigurationSpringCloud: Spring Cloud Config Support
+    distributedConfigurationAwsParameterStore: AWS Parameter Store Support
+    distributedConfigurationOracleCloudVault: Oracle Cloud Vault Support
+  serviceDiscovery:
+    title: Service Discovery
+    serviceDiscoveryConsul: Consul Support
+    serviceDiscoveryEureka: Eureka Support
+    serviceDiscoveryKubernetes: Kubernetes Support
+    serviceDiscoveryRoute53: AWS Route 53 Support
+    serviceDiscoveryManual: Manual Service Discovery Configuration
+  clientSideLoadBalancing:
+    title: Client Side Load Balancing
+    netflixRibbon: Netflix Ribbon Support
+  distributedTracing:
+    title: Distributed Tracing
+    zipkin: Tracing with Zipkin
+    jaeger: Tracing with Jaeger
+serverlessFunctions:
+  title: Serverless Functions
+  awsLambda: AWS Lambda
+  gcpFunction: Google Cloud Function
+  gcpCloudRun: Google Cloud Run
+  azureFunction: Azure Function
+messaging:
+  title: Message-Driven Microservices
+  kafka: Kafka Support
+  rabbitmq: RabbitMQ Support
+  nats: Nats.io Support
+commandLineApps:
+  title: Standalone Command Line Applications
+  picocli:
+    title: Picocli Support
+configurations:
+  title: Configurations
+  reactiveConfigs:
+    title: Configurations for Reactive Programming
+    rxjava3: RxJava 3 Support
+    reactor: Reactor Support
+    rxjava1: RxJava 1 Support
+  dataAccess:
+    title: Configurations for Data Access
+    sqlSupport: Configuring a SQL Data Source
+    hibernateSupport: Configuring Hibernate
+    mongoSupport: Configuring MongoDB
+    neo4jSupport: Configuring Neo4j
+    postgresSupport: Configuring Postgres
+    redisSupport: Configuring Redis
+    cassandraSupport: Configuring Cassandra
+    liquibaseSupport: Configuring Liquibase
+    flywaySupport: Configuring Flyway
+languageSupport:
+  title: Language Support
+  java:
+    title: Micronaut for Java
+    java9: Using Micronaut with Java 9+
+    incrementalannotationgradle: Incremental Annotation Processing with Gradle
+    lombok: Using Project Lombok
+    ide: Configuring an IDE
+    retainparameternames: Retaining Parameter Names
+  groovy: Micronaut for Groovy
+  kotlin:
+    title: Micronaut for Kotlin
+    kaptintellij: Kotlin, Kapt and IntelliJ
+    gradlekapt: Incremental Annotation Processing with Gradle and Kapt
+    openandaop: Kotlin and AOP Advice
+    kotlinretainparamnames: Kotlin and Retaining Parameter Names
+    coroutines: Coroutines Support
+  graal:
+    title: Micronaut for GraalVM
+    graalServices: Microservices as GraalVM native images
+    graalFAQ: GraalVM and Micronaut FAQ
+management:
+  title: Management & Monitoring
+  buildingEndpoints:
+    title: Creating Endpoints
+    endpointAnnotation: The Endpoint Annotation
+    endpointMethod: Endpoint Methods
+    endpointSensitivity: Endpoint Sensitivity
+    endpointConfiguration: Endpoint Configuration
+  providedEndpoints:
+    title: Built-In Endpoints
+    beansEndpoint: The Beans Endpoint
+    infoEndpoint: The Info Endpoint
+    healthEndpoint: The Health Endpoint
+    metricsEndpoint: The Metrics Endpoint
+    refreshEndpoint: The Refresh Endpoint
+    routesEndpoint: The Routes Endpoint
+    loggersEndpoint: The Loggers Endpoint
+    cachesEndpoint: The Caches Endpoint
+    stopEndpoint: The Server Stop Endpoint
+    environmentEndpoint: The Environment Endpoint
+    threadDumpEndpoint: The ThreadDump Endpoint
+security:
+  title: Security
+multitenancy:
+  title: Multi-Tenancy
+cli:
+  title: Micronaut CLI
+  createProject:
+    title: Creating a Project
+    comparingVersions: Comparing Versions
+  features: Features
+  commands: Commands
+  reloading:
+    title: Reloading
+    automaticRestart: Automatic Restart
+    jrebel: JRebel
+    gradleReload: Recompiling with Gradle
+    ideReload: Recompiling with an IDE
+  proxy: Proxy Configuration
+i18n:
+  title: Internationalization
+  bundle: Resource Bundles
+appendix:
+  title: Appendices
+  faq: Frequently Asked Questions (FAQ)
+  usingsnapshots: Using Snapshots
+  problems: Common Problems
+  breaks: Breaking Changes

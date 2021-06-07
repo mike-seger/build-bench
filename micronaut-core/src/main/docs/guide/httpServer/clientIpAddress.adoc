@@ -1,0 +1,10 @@
+You may need to resolve the originating IP address of an HTTP Request. Micronaut includes an implementation of api:http.server.util.HttpClientAddressResolver[].
+
+The default implementation resolves the client address in the following places in order:
+
+. The configured header
+. The `Forwarded` header
+. The `X-Forwarded-For` header
+. The remote address on the request
+
+The first priority header name can be configured with `micronaut.server.client-address-header`.

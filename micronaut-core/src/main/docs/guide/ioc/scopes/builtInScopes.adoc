@@ -1,0 +1,31 @@
+.Micronaut Built-in Scopes
+|===
+|Type |Description
+
+|link:{jeeapi}/javax/inject/Singleton.html[@Singleton]
+|Singleton scope indicates only one instance of the bean will exist
+|link:{api}/io/micronaut/context/annotation/Context.html[@Context]
+|Context scope indicates that the bean will be created at the same time as the `ApplicationContext` (eager initialization)
+|link:{api}/io/micronaut/context/annotation/Prototype.html[@Prototype]
+|Prototype scope indicates that a new instance of the bean is created each time it is injected
+|link:{api}/io/micronaut/context/annotation/Infrastructure.html[@Infrastructure]
+|Infrastructure scope represents a bean that cannot be overridden or replaced using ann:context.annotation.Replaces[] because it is critical to the functioning of the system.
+|link:{api}/io/micronaut/runtime/context/scope/ThreadLocal.html[@ThreadLocal]
+|`@ThreadLocal` scope is a custom scope that associates a bean per thread via a ThreadLocal
+|link:{api}/io/micronaut/runtime/context/scope/Refreshable.html[@Refreshable]
+|`@Refreshable` scope is a custom scope that allows a bean's state to be refreshed via the `/refresh` endpoint.
+|link:{api}/io/micronaut/runtime/http/scope/RequestScope.html[@RequestScope]
+|`@RequestScope` scope is a custom scope that indicates a new instance of the bean is created and associated with each HTTP request
+|===
+
+NOTE: The link:{api}/io/micronaut/context/annotation/Prototype.html[@Prototype] annotation is a synonym for link:{api}/io/micronaut/context/annotation/Bean.html[@Bean] because the default scope is prototype.
+
+Additional scopes can be added by defining a `@Singleton` bean that implements the link:{api}/io/micronaut/context/scope/CustomScope.html[CustomScope] interface.
+
+Note that when starting an api:context.ApplicationContext[], by default `@Singleton`-scoped beans are created lazily and on-demand. This is by design to optimize startup time.
+
+If this presents a problem for your use case you have the option of using the ann:context.annotation.Context[] annotation which binds the lifecycle of your object to the lifecycle of the api:context.ApplicationContext[]. In other words when the api:context.ApplicationContext[] is started your bean will be created.
+
+Alternatively, annotate any `@Singleton`-scoped bean with ann:context.annotation.Parallel[] which allows parallel initialization of your bean without impacting overall startup time.
+
+NOTE: If your bean fails to initialize in parallel, the application will be automatically shut down.
