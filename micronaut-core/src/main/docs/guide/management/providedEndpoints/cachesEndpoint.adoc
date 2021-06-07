@@ -1,3 +1,0 @@
-
-The caches endpoint documentation is available at the https://micronaut-projects.github.io/micronaut-cache/latest/guide/index.html#endpoint[micronaut-cache project].
-

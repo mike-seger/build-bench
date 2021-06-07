@@ -1,4 +1,0 @@
-io.micronaut.aop.factory.mapped.TestConfigurationMapper
-io.micronaut.inject.annotation.CustomHeaderMapper
-io.micronaut.aop.introduction.ListenerAdviceMarkerMapper
-io.micronaut.aop.compile.AroundCompileSpec$NamedTestAnnMapper

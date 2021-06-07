@@ -1,1 +1,0 @@
-Sometimes with distributed applications, bad things happen. Having a good way to handle errors is important.
