@@ -39,5 +39,4 @@ dependencies {
 	testRuntimeOnly("org.mockito:mockito-core")
 }
 
-intTest.enabled = false
 test.enabled = false
