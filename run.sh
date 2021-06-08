@@ -85,12 +85,15 @@ function runIt() {
 #runIt maven-maven-3.8.1 "echo hello"
 #exit 0
 
-runIt micronaut-core-bf570b6a3e1a37138d85b71939d3a6467a9f2982 "./gradlew clean test build"
+runIt testng-7.4.0 "./gradlew clean test build"
+#runIt micronaut-core-2.5.5-master "./gradlew clean test build"
 exit 0
 runIt maven-maven-3.8.1 "./mvnw -Drat.skip=true clean test package"
 runIt dropwizard-2.0.22 "./mvnw clean test package"
 runIt metrics-4.1.22 "./mvnw clean test package"
-runIt junit5-r5.7.2 "./gradlew clean test build"
+runIt testng-7.4.0 "./gradlew clean test build"
+#runIt micronaut-core-2.5.5-master "./gradlew clean test build"
+#runIt junit5-r5.7.2 "./gradlew clean test build"
 runIt spring-data-jdbc-2.2.1 "./mvnw clean test package"
-runIt spring-boot-2.4.6 "./gradlew clean test build"
-runIt spring-kafka-2.7.1 "./gradlew clean test build"
+#runIt spring-boot-2.4.6 "./gradlew clean test build"
+#runIt spring-kafka-2.7.1 "./gradlew clean test build"
