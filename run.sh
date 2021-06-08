@@ -39,7 +39,8 @@ function runIt() {
 			buildcmd="$buildcmd "
 			buildcmd="${buildcmd/ test / test --fail-fast }"
 			[ -f doformat.txt ] && buildcmd="${buildcmd/ build / build -x checkstyleMain }"
-			buildcmd="${buildcmd/ build / build $gb_opts -x checkstyleNohttp -x checkstyleMain -x checkstyleTest --refresh-dependencies --no-daemon }"
+#			buildcmd="${buildcmd/ build / build $gb_opts -x checkstyleNohttp -x checkstyleMain -x checkstyleTest --refresh-dependencies --no-daemon }"
+			buildcmd="${buildcmd/ build / build $gb_opts --refresh-dependencies --no-daemon }"
 			buildcmd="$buildcmd $gcacheopts"
 			./gradlew $gcacheopts --stop
 			if [[ "$OS" == *Windows*  ]] ; then
@@ -59,7 +60,8 @@ function runIt() {
 		if [[ "$buildcmd" == *"./gradlew"* ]] ; then
 			buildcmd="$buildcmd $gcacheopts"
 			[ -f doformat.txt ] && ./gradlew -p buildSrc format && ./gradlew format
-			buildcmd="${buildcmd/ build / build $gb_opts -x checkstyleNohttp -x checkstyleMain -x checkstyleTest }"
+#			buildcmd="${buildcmd/ build / build $gb_opts -x checkstyleNohttp -x checkstyleMain -x checkstyleTest }"
+			buildcmd="${buildcmd/ build / build $gb_opts }"
 			buildcmd="${buildcmd/ test / test --fail-fast }"
 		elif [[ "$buildcmd" ==  *"./mvnw"* ]] ; then
 			buildcmd="$buildcmd -fail-fast -Dsurefire.skipAfterFailureCount=1"
@@ -85,10 +87,15 @@ function runIt() {
 #runIt maven-maven-3.8.1 "echo hello"
 #exit 0
 
+runIt testng-7.4.0 "./gradlew clean test build"
+#runIt micronaut-core-2.5.5-master "./gradlew clean test build"
+exit 0
 runIt maven-maven-3.8.1 "./mvnw -Drat.skip=true clean test package"
 runIt dropwizard-2.0.22 "./mvnw clean test package"
 runIt metrics-4.1.22 "./mvnw clean test package"
-runIt junit5-r5.7.2 "./gradlew clean test build"
+runIt testng-7.4.0 "./gradlew clean test build"
+#runIt micronaut-core-2.5.5-master "./gradlew clean test build"
+#runIt junit5-r5.7.2 "./gradlew clean test build"
 runIt spring-data-jdbc-2.2.1 "./mvnw clean test package"
-runIt spring-boot-2.4.6 "./gradlew clean test build"
-runIt spring-kafka-2.7.1 "./gradlew clean test build"
+#runIt spring-boot-2.4.6 "./gradlew clean test build"
+#runIt spring-kafka-2.7.1 "./gradlew clean test build"

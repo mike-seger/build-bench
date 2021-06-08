@@ -1,0 +1,28 @@
+Endpoints with the `endpoints` prefix can be configured through their default endpoint id. If an endpoint exists with the id of `foo`, it can be configured through `endpoints.foo`. In addition, default values can be provided through the `all` prefix.
+
+For example, consider the following endpoint.
+
+[source,java]
+.FooEndpoint.java
+----
+@Endpoint("foo")
+class FooEndpoint {
+    ...
+}
+----
+
+By default the endpoint is enabled. To disable it, set `endpoints.foo.enabled` to false. If `endpoints.foo.enabled` is not set and `endpoints.all.enabled` is `false`, the endpoint will be disabled.
+
+The configuration values for the endpoint override those for `all`. If `endpoints.foo.enabled` is `true` and `endpoints.all.enabled` is `false`, the endpoint will be enabled.
+
+For all endpoints, the following configuration values can be set.
+
+[source,yaml]
+----
+endpoints:
+  <any endpoint id>:
+    enabled: Boolean
+    sensitive: Boolean
+----
+
+NOTE: The base path for all endpoints is `/` by default. If you prefer the endpoints to be available under a different base path, configure `endpoints.all.path`. For example, if the value is set to `/endpoints`, the foo endpoint will be accessible at `/endpoints/foo`.
