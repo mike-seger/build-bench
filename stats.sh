@@ -1,10 +1,12 @@
 #!/bin/bash
 
 (
-	if [ "$1" != "a"  ]; then
-		git status reports |grep reports/run | tr -d " \t"
+	if [ "$1" == "n"  ]; then
+		git status shared-reports |grep shared-reports/run | tr -d " \t"
+	elif [ "$1" == "o"  ]; then
+		find shared-reports -name "run*.txt"
 	else
-		find reports/run*.txt
+		find reports -name "run*.txt"
 	fi
 ) | sort |while read f ; do 
 	printf "%s: " "$f"
