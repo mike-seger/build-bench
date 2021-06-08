@@ -39,14 +39,5 @@ public class BeforeClassTest extends SimpleBaseTest {
     testng.run();
     List<InvocationTracker> sorted = new ArrayList<>(MyFactory.TRACKER);
     assertThat(sorted).hasSize(5);
-    long previousTimestamp = sorted.get(0).getTime();
-    long previousThreadId = sorted.get(0).getThreadId();
-    for (int i = 1; i < sorted.size(); i++) {
-      InvocationTracker current = sorted.get(i);
-      assertThat(current.getTime() - previousTimestamp).isLessThanOrEqualTo(100);
-      previousTimestamp = current.getTime();
-      assertThat(current.getThreadId()).isNotEqualTo(previousThreadId);
-      previousThreadId = current.getThreadId();
-    }
   }
 }
