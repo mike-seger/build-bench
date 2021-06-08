@@ -30,7 +30,6 @@ import org.testng.internal.RuntimeBehavior;
 import org.testng.internal.SuiteRunnerMap;
 import org.testng.internal.Systematiser;
 import org.testng.internal.Utils;
-import org.testng.internal.Version;
 import org.testng.internal.annotations.DefaultAnnotationTransformer;
 import org.testng.internal.annotations.IAnnotationFinder;
 import org.testng.internal.annotations.JDK15AnnotationFinder;
@@ -1114,10 +1113,6 @@ public class TestNG {
     }
 
     SuiteRunnerMap suiteRunnerMap = new SuiteRunnerMap();
-
-    if (m_suites.get(0).getVerbose() >= 2) {
-      Version.displayBanner();
-    }
 
     // First initialize the suite runners to ensure there are no configuration issues.
     // Create a map with XmlSuite as key and corresponding SuiteRunner as value
