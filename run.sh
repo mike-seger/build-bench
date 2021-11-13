@@ -17,7 +17,7 @@ function runIt() {
         local maven="./mvnw"
 	(
 	if [[ "$OS" == *Windows*  ]] ; then
-		if [[ -x $(cygpath) && "$JAVA_HOME" == /cygdrive/*  ]] ; then
+		if [[ -x $(which cygpath) && "$JAVA_HOME" == /cygdrive/*  ]] ; then
 			export JAVA_HOME=$(cygpath -w $JAVA_HOME)
 		fi
 		#maven="./mvnw.cmd"
