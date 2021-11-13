@@ -26,7 +26,7 @@ function runIt() {
 	git clean -fd
 	d=$(isodate)
 	id=$(uname -prsm | tr "A-Z_ " a-z\-\-| tr -d "()/" | sed -e "s/-x86-64-unknown//")
-	f=../reports/run_${id}_${project}_c${dldeps}_${d}.txt
+	f=../reports/run_${id}_${project}_${d}_c${dldeps}.txt
 	echo $d |tee -a $f
 	echo $id |tee -a $f
 	echo $project |tee -a $f
@@ -88,3 +88,6 @@ runIt spring-data-jdbc-2.2.1 "./mvnw clean test package"
 #runIt micronaut-core-2.5.5-master "./gradlew clean test build"
 #runIt spring-boot-2.4.6 "./gradlew clean test build"
 #runIt spring-kafka-2.7.1 "./gradlew clean test build"
+
+# fix old names
+# rename "s/_(c[01])_(.*).txt/_\2_\1_.txt/" *.txt
