@@ -17,9 +17,14 @@ function runIt() {
         local maven="./mvnw"
 	(
 	if [[ "$OS" == *Windows*  ]] ; then
-		export JAVA_HOME=$(cygpath -w $JAVA_HOME)
-		maven="./mvnw.cmd"
-		buildcmd="${buildcmd/mvnw/mvnw.cmd}"
+		if [[ -x $(cygpath) && "$JAVA_HOME" == /cygdrive/*  ]] ; then
+			export JAVA_HOME=$(cygpath -w $JAVA_HOME)
+		fi
+		#maven="./mvnw.cmd"
+		#buildcmd="${buildcmd/mvnw/mvnw.cmd}"
+	fi
+	if [[ -z "$JAVA_HOME" ]] ; then
+		export JAVA_HOME=$(cd $(dirname "$(which java)")/.. >/dev/null; pwd)
 	fi
 	cd "${workdir}"
 	git checkout . # restore original source because of rogue build projects like spring-boot
