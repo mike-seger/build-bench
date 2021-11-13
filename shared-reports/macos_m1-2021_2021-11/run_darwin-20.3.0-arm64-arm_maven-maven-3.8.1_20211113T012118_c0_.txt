@@ -1,0 +1,2069 @@
+20211113T012118
+darwin-20.3.0-arm64-arm
+maven-maven-3.8.1
+./mvnw -Drat.skip=true clean test package -fail-fast -Dsurefire.skipAfterFailureCount=1
+The operation couldn’t be completed. Unable to locate a Java Runtime.
+Please visit http://www.java.com for information on installing Java.
+
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Build Order:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Apache Maven                                                       [pom]
+[[1;34mINFO[m] Maven Model                                                        [jar]
+[[1;34mINFO[m] Maven Artifact                                                     [jar]
+[[1;34mINFO[m] Maven Plugin API                                                   [jar]
+[[1;34mINFO[m] Maven Builder Support                                              [jar]
+[[1;34mINFO[m] Maven Model Builder                                                [jar]
+[[1;34mINFO[m] Maven Settings                                                     [jar]
+[[1;34mINFO[m] Maven Settings Builder                                             [jar]
+[[1;34mINFO[m] Maven Repository Metadata Model                                    [jar]
+[[1;34mINFO[m] Maven Artifact Resolver Provider                                   [jar]
+[[1;34mINFO[m] Maven Core                                                         [jar]
+[[1;34mINFO[m] Maven SLF4J Simple Provider                                        [jar]
+[[1;34mINFO[m] Maven Embedder                                                     [jar]
+[[1;34mINFO[m] Maven Compat                                                       [jar]
+[[1;34mINFO[m] Apache Maven Distribution                                          [pom]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------------< [0;36morg.apache.maven:maven[0;1m >-----------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Maven 3.8.1                                       [1/15][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mmaven[0;1m ---[m
+[[1;34mINFO[m] Deleting /Users/michael/git/build-bench/maven-maven-3.8.1/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.7.1:attach-descriptor[m [1m(attach-descriptor)[m @ [36mmaven[0;1m ---[m
+[[1;34mINFO[m] Attaching 'src/site/site.xml' site descriptor with classifier 'site'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------< [0;36morg.apache.maven:maven-model[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding Maven Model 3.8.1                                        [2/15][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] Deleting /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:java[m [1m(modello)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/maven.mdo
+[[1;34mINFO[m] Generating current version: 4.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-reader[m [1m(modello)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/maven.mdo
+[[1;34mINFO[m] Generating current version: 4.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-extended-reader[m [1m(modello)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/maven.mdo
+[[1;34mINFO[m] Generating current version: 4.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-writer[m [1m(modello)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/maven.mdo
+[[1;34mINFO[m] Generating current version: 4.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-extended-writer[m [1m(modello)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/maven.mdo
+[[1;34mINFO[m] Generating current version: 4.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 54 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/target/classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello/org/apache/maven/model/RepositoryPolicy.java: Some input files use unchecked or unsafe operations.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello/org/apache/maven/model/RepositoryPolicy.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 37 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running org.apache.maven.model.[1mReportPluginTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.maven.model.[1mReportPluginTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mActivationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mActivationTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mProfileTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mProfileTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mParentTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mParentTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mActivationFileTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mActivationFileTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mExclusionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mExclusionTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mActivationOSTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mActivationOSTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mDeploymentRepositoryTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mDeploymentRepositoryTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mDistributionManagementTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mDistributionManagementTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mPluginExecutionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.[1mPluginExecutionTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mDeveloperTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mDeveloperTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mBuildTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mBuildTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mRepositoryTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mRepositoryTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mMailingListTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.[1mMailingListTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mCiManagementTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mCiManagementTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mReportingTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mReportingTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mScmTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mScmTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mPluginTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.[1mPluginTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mPrerequisitesTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mPrerequisitesTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mPluginContainerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mPluginContainerTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mLicenseTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.[1mLicenseTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mDependencyTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mDependencyTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mOrganizationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mOrganizationTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mNotifierTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.[1mNotifierTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mRelocationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mRelocationTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mReportSetTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mReportSetTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mContributorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mContributorTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mExtensionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mExtensionTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mRepositoryPolicyTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mRepositoryPolicyTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mSiteTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.[1mSiteTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mModelTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mModelTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mPluginManagementTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.[1mPluginManagementTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mPluginConfigurationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mPluginConfigurationTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mActivationPropertyTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mActivationPropertyTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mIssueManagementTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mIssueManagementTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mResourceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.[1mResourceTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.[1mDependencyManagementTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.[1mDependencyManagementTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 148, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:java[m [1m(modello)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/maven.mdo
+[[1;34mINFO[m] Generating current version: 4.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-reader[m [1m(modello)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/maven.mdo
+[[1;34mINFO[m] Generating current version: 4.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-extended-reader[m [1m(modello)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/maven.mdo
+[[1;34mINFO[m] Generating current version: 4.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-writer[m [1m(modello)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/maven.mdo
+[[1;34mINFO[m] Generating current version: 4.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-extended-writer[m [1m(modello)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/maven.mdo
+[[1;34mINFO[m] Generating current version: 4.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 54 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/target/classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello/org/apache/maven/model/RepositoryPolicy.java: Some input files use unchecked or unsafe operations.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello/org/apache/maven/model/RepositoryPolicy.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] Skipping execution of surefire because it has already been run for this configuration
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.0:jar[m [1m(default-jar)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] Building jar: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model/target/maven-model-3.8.1.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.7.1:attach-descriptor[m [1m(attach-descriptor)[m @ [36mmaven-model[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------< [0;36morg.apache.maven:maven-artifact[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Maven Artifact 3.8.1                                     [3/15][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] Deleting /Users/michael/git/build-bench/maven-maven-3.8.1/maven-artifact/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-artifact/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 27 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-artifact/target/classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-artifact/src/main/java/org/apache/maven/artifact/repository/layout/ArtifactRepositoryLayout.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-artifact/src/main/java/org/apache/maven/artifact/repository/layout/ArtifactRepositoryLayout.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-artifact/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 7 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-artifact/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running org.apache.maven.artifact.[1mDefaultArtifactTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m11[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.apache.maven.artifact.[1mDefaultArtifactTest[m
+[[1;34mINFO[m] Running org.apache.maven.artifact.[1mArtifactUtilsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.artifact.[1mArtifactUtilsTest[m
+[[1;34mINFO[m] Running org.apache.maven.artifact.versioning.[1mVersionRangeTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m9[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.artifact.versioning.[1mVersionRangeTest[m
+[[1;34mINFO[m] Running org.apache.maven.artifact.versioning.[1mComparableVersionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m10[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.maven.artifact.versioning.[1mComparableVersionTest[m
+[[1;34mINFO[m] Running org.apache.maven.artifact.versioning.[1mDefaultArtifactVersionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m8[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.maven.artifact.versioning.[1mDefaultArtifactVersionTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 41, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-artifact/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-artifact/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] Skipping execution of surefire because it has already been run for this configuration
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.0:jar[m [1m(default-jar)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] Building jar: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-artifact/target/maven-artifact-3.8.1.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.7.1:attach-descriptor[m [1m(attach-descriptor)[m @ [36mmaven-artifact[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36morg.apache.maven:maven-plugin-api[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding Maven Plugin API 3.8.1                                   [4/15][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] Deleting /Users/michael/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:java[m [1m(modello)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/lifecycle.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-reader[m [1m(modello)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/lifecycle.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-writer[m [1m(modello)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/lifecycle.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-plugin-api/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 25 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello/org/apache/maven/plugin/lifecycle/io/xpp3/LifecycleMappingsXpp3Reader.java: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello/org/apache/maven/plugin/lifecycle/io/xpp3/LifecycleMappingsXpp3Reader.java uses unchecked or unsafe operations.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello/org/apache/maven/plugin/lifecycle/io/xpp3/LifecycleMappingsXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 2 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running org.apache.maven.plugin.lifecycle.[1mLifecycleXpp3ReaderTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.maven.plugin.lifecycle.[1mLifecycleXpp3ReaderTest[m
+[[1;34mINFO[m] Running org.apache.maven.plugin.descriptor.[1mPluginDescriptorBuilderTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.maven.plugin.descriptor.[1mPluginDescriptorBuilderTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 2, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:java[m [1m(modello)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/lifecycle.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-reader[m [1m(modello)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/lifecycle.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-writer[m [1m(modello)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/lifecycle.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-plugin-api/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 25 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello/org/apache/maven/plugin/lifecycle/io/xpp3/LifecycleMappingsXpp3Reader.java: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello/org/apache/maven/plugin/lifecycle/io/xpp3/LifecycleMappingsXpp3Reader.java uses unchecked or unsafe operations.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello/org/apache/maven/plugin/lifecycle/io/xpp3/LifecycleMappingsXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] Skipping execution of surefire because it has already been run for this configuration
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.0:jar[m [1m(default-jar)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] Building jar: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/maven-plugin-api-3.8.1.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.7.1:attach-descriptor[m [1m(attach-descriptor)[m @ [36mmaven-plugin-api[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------< [0;36morg.apache.maven:maven-builder-support[0;1m >---------------[m
+[[1;34mINFO[m] [1mBuilding Maven Builder Support 3.8.1                              [5/15][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] Deleting /Users/michael/git/build-bench/maven-maven-3.8.1/maven-builder-support/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-builder-support/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 9 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-builder-support/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 6 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-builder-support/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running org.apache.maven.building.[1mStringSourceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.apache.maven.building.[1mStringSourceTest[m
+[[1;34mINFO[m] Running org.apache.maven.building.[1mProblemCollectorFactoryTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.building.[1mProblemCollectorFactoryTest[m
+[[1;34mINFO[m] Running org.apache.maven.building.[1mDefaultProblemTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m7[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.building.[1mDefaultProblemTest[m
+[[1;34mINFO[m] Running org.apache.maven.building.[1mFileSourceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.building.[1mFileSourceTest[m
+[[1;34mINFO[m] Running org.apache.maven.building.[1mDefaultProblemCollectorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.building.[1mDefaultProblemCollectorTest[m
+[[1;34mINFO[m] Running org.apache.maven.building.[1mUrlSourceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.building.[1mUrlSourceTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 20, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-builder-support/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] Skipping execution of surefire because it has already been run for this configuration
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.0:jar[m [1m(default-jar)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] Building jar: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-builder-support/target/maven-builder-support-3.8.1.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.7.1:attach-descriptor[m [1m(attach-descriptor)[m @ [36mmaven-builder-support[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36morg.apache.maven:maven-model-builder[0;1m >----------------[m
+[[1;34mINFO[m] [1mBuilding Maven Model Builder 3.8.1                                [6/15][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] Deleting /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model-builder/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 93 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model-builder/target/classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model-builder/src/main/java/org/apache/maven/model/resolution/ModelResolver.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model-builder/src/main/java/org/apache/maven/model/resolution/ModelResolver.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mplexus-component-metadata:2.1.0:generate-metadata[m [1m(default)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 96 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 14 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model-builder/target/test-classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model-builder/src/test/java/org/apache/maven/model/interpolation/StringSearchModelInterpolatorTest.java: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model-builder/src/test/java/org/apache/maven/model/interpolation/StringSearchModelInterpolatorTest.java uses or overrides a deprecated API.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model-builder/src/test/java/org/apache/maven/model/interpolation/StringSearchModelInterpolatorTest.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model-builder/src/test/java/org/apache/maven/model/interpolation/StringSearchModelInterpolatorTest.java: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model-builder/src/test/java/org/apache/maven/model/interpolation/StringSearchModelInterpolatorTest.java uses unchecked or unsafe operations.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model-builder/src/test/java/org/apache/maven/model/interpolation/StringSearchModelInterpolatorTest.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mplexus-component-metadata:2.1.0:generate-test-metadata[m [1m(default)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running org.apache.maven.model.merge.[1mMavenModelMergerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in org.apache.maven.model.merge.[1mMavenModelMergerTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.path.[1mDefaultUrlNormalizerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m7[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.path.[1mDefaultUrlNormalizerTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.inheritance.[1mDefaultInheritanceAssemblerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m9[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.395 s - in org.apache.maven.model.inheritance.[1mDefaultInheritanceAssemblerTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.profile.activation.[1mPropertyProfileActivatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m10[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.maven.model.profile.activation.[1mPropertyProfileActivatorTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.profile.activation.[1mJdkVersionProfileActivatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m7[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.maven.model.profile.activation.[1mJdkVersionProfileActivatorTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.interpolation.[1mStringSearchModelInterpolatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m32[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in org.apache.maven.model.interpolation.[1mStringSearchModelInterpolatorTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.interpolation.[1mMavenBuildTimestampTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.interpolation.[1mMavenBuildTimestampTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.validation.[1mDefaultModelValidatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m61[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.apache.maven.model.validation.[1mDefaultModelValidatorTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.building.[1mFileModelSourceTest[m
+[[1;33mWARNING[m] [1;33mTests [0;1mrun: [0;1m2[m, Failures: 0, Errors: 0, [1;33mSkipped: [0;1;33m1[m, Time elapsed: 0.016 s - in org.apache.maven.model.building.[1mFileModelSourceTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.building.[1mComplexActivationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.apache.maven.model.building.[1mComplexActivationTest[m
+[[1;34mINFO[m] Running org.apache.maven.model.building.[1mDefaultModelBuilderFactoryTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.building.[1mDefaultModelBuilderFactoryTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;33mWARNING[m] [1;33mTests run: 135, Failures: 0, Errors: 0, Skipped: 1[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mplexus-component-metadata:2.1.0:generate-metadata[m [1m(default)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 96 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mplexus-component-metadata:2.1.0:generate-test-metadata[m [1m(default)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] Skipping execution of surefire because it has already been run for this configuration
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.0:jar[m [1m(default-jar)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] Building jar: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-model-builder/target/maven-model-builder-3.8.1.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.7.1:attach-descriptor[m [1m(attach-descriptor)[m @ [36mmaven-model-builder[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------< [0;36morg.apache.maven:maven-settings[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Maven Settings 3.8.1                                     [7/15][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] Deleting /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:java[m [1m(modello)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/settings.mdo
+[[1;34mINFO[m] Generating current version: 1.2.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-reader[m [1m(modello)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/settings.mdo
+[[1;34mINFO[m] Generating current version: 1.2.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-writer[m [1m(modello)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/settings.mdo
+[[1;34mINFO[m] Generating current version: 1.2.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 17 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/target/classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello/org/apache/maven/settings/io/xpp3/SettingsXpp3Reader.java: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello/org/apache/maven/settings/io/xpp3/SettingsXpp3Reader.java uses unchecked or unsafe operations.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello/org/apache/maven/settings/io/xpp3/SettingsXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:java[m [1m(modello)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/settings.mdo
+[[1;34mINFO[m] Generating current version: 1.2.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-reader[m [1m(modello)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/settings.mdo
+[[1;34mINFO[m] Generating current version: 1.2.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-writer[m [1m(modello)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/settings.mdo
+[[1;34mINFO[m] Generating current version: 1.2.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 17 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/target/classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello/org/apache/maven/settings/io/xpp3/SettingsXpp3Reader.java: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello/org/apache/maven/settings/io/xpp3/SettingsXpp3Reader.java uses unchecked or unsafe operations.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello/org/apache/maven/settings/io/xpp3/SettingsXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] Skipping execution of surefire because it has already been run for this configuration
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.0:jar[m [1m(default-jar)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] Building jar: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings/target/maven-settings-3.8.1.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.7.1:attach-descriptor[m [1m(attach-descriptor)[m @ [36mmaven-settings[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------< [0;36morg.apache.maven:maven-settings-builder[0;1m >---------------[m
+[[1;34mINFO[m] [1mBuilding Maven Settings Builder 3.8.1                             [8/15][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] Deleting /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings-builder/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings-builder/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 30 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings-builder/target/classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings-builder/src/main/java/org/apache/maven/settings/building/SettingsBuildingRequest.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings-builder/src/main/java/org/apache/maven/settings/building/SettingsBuildingRequest.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msisu-maven-plugin:0.3.4:main-index[m [1m(default)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 2 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings-builder/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msisu-maven-plugin:0.3.4:test-index[m [1m(default)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running org.apache.maven.settings.validation.[1mDefaultSettingsValidatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m8[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.maven.settings.validation.[1mDefaultSettingsValidatorTest[m
+[[1;34mINFO[m] Running org.apache.maven.settings.building.[1mDefaultSettingsBuilderFactoryTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.apache.maven.settings.building.[1mDefaultSettingsBuilderFactoryTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 9, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings-builder/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msisu-maven-plugin:0.3.4:main-index[m [1m(default)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msisu-maven-plugin:0.3.4:test-index[m [1m(default)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] Skipping execution of surefire because it has already been run for this configuration
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.0:jar[m [1m(default-jar)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] Building jar: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-settings-builder/target/maven-settings-builder-3.8.1.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.7.1:attach-descriptor[m [1m(attach-descriptor)[m @ [36mmaven-settings-builder[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------< [0;36morg.apache.maven:maven-repository-metadata[0;1m >-------------[m
+[[1;34mINFO[m] [1mBuilding Maven Repository Metadata Model 3.8.1                    [9/15][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] Deleting /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:java[m [1m(modello)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/metadata.mdo
+[[1;34mINFO[m] Generating current version: 1.1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-reader[m [1m(modello)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/metadata.mdo
+[[1;34mINFO[m] Generating current version: 1.1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-writer[m [1m(modello)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/metadata.mdo
+[[1;34mINFO[m] Generating current version: 1.1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 7 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello/org/apache/maven/artifact/repository/metadata/io/xpp3/MetadataXpp3Reader.java: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello/org/apache/maven/artifact/repository/metadata/io/xpp3/MetadataXpp3Reader.java uses unchecked or unsafe operations.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello/org/apache/maven/artifact/repository/metadata/io/xpp3/MetadataXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:java[m [1m(modello)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/metadata.mdo
+[[1;34mINFO[m] Generating current version: 1.1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-reader[m [1m(modello)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/metadata.mdo
+[[1;34mINFO[m] Generating current version: 1.1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-writer[m [1m(modello)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/metadata.mdo
+[[1;34mINFO[m] Generating current version: 1.1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 7 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello/org/apache/maven/artifact/repository/metadata/io/xpp3/MetadataXpp3Reader.java: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello/org/apache/maven/artifact/repository/metadata/io/xpp3/MetadataXpp3Reader.java uses unchecked or unsafe operations.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello/org/apache/maven/artifact/repository/metadata/io/xpp3/MetadataXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] Skipping execution of surefire because it has already been run for this configuration
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.0:jar[m [1m(default-jar)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] Building jar: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/maven-repository-metadata-3.8.1.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.7.1:attach-descriptor[m [1m(attach-descriptor)[m @ [36mmaven-repository-metadata[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------< [0;36morg.apache.maven:maven-resolver-provider[0;1m >--------------[m
+[[1;34mINFO[m] [1mBuilding Maven Artifact Resolver Provider 3.8.1                  [10/15][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] Deleting /Users/michael/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 23 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/target/classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/src/main/java/org/apache/maven/repository/internal/DefaultModelResolver.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/src/main/java/org/apache/maven/repository/internal/DefaultModelResolver.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msisu-maven-plugin:0.3.4:main-index[m [1m(default)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 13 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 9 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msisu-maven-plugin:0.3.4:test-index[m [1m(default)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running org.apache.maven.repository.internal.[1mDefaultVersionResolverTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.291 s - in org.apache.maven.repository.internal.[1mDefaultVersionResolverTest[m
+[[1;34mINFO[m] Running org.apache.maven.repository.internal.[1mMavenRepositorySystemUtilsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.maven.repository.internal.[1mMavenRepositorySystemUtilsTest[m
+[[1;34mINFO[m] Running org.apache.maven.repository.internal.[1mRepositorySystemTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m11[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.197 s - in org.apache.maven.repository.internal.[1mRepositorySystemTest[m
+[[1;34mINFO[m] Running org.apache.maven.repository.internal.[1mDefaultModelResolverTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m10[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 s - in org.apache.maven.repository.internal.[1mDefaultModelResolverTest[m
+[[1;34mINFO[m] Running org.apache.maven.repository.internal.[1mDefaultArtifactDescriptorReaderTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 s - in org.apache.maven.repository.internal.[1mDefaultArtifactDescriptorReaderTest[m
+[[1;34mINFO[m] Running org.apache.maven.repository.internal.[1mRemoteSnapshotMetadataTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.maven.repository.internal.[1mRemoteSnapshotMetadataTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 27, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 23 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/target/classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/src/main/java/org/apache/maven/repository/internal/DefaultModelResolver.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/src/main/java/org/apache/maven/repository/internal/DefaultModelResolver.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msisu-maven-plugin:0.3.4:main-index[m [1m(default)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 13 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msisu-maven-plugin:0.3.4:test-index[m [1m(default)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] Skipping execution of surefire because it has already been run for this configuration
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.0:jar[m [1m(default-jar)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] Building jar: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/target/maven-resolver-provider-3.8.1.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.7.1:attach-descriptor[m [1m(attach-descriptor)[m @ [36mmaven-resolver-provider[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------< [0;36morg.apache.maven:maven-core[0;1m >---------------------[m
+[[1;34mINFO[m] [1mBuilding Maven Core 3.8.1                                        [11/15][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Deleting /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.4:create-timestamp[m [1m(create-noncanonicalrev)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.4:create[m [1m(create-buildnumber)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/Users/michael/git/build-bench/maven-maven-3.8.1/maven-core' && 'git' 'rev-parse' '--verify' 'HEAD'
+[[1;34mINFO[m] Working directory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core
+[[1;34mINFO[m] Storing buildNumber: 6fae59877a95ff5e6a287b80da252d9a7d460be6 at timestamp: 1636766494949
+[[1;34mINFO[m] Storing buildScmBranch: master
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:java[m [1m(modello)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/toolchains.mdo
+[[1;34mINFO[m] Generating current version: 1.1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-reader[m [1m(modello)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/toolchains.mdo
+[[1;34mINFO[m] Generating current version: 1.1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-writer[m [1m(modello)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/toolchains.mdo
+[[1;34mINFO[m] Generating current version: 1.1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 6 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 342 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/target/classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/src/main/java/org/apache/maven/lifecycle/internal/DefaultProjectArtifactFactory.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/src/main/java/org/apache/maven/lifecycle/internal/DefaultProjectArtifactFactory.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello/org/apache/maven/toolchain/model/io/xpp3/MavenToolchainsXpp3Reader.java: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello/org/apache/maven/toolchain/model/io/xpp3/MavenToolchainsXpp3Reader.java uses unchecked or unsafe operations.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello/org/apache/maven/toolchain/model/io/xpp3/MavenToolchainsXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mplexus-component-metadata:2.1.0:generate-metadata[m [1m(default)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Discovered 58 component descriptors(s)
+[[1;34mINFO[m] Merging 3 manually-crafted descriptor file(s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msisu-maven-plugin:0.3.4:main-index[m [1m(default)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 237 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 87 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/target/test-classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/src/test/java/org/apache/maven/project/ProjectBuilderTest.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/src/test/java/org/apache/maven/project/ProjectBuilderTest.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mplexus-component-metadata:2.1.0:generate-test-metadata[m [1m(default)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Discovered 4 component descriptors(s)
+[[1;34mINFO[m] Merging 1 manually-crafted descriptor file(s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msisu-maven-plugin:0.3.4:test-index[m [1m(default)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running org.apache.maven.settings.[1mSettingsUtilsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.maven.settings.[1mSettingsUtilsTest[m
+[[1;34mINFO[m] Running org.apache.maven.settings.[1mPomConstructionWithSettingsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.466 s - in org.apache.maven.settings.[1mPomConstructionWithSettingsTest[m
+[[1;34mINFO[m] Running org.apache.maven.configuration.[1mDefaultBeanConfiguratorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in org.apache.maven.configuration.[1mDefaultBeanConfiguratorTest[m
+[[1;34mINFO[m] Running org.apache.maven.[1mProjectDependenciesResolverTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 s - in org.apache.maven.[1mProjectDependenciesResolverTest[m
+[[1;34mINFO[m] Running org.apache.maven.[1mDefaultMavenTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 s - in org.apache.maven.[1mDefaultMavenTest[m
+[[1;34mINFO[m] Running org.apache.maven.graph.[1mDefaultProjectDependencyGraphTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m8[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.maven.graph.[1mDefaultProjectDependencyGraphTest[m
+[[1;34mINFO[m] Running org.apache.maven.plugin.[1mPluginParameterExpressionEvaluatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m16[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.31 s - in org.apache.maven.plugin.[1mPluginParameterExpressionEvaluatorTest[m
+[[1;34mINFO[m] Running org.apache.maven.plugin.internal.[1mDefaultLegacySupportTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.plugin.internal.[1mDefaultLegacySupportTest[m
+[[1;34mINFO[m] Running org.apache.maven.plugin.[1mPluginParameterExceptionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.plugin.[1mPluginParameterExceptionTest[m
+[[1;34mINFO[m] Running org.apache.maven.plugin.[1mPluginManagerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m12[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.29 s - in org.apache.maven.plugin.[1mPluginManagerTest[m
+[[1;34mINFO[m] Running org.apache.maven.lifecycle.mapping.[1mLifecyclePhaseTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.maven.lifecycle.mapping.[1mLifecyclePhaseTest[m
+[[1;34mINFO[m] Running org.apache.maven.lifecycle.[1mLifecycleExecutorSubModulesTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.maven.lifecycle.[1mLifecycleExecutorSubModulesTest[m
+[[1;34mINFO[m] Running org.apache.maven.lifecycle.[1mLifecycleExecutorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m13[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.336 s - in org.apache.maven.lifecycle.[1mLifecycleExecutorTest[m
+[[1;34mINFO[m] Running org.apache.maven.lifecycle.[1mDefaultLifecyclesTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.maven.lifecycle.[1mDefaultLifecyclesTest[m
+[[1;34mINFO[m] Running org.apache.maven.lifecycle.internal.[1mProjectBuildListTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.lifecycle.internal.[1mProjectBuildListTest[m
+[[1;34mINFO[m] Running org.apache.maven.lifecycle.internal.[1mPhaseRecorderTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.maven.lifecycle.internal.[1mPhaseRecorderTest[m
+[[1;34mINFO[m] Running org.apache.maven.lifecycle.internal.[1mLifecycleTaskSegmentCalculatorImplTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.lifecycle.internal.[1mLifecycleTaskSegmentCalculatorImplTest[m
+[[1;34mINFO[m] Running org.apache.maven.lifecycle.internal.[1mLifecycleDependencyResolverTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.apache.maven.lifecycle.internal.[1mLifecycleDependencyResolverTest[m
+[[1;34mINFO[m] Running org.apache.maven.lifecycle.internal.[1mConcurrencyDependencyGraphTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.lifecycle.internal.[1mConcurrencyDependencyGraphTest[m
+[[1;34mINFO[m] Running org.apache.maven.lifecycle.internal.[1mBuildListCalculatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.lifecycle.internal.[1mBuildListCalculatorTest[m
+[[1;34mINFO[m] Running org.apache.maven.lifecycle.internal.[1mBuilderCommonTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.lifecycle.internal.[1mBuilderCommonTest[m
+[[1;34mINFO[m] Running org.apache.maven.lifecycle.internal.stub.[1mProjectDependencyGraphStubTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.lifecycle.internal.stub.[1mProjectDependencyGraphStubTest[m
+[[1;34mINFO[m] Running org.apache.maven.lifecycle.internal.[1mLifecycleExecutionPlanCalculatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.maven.lifecycle.internal.[1mLifecycleExecutionPlanCalculatorTest[m
+[[1;34mINFO[m] Running org.apache.maven.lifecycle.internal.builder.multithreaded.[1mThreadOutputMuxerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.7 s - in org.apache.maven.lifecycle.internal.builder.multithreaded.[1mThreadOutputMuxerTest[m
+[[1;34mINFO[m] Running org.apache.maven.lifecycle.internal.builder.multithreaded.[1mConcurrencyDependencyGraphTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.lifecycle.internal.builder.multithreaded.[1mConcurrencyDependencyGraphTest[m
+[[1;34mINFO[m] Running org.apache.maven.lifecycle.[1mMavenExecutionPlanTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.lifecycle.[1mMavenExecutionPlanTest[m
+[[1;34mINFO[m] Running org.apache.maven.[1mMavenTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in org.apache.maven.[1mMavenTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.[1mProjectSorterTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m12[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.maven.project.[1mProjectSorterTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.canonical.[1mCanonicalProjectBuilderTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in org.apache.maven.project.canonical.[1mCanonicalProjectBuilderTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.[1mExtensionDescriptorBuilderTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.project.[1mExtensionDescriptorBuilderTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.[1mMavenProjectTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m11[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.16 s - in org.apache.maven.project.[1mMavenProjectTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.[1mPomConstructionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m123[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.709 s - in org.apache.maven.project.[1mPomConstructionTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.[1mProjectBuilderTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m10[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 s - in org.apache.maven.project.[1mProjectBuilderTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.[1mProjectModelResolverTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m10[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.148 s - in org.apache.maven.project.[1mProjectModelResolverTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.[1mDefaultMavenProjectBuilderTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m14[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.191 s - in org.apache.maven.project.[1mDefaultMavenProjectBuilderTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.artifact.[1mMavenMetadataSourceTest[m
+[[1;33mWARNING[m] [1;33mTests [0;1mrun: [0;1m1[m, Failures: 0, Errors: 0, [1;33mSkipped: [0;1;33m1[m, Time elapsed: 0 s - in org.apache.maven.project.artifact.[1mMavenMetadataSourceTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.artifact.[1mDefaultProjectArtifactsCacheTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.maven.project.artifact.[1mDefaultProjectArtifactsCacheTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.artifact.[1mDefaultMavenMetadataCacheTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.maven.project.artifact.[1mDefaultMavenMetadataCacheTest[m
+[[1;34mINFO[m] Running org.apache.maven.execution.scope.internal.[1mMojoExecutionScopeTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.execution.scope.internal.[1mMojoExecutionScopeTest[m
+[[1;34mINFO[m] Running org.apache.maven.execution.[1mDefaultMavenExecutionRequestPopulatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.238 s - in org.apache.maven.execution.[1mDefaultMavenExecutionRequestPopulatorTest[m
+[[1;34mINFO[m] Running org.apache.maven.execution.[1mDefaultMavenExecutionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.execution.[1mDefaultMavenExecutionTest[m
+[[1;34mINFO[m] Running org.apache.maven.rtinfo.internal.[1mDefaultRuntimeInformationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.maven.rtinfo.internal.[1mDefaultRuntimeInformationTest[m
+[[1;34mINFO[m] Running org.apache.maven.artifact.handler.[1mArtifactHandlerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.maven.artifact.handler.[1mArtifactHandlerTest[m
+[[1;34mINFO[m] Running org.apache.maven.artifact.resolver.filter.[1mExclusionArtifactFilterTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m9[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.147 s - in org.apache.maven.artifact.resolver.filter.[1mExclusionArtifactFilterTest[m
+[[1;34mINFO[m] Running org.apache.maven.exception.[1mDefaultExceptionHandlerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.exception.[1mDefaultExceptionHandlerTest[m
+[[1;34mINFO[m] Running org.apache.maven.[1mMavenLifecycleParticipantTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in org.apache.maven.[1mMavenLifecycleParticipantTest[m
+[[1;34mINFO[m] Running org.apache.maven.toolchain.[1mDefaultToolchainManagerPrivateTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s - in org.apache.maven.toolchain.[1mDefaultToolchainManagerPrivateTest[m
+[[1;34mINFO[m] Running org.apache.maven.toolchain.merge.[1mMavenToolchainMergerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.maven.toolchain.merge.[1mMavenToolchainMergerTest[m
+[[1;34mINFO[m] Running org.apache.maven.toolchain.[1mDefaultToolchainManagerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.maven.toolchain.[1mDefaultToolchainManagerTest[m
+[[1;34mINFO[m] Running org.apache.maven.toolchain.[1mRequirementMatcherFactoryTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.toolchain.[1mRequirementMatcherFactoryTest[m
+[[1;34mINFO[m] Running org.apache.maven.toolchain.[1mDefaultToolchainTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m6[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.toolchain.[1mDefaultToolchainTest[m
+[[1;34mINFO[m] Running org.apache.maven.toolchain.building.[1mDefaultToolchainsBuilderTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m9[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.apache.maven.toolchain.building.[1mDefaultToolchainsBuilderTest[m
+[[1;34mINFO[m] Running org.apache.maven.toolchain.building.[1mToolchainsBuildingExceptionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.toolchain.building.[1mToolchainsBuildingExceptionTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;33mWARNING[m] [1;33mTests run: 332, Failures: 0, Errors: 0, Skipped: 1[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.4:create-timestamp[m [1m(create-noncanonicalrev)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.4:create[m [1m(create-buildnumber)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/Users/michael/git/build-bench/maven-maven-3.8.1/maven-core' && 'git' 'rev-parse' '--verify' 'HEAD'
+[[1;34mINFO[m] Working directory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core
+[[1;34mINFO[m] Storing buildNumber: 6fae59877a95ff5e6a287b80da252d9a7d460be6 at timestamp: 1636766503231
+[[1;34mINFO[m] Storing buildScmBranch: master
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:java[m [1m(modello)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/toolchains.mdo
+[[1;34mINFO[m] Generating current version: 1.1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-reader[m [1m(modello)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/toolchains.mdo
+[[1;34mINFO[m] Generating current version: 1.1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-writer[m [1m(modello)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/toolchains.mdo
+[[1;34mINFO[m] Generating current version: 1.1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 6 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 342 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/target/classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/src/main/java/org/apache/maven/lifecycle/internal/DefaultProjectArtifactFactory.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/src/main/java/org/apache/maven/lifecycle/internal/DefaultProjectArtifactFactory.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello/org/apache/maven/toolchain/model/io/xpp3/MavenToolchainsXpp3Reader.java: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello/org/apache/maven/toolchain/model/io/xpp3/MavenToolchainsXpp3Reader.java uses unchecked or unsafe operations.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello/org/apache/maven/toolchain/model/io/xpp3/MavenToolchainsXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mplexus-component-metadata:2.1.0:generate-metadata[m [1m(default)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Discovered 58 component descriptors(s)
+[[1;34mINFO[m] Merging 3 manually-crafted descriptor file(s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msisu-maven-plugin:0.3.4:main-index[m [1m(default)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 237 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mplexus-component-metadata:2.1.0:generate-test-metadata[m [1m(default)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Discovered 4 component descriptors(s)
+[[1;34mINFO[m] Merging 1 manually-crafted descriptor file(s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msisu-maven-plugin:0.3.4:test-index[m [1m(default)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Skipping execution of surefire because it has already been run for this configuration
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.0:jar[m [1m(default-jar)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Building jar: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-core/target/maven-core-3.8.1.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.7.1:attach-descriptor[m [1m(attach-descriptor)[m @ [36mmaven-core[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------< [0;36morg.apache.maven:maven-slf4j-provider[0;1m >----------------[m
+[[1;34mINFO[m] [1mBuilding Maven SLF4J Simple Provider 3.8.1                       [12/15][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] Deleting /Users/michael/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:1.12:add-source[m [1m(add-slf4j-simple)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] Source directory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/target/generated-sources/slf4j-simple added.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:3.1.1:unpack[m [1m(unzip-slf4j-simple)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] Configured Artifact: org.slf4j:slf4j-simple:sources:1.7.29:jar
+[[1;34mINFO[m] Unpacking /Users/michael/.m2/repository/org/slf4j/slf4j-simple/1.7.29/slf4j-simple-1.7.29-sources.jar to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/target/generated-sources/slf4j-simple with includes "org/slf4j/impl/*.java" and excludes "org/slf4j/impl/StaticLoggerBinder*"
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 9 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:1.12:add-source[m [1m(add-slf4j-simple)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] Source directory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/target/generated-sources/slf4j-simple added.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:3.1.1:unpack[m [1m(unzip-slf4j-simple)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] Configured Artifact: org.slf4j:slf4j-simple:sources:1.7.29:jar
+[[1;34mINFO[m] slf4j-simple-1.7.29-sources.jar already unpacked.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/michael/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] Skipping execution of surefire because it has already been run for this configuration
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.0:jar[m [1m(default-jar)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] Building jar: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/target/maven-slf4j-provider-3.8.1.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.7.1:attach-descriptor[m [1m(attach-descriptor)[m @ [36mmaven-slf4j-provider[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------< [0;36morg.apache.maven:maven-embedder[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Maven Embedder 3.8.1                                    [13/15][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] Deleting /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:java[m [1m(modello)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/core-extensions.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-reader[m [1m(modello)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/core-extensions.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-writer[m [1m(modello)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/core-extensions.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 32 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/target/classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/src/main/java/org/apache/maven/cli/CLIManager.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/src/main/java/org/apache/maven/cli/CLIManager.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello/org/apache/maven/cli/internal/extension/model/io/xpp3/CoreExtensionsXpp3Reader.java: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello/org/apache/maven/cli/internal/extension/model/io/xpp3/CoreExtensionsXpp3Reader.java uses unchecked or unsafe operations.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello/org/apache/maven/cli/internal/extension/model/io/xpp3/CoreExtensionsXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msisu-maven-plugin:0.3.4:main-index[m [1m(default)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 7 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 7 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msisu-maven-plugin:0.3.4:test-index[m [1m(default)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running org.apache.maven.cli.[1mCleanArgumentTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.apache.maven.cli.[1mCleanArgumentTest[m
+[[1;34mINFO[m] Running org.apache.maven.cli.[1mCLIManagerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.maven.cli.[1mCLIManagerTest[m
+[[1;34mINFO[m] Running org.apache.maven.cli.[1mMavenCliTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m9[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.49 s - in org.apache.maven.cli.[1mMavenCliTest[m
+[[1;34mINFO[m] Running org.apache.maven.cli.transfer.[1mFileSizeFormatTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m8[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.maven.cli.transfer.[1mFileSizeFormatTest[m
+[[1;34mINFO[m] Running org.apache.maven.cli.[1mCLIReportingUtilsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.maven.cli.[1mCLIReportingUtilsTest[m
+[[1;34mINFO[m] Running org.apache.maven.cli.[1mCLIManagerDocumentationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.maven.cli.[1mCLIManagerDocumentationTest[m
+[[1;34mINFO[m] Running org.apache.maven.cli.event.[1mExecutionEventLoggerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.17 s - in org.apache.maven.cli.event.[1mExecutionEventLoggerTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 25, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:java[m [1m(modello)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/core-extensions.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-reader[m [1m(modello)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/core-extensions.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-writer[m [1m(modello)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/core-extensions.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 32 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/target/classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/src/main/java/org/apache/maven/cli/CLIManager.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/src/main/java/org/apache/maven/cli/CLIManager.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello/org/apache/maven/cli/internal/extension/model/io/xpp3/CoreExtensionsXpp3Reader.java: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello/org/apache/maven/cli/internal/extension/model/io/xpp3/CoreExtensionsXpp3Reader.java uses unchecked or unsafe operations.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello/org/apache/maven/cli/internal/extension/model/io/xpp3/CoreExtensionsXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msisu-maven-plugin:0.3.4:main-index[m [1m(default)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 7 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msisu-maven-plugin:0.3.4:test-index[m [1m(default)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] Skipping execution of surefire because it has already been run for this configuration
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.0:jar[m [1m(default-jar)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] Building jar: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-embedder/target/maven-embedder-3.8.1.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.7.1:attach-descriptor[m [1m(attach-descriptor)[m @ [36mmaven-embedder[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.maven:maven-compat[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding Maven Compat 3.8.1                                      [14/15][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] Deleting /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:java[m [1m(modello)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/profiles.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] Working on model: src/main/mdo/paramdoc.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-reader[m [1m(modello)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/profiles.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] Working on model: src/main/mdo/paramdoc.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-writer[m [1m(modello)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/profiles.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] Working on model: src/main/mdo/paramdoc.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 4 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 146 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/target/classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/src/main/java/org/apache/maven/project/interpolation/StringSearchModelInterpolator.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/src/main/java/org/apache/maven/project/interpolation/StringSearchModelInterpolator.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello/org/apache/maven/profiles/io/xpp3/ProfilesXpp3Reader.java: Some input files use unchecked or unsafe operations.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello/org/apache/maven/profiles/io/xpp3/ProfilesXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mplexus-component-metadata:2.1.0:generate-metadata[m [1m(default)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] Discovered 34 component descriptors(s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 156 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 68 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/target/test-classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/src/test/java/org/apache/maven/artifact/AbstractArtifactComponentTestCase.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/src/test/java/org/apache/maven/artifact/AbstractArtifactComponentTestCase.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/src/test/java/org/apache/maven/repository/legacy/resolver/DefaultArtifactCollectorTest.java: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/src/test/java/org/apache/maven/repository/legacy/resolver/DefaultArtifactCollectorTest.java uses unchecked or unsafe operations.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/src/test/java/org/apache/maven/repository/legacy/resolver/DefaultArtifactCollectorTest.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mplexus-component-metadata:2.1.0:generate-test-metadata[m [1m(default)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] Discovered 12 component descriptors(s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running org.apache.maven.repository.legacy.[1mLegacyRepositorySystemTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.381 s - in org.apache.maven.repository.legacy.[1mLegacyRepositorySystemTest[m
+[[1;34mINFO[m] Running org.apache.maven.repository.legacy.[1mDefaultUpdateCheckManagerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m7[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.245 s - in org.apache.maven.repository.legacy.[1mDefaultUpdateCheckManagerTest[m
+[[1;34mINFO[m] Running org.apache.maven.repository.legacy.[1mDefaultWagonManagerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m7[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 s - in org.apache.maven.repository.legacy.[1mDefaultWagonManagerTest[m
+[[1;34mINFO[m] Running org.apache.maven.repository.legacy.resolver.conflict.[1mFarthestConflictResolverTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in org.apache.maven.repository.legacy.resolver.conflict.[1mFarthestConflictResolverTest[m
+[[1;34mINFO[m] Running org.apache.maven.repository.legacy.resolver.conflict.[1mNewestConflictResolverTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in org.apache.maven.repository.legacy.resolver.conflict.[1mNewestConflictResolverTest[m
+[[1;34mINFO[m] Running org.apache.maven.repository.legacy.resolver.conflict.[1mOldestConflictResolverTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in org.apache.maven.repository.legacy.resolver.conflict.[1mOldestConflictResolverTest[m
+[[1;34mINFO[m] Running org.apache.maven.repository.legacy.resolver.conflict.[1mNearestConflictResolverTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in org.apache.maven.repository.legacy.resolver.conflict.[1mNearestConflictResolverTest[m
+[[1;34mINFO[m] Running org.apache.maven.repository.legacy.resolver.[1mDefaultArtifactCollectorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m29[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.22 s - in org.apache.maven.repository.legacy.resolver.[1mDefaultArtifactCollectorTest[m
+[[1;34mINFO[m] Running org.apache.maven.repository.[1mLegacyRepositorySystemTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 s - in org.apache.maven.repository.[1mLegacyRepositorySystemTest[m
+[[1;34mINFO[m] Running org.apache.maven.repository.[1mMirrorProcessorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m8[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in org.apache.maven.repository.[1mMirrorProcessorTest[m
+[[1;34mINFO[m] Running org.apache.maven.repository.[1mDefaultMirrorSelectorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.repository.[1mDefaultMirrorSelectorTest[m
+[[1;34mINFO[m] Running org.apache.maven.repository.metadata.[1mDefaultGraphConflictResolutionPolicyTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.maven.repository.metadata.[1mDefaultGraphConflictResolutionPolicyTest[m
+[[1;34mINFO[m] Running org.apache.maven.repository.metadata.[1mDefaultClasspathTransformationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.maven.repository.metadata.[1mDefaultClasspathTransformationTest[m
+[[1;34mINFO[m] Running org.apache.maven.repository.metadata.[1mDefaultGraphConflictResolverTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.maven.repository.metadata.[1mDefaultGraphConflictResolverTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.path.[1mDefaultPathTranslatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.project.path.[1mDefaultPathTranslatorTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.[1mProjectClasspathTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s - in org.apache.maven.project.[1mProjectClasspathTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.inheritance.t11.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in org.apache.maven.project.inheritance.t11.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.inheritance.t10.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.apache.maven.project.inheritance.t10.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.inheritance.t03.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.apache.maven.project.inheritance.t03.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.inheritance.t04.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.apache.maven.project.inheritance.t04.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.inheritance.t05.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in org.apache.maven.project.inheritance.t05.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.inheritance.t02.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in org.apache.maven.project.inheritance.t02.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.inheritance.t12.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in org.apache.maven.project.inheritance.t12.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.inheritance.t12scm.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in org.apache.maven.project.inheritance.t12scm.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.inheritance.t07.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in org.apache.maven.project.inheritance.t07.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.inheritance.t00.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.apache.maven.project.inheritance.t00.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.inheritance.t09.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 s - in org.apache.maven.project.inheritance.t09.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.inheritance.t08.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.apache.maven.project.inheritance.t08.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.inheritance.t01.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in org.apache.maven.project.inheritance.t01.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.inheritance.t06.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.maven.project.inheritance.t06.[1mProjectInheritanceTest[m
+[[1;34mINFO[m] Running org.apache.maven.project.[1mModelUtilsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m15[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.maven.project.[1mModelUtilsTest[m
+[[1;34mINFO[m] Running org.apache.maven.artifact.deployer.[1mArtifactDeployerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in org.apache.maven.artifact.deployer.[1mArtifactDeployerTest[m
+[[1;34mINFO[m] Running org.apache.maven.artifact.repository.[1mMavenArtifactRepositoryTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.artifact.repository.[1mMavenArtifactRepositoryTest[m
+[[1;34mINFO[m] Running org.apache.maven.artifact.installer.[1mArtifactInstallerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.maven.artifact.installer.[1mArtifactInstallerTest[m
+[[1;34mINFO[m] Running org.apache.maven.artifact.transform.[1mTransformationManagerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.maven.artifact.transform.[1mTransformationManagerTest[m
+[[1;34mINFO[m] Running org.apache.maven.artifact.factory.[1mDefaultArtifactFactoryTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.maven.artifact.factory.[1mDefaultArtifactFactoryTest[m
+[[1;34mINFO[m] Running org.apache.maven.artifact.resolver.[1mDefaultArtifactResolverTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in org.apache.maven.artifact.resolver.[1mDefaultArtifactResolverTest[m
+[[1;34mINFO[m] Running org.apache.maven.artifact.resolver.[1mArtifactResolverTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m7[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.16 s - in org.apache.maven.artifact.resolver.[1mArtifactResolverTest[m
+[[1;34mINFO[m] Running org.apache.maven.artifact.resolver.[1mArtifactResolutionExceptionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.artifact.resolver.[1mArtifactResolutionExceptionTest[m
+[[1;34mINFO[m] Running org.apache.maven.artifact.resolver.filter.[1mScopeArtifactFilterTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.artifact.resolver.filter.[1mScopeArtifactFilterTest[m
+[[1;34mINFO[m] Running org.apache.maven.artifact.resolver.filter.[1mFilterHashEqualsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.artifact.resolver.filter.[1mFilterHashEqualsTest[m
+[[1;34mINFO[m] Running org.apache.maven.artifact.resolver.filter.[1mOrArtifactFilterTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.artifact.resolver.filter.[1mOrArtifactFilterTest[m
+[[1;34mINFO[m] Running org.apache.maven.artifact.resolver.filter.[1mAndArtifactFilterTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.artifact.resolver.filter.[1mAndArtifactFilterTest[m
+[[1;34mINFO[m] Running org.apache.maven.profiles.manager.[1mDefaultProfileManagerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.764 s - in org.apache.maven.profiles.manager.[1mDefaultProfileManagerTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 142, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:java[m [1m(modello)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/profiles.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] Working on model: src/main/mdo/paramdoc.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-reader[m [1m(modello)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/profiles.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] Working on model: src/main/mdo/paramdoc.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmodello-maven-plugin:1.11:xpp3-writer[m [1m(modello)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] outputDirectory: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello
+[[1;34mINFO[m] Working on model: src/main/mdo/profiles.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] Working on model: src/main/mdo/paramdoc.mdo
+[[1;34mINFO[m] Generating current version: 1.0.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 4 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 146 source files to /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/target/classes
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/src/main/java/org/apache/maven/project/interpolation/StringSearchModelInterpolator.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/src/main/java/org/apache/maven/project/interpolation/StringSearchModelInterpolator.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello/org/apache/maven/profiles/io/xpp3/ProfilesXpp3Reader.java: Some input files use unchecked or unsafe operations.
+[[1;34mINFO[m] /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello/org/apache/maven/profiles/io/xpp3/ProfilesXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mplexus-component-metadata:2.1.0:generate-metadata[m [1m(default)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] Discovered 34 component descriptors(s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 156 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mplexus-component-metadata:2.1.0:generate-test-metadata[m [1m(default)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] Discovered 12 component descriptors(s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] Skipping execution of surefire because it has already been run for this configuration
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.0:jar[m [1m(default-jar)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] Building jar: /Users/michael/git/build-bench/maven-maven-3.8.1/maven-compat/target/maven-compat-3.8.1.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.7.1:attach-descriptor[m [1m(attach-descriptor)[m @ [36mmaven-compat[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.maven:apache-maven[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Maven Distribution 3.8.1                         [15/15][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] Deleting /Users/michael/git/build-bench/maven-maven-3.8.1/apache-maven/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:3.1.1:unpack-dependencies[m [1m(unpack-jansi-native)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] Unpacking /Users/michael/.m2/repository/org/fusesource/jansi/jansi/1.17.1/jansi-1.17.1.jar to /Users/michael/git/build-bench/maven-maven-3.8.1/apache-maven/target/dependency with includes "META-INF/native/**" and excludes ""
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(test-compile)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /Users/michael/git/build-bench/maven-maven-3.8.1/apache-maven/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(test)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running org.apache.maven.settings.[1mGlobalSettingsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.maven.settings.[1mGlobalSettingsTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 1, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-version)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-bytecode-version)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(ban-known-bad-maven-versions)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.12:check[m [1m(rat-check)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:3.1.1:unpack-dependencies[m [1m(unpack-jansi-native)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] org.fusesource.jansi:jansi:jar:1.17.1 already exists in destination.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(check-java-compat)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(test-compile)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(test)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] Skipping execution of surefire because it has already been run for this configuration
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.7.1:attach-descriptor[m [1m(attach-descriptor)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] Attaching 'src/site/site.xml' site descriptor with classifier 'site'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:3.2.0:single[m [1m(create-distro-packages)[m @ [36mapache-maven[0;1m ---[m
+[[1;34mINFO[m] Reading assembly descriptor: src/main/assembly/bin.xml
+[[1;34mINFO[m] Building zip: /Users/michael/git/build-bench/maven-maven-3.8.1/apache-maven/target/apache-maven-3.8.1-bin.zip
+[[1;34mINFO[m] Building tar: /Users/michael/git/build-bench/maven-maven-3.8.1/apache-maven/target/apache-maven-3.8.1-bin.tar.gz
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Summary for Apache Maven 3.8.1:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Apache Maven ....................................... [1;32mSUCCESS[m [  1.205 s]
+[[1;34mINFO[m] Maven Model ........................................ [1;32mSUCCESS[m [  3.294 s]
+[[1;34mINFO[m] Maven Artifact ..................................... [1;32mSUCCESS[m [  1.335 s]
+[[1;34mINFO[m] Maven Plugin API ................................... [1;32mSUCCESS[m [  1.418 s]
+[[1;34mINFO[m] Maven Builder Support .............................. [1;32mSUCCESS[m [  1.072 s]
+[[1;34mINFO[m] Maven Model Builder ................................ [1;32mSUCCESS[m [  2.534 s]
+[[1;34mINFO[m] Maven Settings ..................................... [1;32mSUCCESS[m [  0.577 s]
+[[1;34mINFO[m] Maven Settings Builder ............................. [1;32mSUCCESS[m [  1.170 s]
+[[1;34mINFO[m] Maven Repository Metadata Model .................... [1;32mSUCCESS[m [  0.451 s]
+[[1;34mINFO[m] Maven Artifact Resolver Provider ................... [1;32mSUCCESS[m [  2.447 s]
+[[1;34mINFO[m] Maven Core ......................................... [1;32mSUCCESS[m [  9.824 s]
+[[1;34mINFO[m] Maven SLF4J Simple Provider ........................ [1;32mSUCCESS[m [  0.570 s]
+[[1;34mINFO[m] Maven Embedder ..................................... [1;32mSUCCESS[m [  2.538 s]
+[[1;34mINFO[m] Maven Compat ....................................... [1;32mSUCCESS[m [  5.424 s]
+[[1;34mINFO[m] Apache Maven Distribution .......................... [1;32mSUCCESS[m [  3.104 s]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  37.083 s
+[[1;34mINFO[m] Finished at: 2021-11-13T02:21:56+01:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+20211113T012156
+ELAPSED TIME: 38 s
