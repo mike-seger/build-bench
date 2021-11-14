@@ -96,3 +96,6 @@ runIt spring-data-jdbc-2.2.1 "./mvnw clean test package"
 
 # fix old names
 # rename "s/_(c[01])_(.*).txt/_\2_\1_.txt/" *.txt
+
+# Count DL
+# ls reports/run* | while read f ; do echo -n "$f: " ; grep -i download "$f"| wc -l; done
