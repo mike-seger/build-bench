@@ -1,0 +1,666 @@
+20211114T163647
+darwin-20.5.0-x86-64-i386
+spring-data-jdbc-2.2.1
+./mvnw clean test package -fail-fast -Dsurefire.skipAfterFailureCount=1
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Spring Data Relational Parent                                      [pom]
+[INFO] Spring Data Relational                                             [jar]
+[INFO] Spring Data JDBC                                                   [jar]
+[INFO] Spring Data JDBC - Distribution                                    [pom]
+[INFO] 
+[INFO] -------< org.springframework.data:spring-data-relational-parent >-------
+[INFO] Building Spring Data Relational Parent 2.2.1                       [1/4]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ spring-data-relational-parent ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-maven-version) @ spring-data-relational-parent ---
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.5.0:compile (compile) @ spring-data-relational-parent ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ spring-data-relational-parent ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.5.0:test-compile (test-compile) @ spring-data-relational-parent ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ spring-data-relational-parent ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-maven-version) @ spring-data-relational-parent ---
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.5.0:compile (compile) @ spring-data-relational-parent ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ spring-data-relational-parent ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.5.0:test-compile (test-compile) @ spring-data-relational-parent ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ spring-data-relational-parent ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.1.0:add-source (add-kotlin-source) @ spring-data-relational-parent ---
+[INFO] Source directory: /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/src/main/kotlin added.
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (attach-sources) > generate-sources @ spring-data-relational-parent >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-maven-version) @ spring-data-relational-parent ---
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (attach-sources) < generate-sources @ spring-data-relational-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (attach-sources) @ spring-data-relational-parent ---
+[INFO] 
+[INFO] ----------< org.springframework.data:spring-data-relational >-----------
+[INFO] Building Spring Data Relational 2.2.1                              [2/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ spring-data-relational ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-relational/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-maven-version) @ spring-data-relational ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-data-relational ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-relational/src/main/resources
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.5.0:compile (compile) @ spring-data-relational ---
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ spring-data-relational ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 210 source files to /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-relational/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-data-relational ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-relational/src/test/resources
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.5.0:test-compile (test-compile) @ spring-data-relational ---
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ spring-data-relational ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 45 source files to /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-relational/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ spring-data-relational ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.springframework.data.relational.repository.query.ParameterMetadataProviderUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.557 s - in org.springframework.data.relational.repository.query.ParameterMetadataProviderUnitTests
+[INFO] Running org.springframework.data.relational.repository.query.CriteriaFactoryUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in org.springframework.data.relational.repository.query.CriteriaFactoryUnitTests
+[INFO] Running org.springframework.data.relational.repository.query.RelationalExampleMapperTests
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.499 s - in org.springframework.data.relational.repository.query.RelationalExampleMapperTests
+[INFO] Running org.springframework.data.relational.core.mapping.RelationalMappingContextUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.springframework.data.relational.core.mapping.RelationalMappingContextUnitTests
+[INFO] Running org.springframework.data.relational.core.mapping.NamingStrategyUnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 s - in org.springframework.data.relational.core.mapping.NamingStrategyUnitTests
+[INFO] Running org.springframework.data.relational.core.mapping.DerivedSqlIdentifierUnitTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.249 s - in org.springframework.data.relational.core.mapping.DerivedSqlIdentifierUnitTests
+[INFO] Running org.springframework.data.relational.core.mapping.BasicRelationalPersistentPropertyUnitTests
+[ERROR] WARNING: An illegal reflective access operation has occurred
+[ERROR] WARNING: Illegal reflective access by org.springframework.util.ReflectionUtils (file:/Users/michaelseger/.m2/repository/org/springframework/spring-core/5.3.7/spring-core-5.3.7.jar) to field java.util.UUID.mostSigBits
+[ERROR] WARNING: Please consider reporting this to the maintainers of org.springframework.util.ReflectionUtils
+[ERROR] WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[ERROR] WARNING: All illegal access operations will be denied in a future release
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.412 s - in org.springframework.data.relational.core.mapping.BasicRelationalPersistentPropertyUnitTests
+[INFO] Running org.springframework.data.relational.core.mapping.RelationalPersistentEntityImplUnitTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.springframework.data.relational.core.mapping.RelationalPersistentEntityImplUnitTests
+[INFO] Running org.springframework.data.relational.core.mapping.event.AbstractRelationalEventListenerUnitTests
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.springframework.data.relational.core.mapping.event.AbstractRelationalEventListenerUnitTests
+[INFO] Running org.springframework.data.relational.core.conversion.RelationalEntityWriterUnitTests
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.781 s - in org.springframework.data.relational.core.conversion.RelationalEntityWriterUnitTests
+[INFO] Running org.springframework.data.relational.core.conversion.RelationalEntityInsertWriterUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in org.springframework.data.relational.core.conversion.RelationalEntityInsertWriterUnitTests
+[INFO] Running org.springframework.data.relational.core.conversion.BasicRelationalConverterUnitTests
+17:37:13.912 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding user defined converter from class org.springframework.data.relational.core.conversion.BasicRelationalConverterUnitTests$MyValue to class java.lang.String as writing converter.
+17:37:13.925 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding user defined converter from class java.lang.String to class org.springframework.data.relational.core.conversion.BasicRelationalConverterUnitTests$MyValue as reading converter.
+17:37:13.925 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter.
+17:37:13.925 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter.
+17:37:13.925 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.LocalDate as reading converter.
+17:37:13.925 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalDate to class java.util.Date as writing converter.
+17:37:13.925 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.LocalTime as reading converter.
+17:37:13.925 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalTime to class java.util.Date as writing converter.
+17:37:13.925 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.Instant as reading converter.
+17:37:13.926 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Instant to class java.util.Date as writing converter.
+17:37:13.926 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter.
+17:37:13.926 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter.
+17:37:13.926 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.ZoneId to class java.lang.String as writing converter.
+17:37:13.926 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.ZoneId as reading converter.
+17:37:13.926 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Duration to class java.lang.String as writing converter.
+17:37:13.926 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.Duration as reading converter.
+17:37:13.926 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Period to class java.lang.String as writing converter.
+17:37:13.926 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.Period as reading converter.
+17:37:13.926 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.LocalDate as reading converter.
+17:37:13.926 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter.
+17:37:13.926 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.Instant as reading converter.
+17:37:13.944 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding user defined converter from class org.springframework.data.relational.core.conversion.BasicRelationalConverterUnitTests$MyValue to class java.lang.String as writing converter.
+17:37:13.944 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding user defined converter from class java.lang.String to class org.springframework.data.relational.core.conversion.BasicRelationalConverterUnitTests$MyValue as reading converter.
+17:37:13.944 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter.
+17:37:13.945 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter.
+17:37:13.945 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.LocalDate as reading converter.
+17:37:13.945 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalDate to class java.util.Date as writing converter.
+17:37:13.945 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.LocalTime as reading converter.
+17:37:13.945 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalTime to class java.util.Date as writing converter.
+17:37:13.945 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.Instant as reading converter.
+17:37:13.947 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Instant to class java.util.Date as writing converter.
+17:37:13.947 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter.
+17:37:13.947 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter.
+17:37:13.948 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.ZoneId to class java.lang.String as writing converter.
+17:37:13.948 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.ZoneId as reading converter.
+17:37:13.948 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Duration to class java.lang.String as writing converter.
+17:37:13.948 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.Duration as reading converter.
+17:37:13.948 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Period to class java.lang.String as writing converter.
+17:37:13.948 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.Period as reading converter.
+17:37:13.948 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.LocalDate as reading converter.
+17:37:13.948 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter.
+17:37:13.948 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.Instant as reading converter.
+17:37:13.954 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding user defined converter from class org.springframework.data.relational.core.conversion.BasicRelationalConverterUnitTests$MyValue to class java.lang.String as writing converter.
+17:37:13.954 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding user defined converter from class java.lang.String to class org.springframework.data.relational.core.conversion.BasicRelationalConverterUnitTests$MyValue as reading converter.
+17:37:13.954 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter.
+17:37:13.954 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter.
+17:37:13.954 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.LocalDate as reading converter.
+17:37:13.955 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalDate to class java.util.Date as writing converter.
+17:37:13.955 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.LocalTime as reading converter.
+17:37:13.955 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalTime to class java.util.Date as writing converter.
+17:37:13.955 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.Instant as reading converter.
+17:37:13.955 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Instant to class java.util.Date as writing converter.
+17:37:13.955 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter.
+17:37:13.955 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter.
+17:37:13.955 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.ZoneId to class java.lang.String as writing converter.
+17:37:13.955 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.ZoneId as reading converter.
+17:37:13.955 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Duration to class java.lang.String as writing converter.
+17:37:13.955 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.Duration as reading converter.
+17:37:13.956 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Period to class java.lang.String as writing converter.
+17:37:13.956 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.Period as reading converter.
+17:37:13.956 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.LocalDate as reading converter.
+17:37:13.956 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter.
+17:37:13.956 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.Instant as reading converter.
+17:37:13.964 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding user defined converter from class org.springframework.data.relational.core.conversion.BasicRelationalConverterUnitTests$MyValue to class java.lang.String as writing converter.
+17:37:13.965 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding user defined converter from class java.lang.String to class org.springframework.data.relational.core.conversion.BasicRelationalConverterUnitTests$MyValue as reading converter.
+17:37:13.965 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter.
+17:37:13.965 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter.
+17:37:13.965 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.LocalDate as reading converter.
+17:37:13.965 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalDate to class java.util.Date as writing converter.
+17:37:13.965 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.LocalTime as reading converter.
+17:37:13.965 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalTime to class java.util.Date as writing converter.
+17:37:13.966 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.Instant as reading converter.
+17:37:13.966 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Instant to class java.util.Date as writing converter.
+17:37:13.966 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter.
+17:37:13.967 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter.
+17:37:13.967 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.ZoneId to class java.lang.String as writing converter.
+17:37:13.968 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.ZoneId as reading converter.
+17:37:13.968 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Duration to class java.lang.String as writing converter.
+17:37:13.968 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.Duration as reading converter.
+17:37:13.968 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Period to class java.lang.String as writing converter.
+17:37:13.968 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.Period as reading converter.
+17:37:13.968 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.LocalDate as reading converter.
+17:37:13.968 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter.
+17:37:13.968 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.Instant as reading converter.
+17:37:13.984 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding user defined converter from class org.springframework.data.relational.core.conversion.BasicRelationalConverterUnitTests$MyValue to class java.lang.String as writing converter.
+17:37:13.984 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding user defined converter from class java.lang.String to class org.springframework.data.relational.core.conversion.BasicRelationalConverterUnitTests$MyValue as reading converter.
+17:37:13.984 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter.
+17:37:13.984 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter.
+17:37:13.985 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.LocalDate as reading converter.
+17:37:13.985 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalDate to class java.util.Date as writing converter.
+17:37:13.985 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.LocalTime as reading converter.
+17:37:13.985 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalTime to class java.util.Date as writing converter.
+17:37:13.985 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.Instant as reading converter.
+17:37:13.985 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Instant to class java.util.Date as writing converter.
+17:37:13.985 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter.
+17:37:13.985 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter.
+17:37:13.985 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.ZoneId to class java.lang.String as writing converter.
+17:37:13.985 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.ZoneId as reading converter.
+17:37:13.985 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Duration to class java.lang.String as writing converter.
+17:37:13.985 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.Duration as reading converter.
+17:37:13.986 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Period to class java.lang.String as writing converter.
+17:37:13.986 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.Period as reading converter.
+17:37:13.986 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.LocalDate as reading converter.
+17:37:13.986 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter.
+17:37:13.986 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.Instant as reading converter.
+17:37:14.007 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding user defined converter from class org.springframework.data.relational.core.conversion.BasicRelationalConverterUnitTests$MyValue to class java.lang.String as writing converter.
+17:37:14.007 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding user defined converter from class java.lang.String to class org.springframework.data.relational.core.conversion.BasicRelationalConverterUnitTests$MyValue as reading converter.
+17:37:14.008 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter.
+17:37:14.008 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter.
+17:37:14.008 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.LocalDate as reading converter.
+17:37:14.008 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalDate to class java.util.Date as writing converter.
+17:37:14.008 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.LocalTime as reading converter.
+17:37:14.008 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalTime to class java.util.Date as writing converter.
+17:37:14.008 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.util.Date to class java.time.Instant as reading converter.
+17:37:14.008 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Instant to class java.util.Date as writing converter.
+17:37:14.008 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter.
+17:37:14.008 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter.
+17:37:14.009 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.ZoneId to class java.lang.String as writing converter.
+17:37:14.009 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.ZoneId as reading converter.
+17:37:14.009 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Duration to class java.lang.String as writing converter.
+17:37:14.009 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.Duration as reading converter.
+17:37:14.009 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.time.Period to class java.lang.String as writing converter.
+17:37:14.009 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.Period as reading converter.
+17:37:14.009 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.LocalDate as reading converter.
+17:37:14.009 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter.
+17:37:14.009 [main] DEBUG org.springframework.data.convert.CustomConversions - Adding converter from class java.lang.String to class java.time.Instant as reading converter.
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.139 s - in org.springframework.data.relational.core.conversion.BasicRelationalConverterUnitTests
+[INFO] Running org.springframework.data.relational.core.conversion.DbActionExecutionExceptionUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.178 s - in org.springframework.data.relational.core.conversion.DbActionExecutionExceptionUnitTests
+[INFO] Running org.springframework.data.relational.core.conversion.RelationalEntityDeleteWriterUnitTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in org.springframework.data.relational.core.conversion.RelationalEntityDeleteWriterUnitTests
+[INFO] Running org.springframework.data.relational.core.conversion.RelationalEntityUpdateWriterUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.springframework.data.relational.core.conversion.RelationalEntityUpdateWriterUnitTests
+[INFO] Running org.springframework.data.relational.core.dialect.PostgresDialectUnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.255 s - in org.springframework.data.relational.core.dialect.PostgresDialectUnitTests
+[INFO] Running org.springframework.data.relational.core.dialect.HsqlDbDialectUnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.springframework.data.relational.core.dialect.HsqlDbDialectUnitTests
+[INFO] Running org.springframework.data.relational.core.dialect.MySqlDialectUnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.springframework.data.relational.core.dialect.MySqlDialectUnitTests
+[INFO] Running org.springframework.data.relational.core.dialect.EscaperUnitTests
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.springframework.data.relational.core.dialect.EscaperUnitTests
+[INFO] Running org.springframework.data.relational.core.dialect.PostgresDialectRenderingUnitTests
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 s - in org.springframework.data.relational.core.dialect.PostgresDialectRenderingUnitTests
+[INFO] Running org.springframework.data.relational.core.dialect.MySqlDialectRenderingUnitTests
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.springframework.data.relational.core.dialect.MySqlDialectRenderingUnitTests
+[INFO] Running org.springframework.data.relational.core.dialect.SqlServerDialectUnitTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.springframework.data.relational.core.dialect.SqlServerDialectUnitTests
+[INFO] Running org.springframework.data.relational.core.dialect.SqlServerDialectRenderingUnitTests
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in org.springframework.data.relational.core.dialect.SqlServerDialectRenderingUnitTests
+[INFO] Running org.springframework.data.relational.core.query.UpdateUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.springframework.data.relational.core.query.UpdateUnitTests
+[INFO] Running org.springframework.data.relational.core.query.QueryUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.springframework.data.relational.core.query.QueryUnitTests
+[INFO] Running org.springframework.data.relational.core.query.CriteriaUnitTests
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.springframework.data.relational.core.query.CriteriaUnitTests
+[INFO] Running org.springframework.data.relational.core.sql.InTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.springframework.data.relational.core.sql.InTests
+[INFO] Running org.springframework.data.relational.core.sql.DefaultIdentifierProcessingUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.springframework.data.relational.core.sql.DefaultIdentifierProcessingUnitTests
+[INFO] Running org.springframework.data.relational.core.sql.DeleteValidatorUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.springframework.data.relational.core.sql.DeleteValidatorUnitTests
+[INFO] Running org.springframework.data.relational.core.sql.InsertBuilderUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.springframework.data.relational.core.sql.InsertBuilderUnitTests
+[INFO] Running org.springframework.data.relational.core.sql.ConditionsUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.springframework.data.relational.core.sql.ConditionsUnitTests
+[INFO] Running org.springframework.data.relational.core.sql.render.OrderByClauseVisitorUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.springframework.data.relational.core.sql.render.OrderByClauseVisitorUnitTests
+[INFO] Running org.springframework.data.relational.core.sql.render.ConditionRendererUnitTests
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 s - in org.springframework.data.relational.core.sql.render.ConditionRendererUnitTests
+[INFO] Running org.springframework.data.relational.core.sql.render.InsertRendererUnitTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.springframework.data.relational.core.sql.render.InsertRendererUnitTests
+[INFO] Running org.springframework.data.relational.core.sql.render.UpdateRendererUnitTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.springframework.data.relational.core.sql.render.UpdateRendererUnitTests
+[INFO] Running org.springframework.data.relational.core.sql.render.DeleteRendererUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.springframework.data.relational.core.sql.render.DeleteRendererUnitTests
+[INFO] Running org.springframework.data.relational.core.sql.render.SelectRendererUnitTests
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s - in org.springframework.data.relational.core.sql.render.SelectRendererUnitTests
+[INFO] Running org.springframework.data.relational.core.sql.SqlIdentifierUnitTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.springframework.data.relational.core.sql.SqlIdentifierUnitTests
+[INFO] Running org.springframework.data.relational.core.sql.DeleteBuilderUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.springframework.data.relational.core.sql.DeleteBuilderUnitTests
+[INFO] Running org.springframework.data.relational.core.sql.UpdateBuilderUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.springframework.data.relational.core.sql.UpdateBuilderUnitTests
+[INFO] Running org.springframework.data.relational.core.sql.SelectBuilderUnitTests
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.springframework.data.relational.core.sql.SelectBuilderUnitTests
+[INFO] Running org.springframework.data.relational.core.sql.SelectValidatorUnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.springframework.data.relational.core.sql.SelectValidatorUnitTests
+[INFO] Running org.springframework.data.relational.degraph.DependencyTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.472 s - in org.springframework.data.relational.degraph.DependencyTests
+[INFO] Running org.springframework.data.relational.core.query.CriteriaStepExtensionsTests
+17:37:21.452 [main] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for CriteriaStep name=#1
+17:37:21.814 [main] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Criteria name=#2
+17:37:23.922 [main] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Criteria name=child of #1#3
+17:37:24.126 [main] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering Criteria(#2) on CriteriaStep(#1).in([test])
+17:37:24.150 [main] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for CriteriaStep name=#4
+17:37:24.150 [main] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Criteria name=#5
+17:37:24.166 [main] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Criteria name=child of #4#6
+17:37:24.173 [main] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering Criteria(#5) on CriteriaStep(#4).in([[test]])
+17:37:24.175 [main] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Criteria name=child of #4#7
+17:37:24.177 [main] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for CriteriaStep name=#8
+17:37:24.177 [main] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Criteria name=#9
+17:37:24.181 [main] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Criteria name=child of #8#10
+17:37:24.182 [main] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering Criteria(#9) on CriteriaStep(#8).is(test)
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.594 s - in org.springframework.data.relational.core.query.CriteriaStepExtensionsTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 266, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-maven-version) @ spring-data-relational ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-data-relational ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-relational/src/main/resources
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.5.0:compile (compile) @ spring-data-relational ---
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ spring-data-relational ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 210 source files to /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-relational/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-data-relational ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-relational/src/test/resources
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.5.0:test-compile (test-compile) @ spring-data-relational ---
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ spring-data-relational ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 45 source files to /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-relational/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ spring-data-relational ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.1.0:add-source (add-kotlin-source) @ spring-data-relational ---
+[INFO] Source directory: /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-relational/src/main/kotlin added.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ spring-data-relational ---
+[INFO] Building jar: /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-relational/target/spring-data-relational-2.2.1.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (attach-sources) > generate-sources @ spring-data-relational >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-maven-version) @ spring-data-relational ---
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (attach-sources) < generate-sources @ spring-data-relational <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (attach-sources) @ spring-data-relational ---
+[INFO] Building jar: /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-relational/target/spring-data-relational-2.2.1-sources.jar
+[INFO] 
+[INFO] -------------< org.springframework.data:spring-data-jdbc >--------------
+[INFO] Building Spring Data JDBC 2.2.1                                    [3/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ spring-data-jdbc ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-jdbc/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-maven-version) @ spring-data-jdbc ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-data-jdbc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.5.0:compile (compile) @ spring-data-jdbc ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ spring-data-jdbc ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 75 source files to /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-jdbc/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-data-jdbc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 176 resources
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.5.0:test-compile (test-compile) @ spring-data-jdbc ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ spring-data-jdbc ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 85 source files to /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-jdbc/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ spring-data-jdbc ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.springframework.data.jdbc.mapping.model.NamingStrategyUnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.597 s - in org.springframework.data.jdbc.mapping.model.NamingStrategyUnitTests
+[INFO] Running org.springframework.data.jdbc.repository.JdbcRepositoryEmbeddedIntegrationTests
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.776 s - in org.springframework.data.jdbc.repository.JdbcRepositoryEmbeddedIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.JdbcRepositoryResultSetExtractorIntegrationTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.271 s - in org.springframework.data.jdbc.repository.JdbcRepositoryResultSetExtractorIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.JdbcRepositoryWithMapsIntegrationTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.118 s - in org.springframework.data.jdbc.repository.JdbcRepositoryWithMapsIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.JdbcRepositoryEmbeddedImmutableIntegrationTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 s - in org.springframework.data.jdbc.repository.JdbcRepositoryEmbeddedImmutableIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.JdbcRepositoryWithCollectionsAndManuallyAssignedIdHsqlIntegrationTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.225 s - in org.springframework.data.jdbc.repository.JdbcRepositoryWithCollectionsAndManuallyAssignedIdHsqlIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.JdbcRepositoryEmbeddedWithCollectionIntegrationTests
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.359 s - in org.springframework.data.jdbc.repository.JdbcRepositoryEmbeddedWithCollectionIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.JdbcRepositoryWithCollectionsIntegrationTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.186 s - in org.springframework.data.jdbc.repository.JdbcRepositoryWithCollectionsIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.config.MyBatisJdbcConfigurationIntegrationTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.744 s - in org.springframework.data.jdbc.repository.config.MyBatisJdbcConfigurationIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.config.JdbcRepositoryConfigExtensionUnitTests
+2021-11-14 17:37:48,776  INFO .RepositoryConfigurationExtensionSupport: 349 - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.springframework.data.jdbc.repository.config.EnableJdbcRepositoriesBrokenTransactionManagerRefIntegrationTests$DummyRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-14 17:37:48,781  INFO .RepositoryConfigurationExtensionSupport: 349 - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.springframework.data.jdbc.repository.config.EnableJdbcRepositoriesIntegrationTests$DummyRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-14 17:37:48,787  INFO .RepositoryConfigurationExtensionSupport: 349 - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.springframework.data.jdbc.repository.config.JdbcRepositoryConfigExtensionUnitTests$UnannotatedRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 s - in org.springframework.data.jdbc.repository.config.JdbcRepositoryConfigExtensionUnitTests
+[INFO] Running org.springframework.data.jdbc.repository.config.ConfigurableRowMapperMapUnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s - in org.springframework.data.jdbc.repository.config.ConfigurableRowMapperMapUnitTests
+[INFO] Running org.springframework.data.jdbc.repository.config.EnableJdbcRepositoriesBrokenTransactionManagerRefIntegrationTests
+2021-11-14 17:37:48,893  INFO y.config.RepositoryConfigurationDelegate: 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-14 17:37:48,953  INFO y.config.RepositoryConfigurationDelegate: 201 - Finished Spring Data repository scanning in 52 ms. Found 1 JDBC repository interfaces.
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.23 s - in org.springframework.data.jdbc.repository.config.EnableJdbcRepositoriesBrokenTransactionManagerRefIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.config.AbstractJdbcConfigurationIntegrationTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.springframework.data.jdbc.repository.config.AbstractJdbcConfigurationIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.config.EnableJdbcRepositoriesIntegrationTests
+2021-11-14 17:37:49,149  INFO y.config.RepositoryConfigurationDelegate: 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-14 17:37:49,201  INFO y.config.RepositoryConfigurationDelegate: 201 - Finished Spring Data repository scanning in 51 ms. Found 1 JDBC repository interfaces.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.24 s - in org.springframework.data.jdbc.repository.config.EnableJdbcRepositoriesIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.JdbcRepositoryCustomConversionIntegrationTests
+2021-11-14 17:37:49,447  WARN framework.data.convert.CustomConversions: 271 - Registering converter from class java.lang.String to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.914 s - in org.springframework.data.jdbc.repository.JdbcRepositoryCustomConversionIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.JdbcRepositoryWithListsIntegrationTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.208 s - in org.springframework.data.jdbc.repository.JdbcRepositoryWithListsIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.StringBasedJdbcQueryMappingConfigurationIntegrationTests
+2021-11-14 17:37:50,509  INFO y.config.RepositoryConfigurationDelegate: 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-14 17:37:50,626  INFO y.config.RepositoryConfigurationDelegate: 201 - Finished Spring Data repository scanning in 115 ms. Found 1 JDBC repository interfaces.
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.259 s - in org.springframework.data.jdbc.repository.StringBasedJdbcQueryMappingConfigurationIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.JdbcRepositoryIdGenerationIntegrationTests
+2021-11-14 17:37:50,774  INFO y.config.RepositoryConfigurationDelegate: 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-14 17:37:50,883  INFO y.config.RepositoryConfigurationDelegate: 201 - Finished Spring Data repository scanning in 108 ms. Found 24 JDBC repository interfaces.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.594 s - in org.springframework.data.jdbc.repository.JdbcRepositoryIdGenerationIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.JdbcRepositoryPropertyConversionIntegrationTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.224 s - in org.springframework.data.jdbc.repository.JdbcRepositoryPropertyConversionIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.JdbcRepositoryEmbeddedNotInAggregateRootIntegrationTests
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 s - in org.springframework.data.jdbc.repository.JdbcRepositoryEmbeddedNotInAggregateRootIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.JdbcRepositoryCrossAggregateHsqlIntegrationTests
+2021-11-14 17:37:52,801  INFO y.config.RepositoryConfigurationDelegate: 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-14 17:37:52,885  INFO y.config.RepositoryConfigurationDelegate: 201 - Finished Spring Data repository scanning in 83 ms. Found 1 JDBC repository interfaces.
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.185 s - in org.springframework.data.jdbc.repository.JdbcRepositoryCrossAggregateHsqlIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.support.JdbcRepositoryFactoryBeanUnitTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.342 s - in org.springframework.data.jdbc.repository.support.JdbcRepositoryFactoryBeanUnitTests
+[INFO] Running org.springframework.data.jdbc.repository.support.SimpleJdbcRepositoryUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 s - in org.springframework.data.jdbc.repository.support.SimpleJdbcRepositoryUnitTests
+[INFO] Running org.springframework.data.jdbc.repository.support.JdbcQueryLookupStrategyUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.172 s - in org.springframework.data.jdbc.repository.support.JdbcQueryLookupStrategyUnitTests
+[INFO] Running org.springframework.data.jdbc.repository.JdbcRepositoryIntegrationTests
+[WARNING] Tests run: 27, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.338 s - in org.springframework.data.jdbc.repository.JdbcRepositoryIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.JdbcRepositoryConcurrencyIntegrationTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.529 s - in org.springframework.data.jdbc.repository.JdbcRepositoryConcurrencyIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.query.QueryAnnotationHsqlIntegrationTests
+2021-11-14 17:37:54,470  INFO y.config.RepositoryConfigurationDelegate: 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-14 17:37:54,507  INFO y.config.RepositoryConfigurationDelegate: 201 - Finished Spring Data repository scanning in 31 ms. Found 1 JDBC repository interfaces.
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.247 s - in org.springframework.data.jdbc.repository.query.QueryAnnotationHsqlIntegrationTests
+[INFO] Running org.springframework.data.jdbc.repository.query.PartTreeJdbcQueryUnitTests
+[INFO] Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.572 s - in org.springframework.data.jdbc.repository.query.PartTreeJdbcQueryUnitTests
+[INFO] Running org.springframework.data.jdbc.repository.query.JdbcQueryMethodUnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 s - in org.springframework.data.jdbc.repository.query.JdbcQueryMethodUnitTests
+[INFO] Running org.springframework.data.jdbc.repository.query.QueryMapperUnitTests
+[INFO] Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 s - in org.springframework.data.jdbc.repository.query.QueryMapperUnitTests
+[INFO] Running org.springframework.data.jdbc.repository.query.StringBasedJdbcQueryUnitTests
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.springframework.data.jdbc.repository.query.StringBasedJdbcQueryUnitTests
+[INFO] Running org.springframework.data.jdbc.repository.SimpleJdbcRepositoryEventsUnitTests
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.208 s - in org.springframework.data.jdbc.repository.SimpleJdbcRepositoryEventsUnitTests
+[INFO] Running org.springframework.data.jdbc.repository.JdbcRepositoryEmbeddedWithReferenceIntegrationTests
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 s - in org.springframework.data.jdbc.repository.JdbcRepositoryEmbeddedWithReferenceIntegrationTests
+[INFO] Running org.springframework.data.jdbc.core.mapping.BasicJdbcPersistentPropertyUnitTests
+[ERROR] WARNING: An illegal reflective access operation has occurred
+[ERROR] WARNING: Illegal reflective access by org.springframework.util.ReflectionUtils (file:/Users/michaelseger/.m2/repository/org/springframework/spring-core/5.3.7/spring-core-5.3.7.jar) to field java.util.UUID.mostSigBits
+[ERROR] WARNING: Please consider reporting this to the maintainers of org.springframework.util.ReflectionUtils
+[ERROR] WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[ERROR] WARNING: All illegal access operations will be denied in a future release
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in org.springframework.data.jdbc.core.mapping.BasicJdbcPersistentPropertyUnitTests
+[INFO] Running org.springframework.data.jdbc.core.JdbcAggregateTemplateIntegrationTests
+[WARNING] Tests run: 42, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.015 s - in org.springframework.data.jdbc.core.JdbcAggregateTemplateIntegrationTests
+[INFO] Running org.springframework.data.jdbc.core.JdbcAggregateChangeExecutorContextUnitTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in org.springframework.data.jdbc.core.JdbcAggregateChangeExecutorContextUnitTests
+[INFO] Running org.springframework.data.jdbc.core.PersistentPropertyPathExtensionUnitTests
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.354 s - in org.springframework.data.jdbc.core.PersistentPropertyPathExtensionUnitTests
+[INFO] Running org.springframework.data.jdbc.core.JdbcAggregateChangeExecutorContextImmutableUnitTests
+[WARNING] Tests run: 5, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.051 s - in org.springframework.data.jdbc.core.JdbcAggregateChangeExecutorContextImmutableUnitTests
+[INFO] Running org.springframework.data.jdbc.core.ImmutableAggregateTemplateHsqlIntegrationTests
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.191 s - in org.springframework.data.jdbc.core.ImmutableAggregateTemplateHsqlIntegrationTests
+[INFO] Running org.springframework.data.jdbc.core.AggregateChangeIdGenerationUnitTests
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.467 s - in org.springframework.data.jdbc.core.AggregateChangeIdGenerationUnitTests
+[INFO] Running org.springframework.data.jdbc.core.JdbcAggregateTemplateUnitTests
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 s - in org.springframework.data.jdbc.core.JdbcAggregateTemplateUnitTests
+[INFO] Running org.springframework.data.jdbc.core.convert.EntityRowMapperUnitTests
+[INFO] Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.825 s - in org.springframework.data.jdbc.core.convert.EntityRowMapperUnitTests
+[INFO] Running org.springframework.data.jdbc.core.convert.SqlGeneratorFixedNamingStrategyUnitTests
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in org.springframework.data.jdbc.core.convert.SqlGeneratorFixedNamingStrategyUnitTests
+[INFO] Running org.springframework.data.jdbc.core.convert.IterableOfEntryToMapConverterUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.springframework.data.jdbc.core.convert.IterableOfEntryToMapConverterUnitTests
+[INFO] Running org.springframework.data.jdbc.core.convert.SqlGeneratorContextBasedNamingStrategyUnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s - in org.springframework.data.jdbc.core.convert.SqlGeneratorContextBasedNamingStrategyUnitTests
+[INFO] Running org.springframework.data.jdbc.core.convert.ArrayUtilsUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in org.springframework.data.jdbc.core.convert.ArrayUtilsUnitTests
+[INFO] Running org.springframework.data.jdbc.core.convert.BasicJdbcConverterUnitTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 s - in org.springframework.data.jdbc.core.convert.BasicJdbcConverterUnitTests
+[INFO] Running org.springframework.data.jdbc.core.convert.IdentifierUnitTests
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.springframework.data.jdbc.core.convert.IdentifierUnitTests
+[INFO] Running org.springframework.data.jdbc.core.convert.JdbcCustomConversionsUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.springframework.data.jdbc.core.convert.JdbcCustomConversionsUnitTests
+[INFO] Running org.springframework.data.jdbc.core.convert.SqlGeneratorUnitTests
+[INFO] Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.217 s - in org.springframework.data.jdbc.core.convert.SqlGeneratorUnitTests
+[INFO] Running org.springframework.data.jdbc.core.convert.SqlIdentifierParameterSourceUnitTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.199 s - in org.springframework.data.jdbc.core.convert.SqlIdentifierParameterSourceUnitTests
+[INFO] Running org.springframework.data.jdbc.core.convert.BasicRelationalConverterAggregateReferenceUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.springframework.data.jdbc.core.convert.BasicRelationalConverterAggregateReferenceUnitTests
+[INFO] Running org.springframework.data.jdbc.core.convert.SqlGeneratorEmbeddedUnitTests
+[WARNING] Tests run: 15, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.077 s - in org.springframework.data.jdbc.core.convert.SqlGeneratorEmbeddedUnitTests
+[INFO] Running org.springframework.data.jdbc.core.convert.DefaultDataAccessStrategyUnitTests
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 s - in org.springframework.data.jdbc.core.convert.DefaultDataAccessStrategyUnitTests
+[INFO] Running org.springframework.data.jdbc.core.convert.CascadingDataAccessStrategyUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 s - in org.springframework.data.jdbc.core.convert.CascadingDataAccessStrategyUnitTests
+[INFO] Running org.springframework.data.jdbc.core.convert.JdbcIdentifierBuilderUnitTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.springframework.data.jdbc.core.convert.JdbcIdentifierBuilderUnitTests
+[INFO] Running org.springframework.data.jdbc.core.JdbcAggregateTemplateSchemaIntegrationTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 s - in org.springframework.data.jdbc.core.JdbcAggregateTemplateSchemaIntegrationTests
+[INFO] Running org.springframework.data.jdbc.mybatis.MyBatisHsqlIntegrationTests
+2021-11-14 17:38:00,135  INFO y.config.RepositoryConfigurationDelegate: 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-14 17:38:00,151  INFO y.config.RepositoryConfigurationDelegate: 201 - Finished Spring Data repository scanning in 13 ms. Found 2 JDBC repository interfaces.
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.409 s - in org.springframework.data.jdbc.mybatis.MyBatisHsqlIntegrationTests
+[INFO] Running org.springframework.data.jdbc.mybatis.MyBatisCustomizingNamespaceHsqlIntegrationTests
+2021-11-14 17:38:00,547  INFO y.config.RepositoryConfigurationDelegate: 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-14 17:38:00,560  INFO y.config.RepositoryConfigurationDelegate: 201 - Finished Spring Data repository scanning in 12 ms. Found 2 JDBC repository interfaces.
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 s - in org.springframework.data.jdbc.mybatis.MyBatisCustomizingNamespaceHsqlIntegrationTests
+[INFO] Running org.springframework.data.jdbc.mybatis.MyBatisContextUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.springframework.data.jdbc.mybatis.MyBatisContextUnitTests
+[INFO] Running org.springframework.data.jdbc.mybatis.MyBatisDataAccessStrategyUnitTests
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.204 s - in org.springframework.data.jdbc.mybatis.MyBatisDataAccessStrategyUnitTests
+[INFO] Running org.springframework.data.jdbc.degraph.DependencyTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.884 s - in org.springframework.data.jdbc.degraph.DependencyTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 522, Failures: 0, Errors: 0, Skipped: 4
+[INFO] 
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-maven-version) @ spring-data-jdbc ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-data-jdbc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.5.0:compile (compile) @ spring-data-jdbc ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ spring-data-jdbc ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 75 source files to /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-jdbc/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-data-jdbc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 176 resources
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.5.0:test-compile (test-compile) @ spring-data-jdbc ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ spring-data-jdbc ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 85 source files to /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-jdbc/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ spring-data-jdbc ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.1.0:add-source (add-kotlin-source) @ spring-data-jdbc ---
+[INFO] Source directory: /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-jdbc/src/main/kotlin added.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ spring-data-jdbc ---
+[INFO] Building jar: /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-jdbc/target/spring-data-jdbc-2.2.1.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (attach-sources) > generate-sources @ spring-data-jdbc >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-maven-version) @ spring-data-jdbc ---
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (attach-sources) < generate-sources @ spring-data-jdbc <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (attach-sources) @ spring-data-jdbc ---
+[INFO] Building jar: /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-jdbc/target/spring-data-jdbc-2.2.1-sources.jar
+[INFO] 
+[INFO] -------< org.springframework.data:spring-data-jdbc-distribution >-------
+[INFO] Building Spring Data JDBC - Distribution 2.2.1                     [4/4]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ spring-data-jdbc-distribution ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-maven-version) @ spring-data-jdbc-distribution ---
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.5.0:compile (compile) @ spring-data-jdbc-distribution ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ spring-data-jdbc-distribution ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.5.0:test-compile (test-compile) @ spring-data-jdbc-distribution ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ spring-data-jdbc-distribution ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-maven-version) @ spring-data-jdbc-distribution ---
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.5.0:compile (compile) @ spring-data-jdbc-distribution ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ spring-data-jdbc-distribution ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.5.0:test-compile (test-compile) @ spring-data-jdbc-distribution ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ spring-data-jdbc-distribution ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.1.0:add-source (add-kotlin-source) @ spring-data-jdbc-distribution ---
+[INFO] Source directory: /Users/michaelseger/git/build-bench/spring-data-jdbc-2.2.1/spring-data-jdbc-distribution/src/main/kotlin added.
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (attach-sources) > generate-sources @ spring-data-jdbc-distribution >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-maven-version) @ spring-data-jdbc-distribution ---
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (attach-sources) < generate-sources @ spring-data-jdbc-distribution <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (attach-sources) @ spring-data-jdbc-distribution ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Spring Data Relational Parent 2.2.1 ................ SUCCESS [  2.072 s]
+[INFO] Spring Data Relational ............................. SUCCESS [ 40.253 s]
+[INFO] Spring Data JDBC ................................... SUCCESS [ 43.193 s]
+[INFO] Spring Data JDBC - Distribution 2.2.1 .............. SUCCESS [  0.044 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:25 min
+[INFO] Finished at: 2021-11-14T17:38:14+01:00
+[INFO] ------------------------------------------------------------------------
+20211114T163814
+ELAPSED TIME: 87 s

@@ -1,0 +1,20 @@
+reports/run_darwin-20.5.0-x86-64-i386_dropwizard-2.0.22_20211114T154417_c1.txt: SUCCESS : 808 s 
+reports/run_darwin-20.5.0-x86-64-i386_dropwizard-2.0.22_20211114T161915_c0.txt: SUCCESS : 771 s 
+reports/run_darwin-20.5.0-x86-64-i386_dropwizard-2.0.22_20211114T164004_c0.txt: SUCCESS : 715 s 
+reports/run_darwin-20.5.0-x86-64-i386_dropwizard-2.0.22_20211114T165529_c0.txt: SUCCESS : 683 s 
+reports/run_darwin-20.5.0-x86-64-i386_dropwizard-2.0.22_20211114T171520_c1.txt: SUCCESS : 774 s 
+reports/run_darwin-20.5.0-x86-64-i386_maven-maven-3.8.1_20211114T154059_c1.txt: SUCCESS : 174 s 
+reports/run_darwin-20.5.0-x86-64-i386_maven-maven-3.8.1_20211114T161639_c0.txt: SUCCESS : 156 s 
+reports/run_darwin-20.5.0-x86-64-i386_maven-maven-3.8.1_20211114T163815_c0.txt: SUCCESS : 109 s 
+reports/run_darwin-20.5.0-x86-64-i386_maven-maven-3.8.1_20211114T165347_c0.txt: SUCCESS : 101 s 
+reports/run_darwin-20.5.0-x86-64-i386_maven-maven-3.8.1_20211114T171215_c1.txt: SUCCESS : 172 s 
+reports/run_darwin-20.5.0-x86-64-i386_metrics-4.1.22_20211114T155844_c1.txt: SUCCESS : 489 s 
+reports/run_darwin-20.5.0-x86-64-i386_metrics-4.1.22_20211114T163206_c0.txt: SUCCESS : 280 s 
+reports/run_darwin-20.5.0-x86-64-i386_metrics-4.1.22_20211114T165159_c0.txt: : 26 s 
+reports/run_darwin-20.5.0-x86-64-i386_metrics-4.1.22_20211114T170652_c0.txt: SUCCESS : 242 s 
+reports/run_darwin-20.5.0-x86-64-i386_metrics-4.1.22_20211114T172909_c1.txt: SUCCESS : 292 s 
+reports/run_darwin-20.5.0-x86-64-i386_spring-data-jdbc-2.2.1_20211114T160729_c1.txt: SUCCESS : 459 s 
+reports/run_darwin-20.5.0-x86-64-i386_spring-data-jdbc-2.2.1_20211114T163647_c0.txt: SUCCESS : 87 s 
+reports/run_darwin-20.5.0-x86-64-i386_spring-data-jdbc-2.2.1_20211114T165226_c0.txt: SUCCESS : 80 s 
+reports/run_darwin-20.5.0-x86-64-i386_spring-data-jdbc-2.2.1_20211114T171054_c0.txt: SUCCESS : 81 s 
+reports/run_darwin-20.5.0-x86-64-i386_spring-data-jdbc-2.2.1_20211114T173437_c1.txt: SUCCESS : 453 s 

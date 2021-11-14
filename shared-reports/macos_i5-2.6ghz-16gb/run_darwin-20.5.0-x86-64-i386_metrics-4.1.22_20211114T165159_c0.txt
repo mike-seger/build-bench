@@ -1,0 +1,529 @@
+20211114T165159
+darwin-20.5.0-x86-64-i386
+metrics-4.1.22
+./mvnw clean test package -fail-fast -Dsurefire.skipAfterFailureCount=1
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Metrics Parent                                                     [pom]
+[INFO] Metrics Documentation                                              [jar]
+[INFO] Metrics BOM                                                        [pom]
+[INFO] Annotations for Metrics                                         [bundle]
+[INFO] Metrics Core                                                    [bundle]
+[INFO] Benchmarks for Metrics                                             [jar]
+[INFO] Metrics Integration for Caffeine                                [bundle]
+[INFO] Metrics Integration for Collectd                                [bundle]
+[INFO] Metrics Integration for Ehcache                                 [bundle]
+[INFO] Graphite Integration for Metrics                                [bundle]
+[INFO] JVM Integration for Metrics                                     [bundle]
+[INFO] Metrics Health Checks                                           [bundle]
+[INFO] Metrics Integration for Apache HttpClient                       [bundle]
+[INFO] Metrics Integration for Apache HttpClient 5.x                   [bundle]
+[INFO] Metrics Integration for Apache HttpAsyncClient                  [bundle]
+[INFO] Metrics Integration for JCache                                  [bundle]
+[INFO] Metrics JCStress tests                                             [jar]
+[INFO] Metrics Integration for JDBI                                    [bundle]
+[INFO] Metrics Integration for JDBI3                                   [bundle]
+[INFO] Metrics Integration for Jersey 2.x                              [bundle]
+[INFO] Metrics Integration for Jetty 9.3 and higher                    [bundle]
+[INFO] Metrics Integration with JMX                                    [bundle]
+[INFO] Jackson Integration for Metrics                                 [bundle]
+[INFO] Metrics Integration for Log4j 2.x                               [bundle]
+[INFO] Metrics Integration for Logback                                 [bundle]
+[INFO] Metrics Integration for Servlets                                [bundle]
+[INFO] Metrics Utility Servlets                                        [bundle]
+[INFO] 
+[INFO] ----------------< io.dropwizard.metrics:metrics-parent >----------------
+[INFO] Building Metrics Parent 4.1.22                                    [1/27]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ metrics-parent ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ metrics-parent ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (prepare-agent) @ metrics-parent ---
+[INFO] argLine set to -javaagent:/Users/michaelseger/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/Users/michaelseger/git/build-bench/metrics-4.1.22/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ metrics-parent ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (prepare-agent) @ metrics-parent ---
+[INFO] argLine set to -javaagent:/Users/michaelseger/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/Users/michaelseger/git/build-bench/metrics-4.1.22/target/jacoco.exec
+[INFO] 
+[INFO] ---------------------< io.dropwizard.metrics:docs >---------------------
+[INFO] Building Metrics Documentation 4.1.22                             [2/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ docs ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/metrics-4.1.22/docs/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ docs ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (prepare-agent) @ docs ---
+[INFO] argLine set to -javaagent:/Users/michaelseger/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/Users/michaelseger/git/build-bench/metrics-4.1.22/docs/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:parse-version (parse-version) @ docs ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (process-resources) @ docs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 72 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ docs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 72 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ docs ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ docs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/metrics-4.1.22/docs/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ docs ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ docs ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ docs ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (prepare-agent) @ docs ---
+[INFO] argLine set to -javaagent:/Users/michaelseger/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/Users/michaelseger/git/build-bench/metrics-4.1.22/docs/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:parse-version (parse-version) @ docs ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (process-resources) @ docs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 72 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ docs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 72 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ docs ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ docs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/metrics-4.1.22/docs/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ docs ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ docs ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ docs ---
+[INFO] Building jar: /Users/michaelseger/git/build-bench/metrics-4.1.22/docs/target/docs-4.1.22.jar
+[INFO] 
+[INFO] -----------------< io.dropwizard.metrics:metrics-bom >------------------
+[INFO] Building Metrics BOM 4.1.22                                       [3/27]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ metrics-bom ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ metrics-bom ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (prepare-agent) @ metrics-bom ---
+[INFO] argLine set to -javaagent:/Users/michaelseger/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-bom/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ metrics-bom ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (prepare-agent) @ metrics-bom ---
+[INFO] argLine set to -javaagent:/Users/michaelseger/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-bom/target/jacoco.exec
+[INFO] 
+[INFO] --------------< io.dropwizard.metrics:metrics-annotation >--------------
+[INFO] Building Annotations for Metrics 4.1.22                           [4/27]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ metrics-annotation ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ metrics-annotation ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (prepare-agent) @ metrics-annotation ---
+[INFO] argLine set to -javaagent:/Users/michaelseger/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ metrics-annotation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ metrics-annotation ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/target/classes
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.errorprone.util.ErrorProneTokens$CommentSavingTokenizer (file:/Users/michaelseger/.m2/repository/com/google/errorprone/error_prone_check_api/2.7.1/error_prone_check_api-2.7.1.jar) to field com.sun.tools.javac.parser.JavaTokenizer.reader
+WARNING: Please consider reporting this to the maintainers of com.google.errorprone.util.ErrorProneTokens$CommentSavingTokenizer
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Metered.java:[30,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the name of the meter.'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Metered.java:[35,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns if {@code true}, use the given name as an absolute name. If {@code false}, use the given name'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Metric.java:[38,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the name of the metric.'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Metric.java:[43,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns if {@code true}, use the given name as an absolute name. If {@code false},'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Gauge.java:[26,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the gauge's name.'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Gauge.java:[31,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns if {@code true}, use the given name as an absolute name. If {@code false}, use the given name'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Counted.java:[34,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the name of the counter.'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Counted.java:[39,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns if {@code true}, use the given name as an absolute name. If {@code false}, use the given name'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Counted.java:[45,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns if {@code false} (default), the counter is decremented when the annotated'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/ExceptionMetered.java:[50,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the name of the meter. If not specified, the meter will be given a name based on the method'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/ExceptionMetered.java:[56,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns if {@code true}, use the given name as an absolute name. If {@code false}, use the given name'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/ExceptionMetered.java:[62,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the type of exceptions that the meter will catch and count.'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Timed.java:[30,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the name of the timer.'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Timed.java:[35,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns if {@code true}, use the given name as an absolute name. If {@code false}, use the given name'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/ResponseMetered.java:[30,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the name of the meter.'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/ResponseMetered.java:[35,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns if {@code true}, use the given name as an absolute name. If {@code false}, use the given name'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/CachedGauge.java:[33,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the name of the counter.'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/CachedGauge.java:[38,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns if {@code true}, use the given name as an absolute name. If {@code false}, use the given name'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/CachedGauge.java:[44,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the amount of time to cache the result.'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/CachedGauge.java:[49,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the unit of timeout.'?
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ metrics-annotation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ metrics-annotation ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ metrics-annotation ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ metrics-annotation ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (prepare-agent) @ metrics-annotation ---
+[INFO] argLine set to -javaagent:/Users/michaelseger/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ metrics-annotation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ metrics-annotation ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Metered.java:[30,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the name of the meter.'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Metered.java:[35,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns if {@code true}, use the given name as an absolute name. If {@code false}, use the given name'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Metric.java:[38,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the name of the metric.'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Metric.java:[43,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns if {@code true}, use the given name as an absolute name. If {@code false},'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Gauge.java:[26,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the gauge's name.'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Gauge.java:[31,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns if {@code true}, use the given name as an absolute name. If {@code false}, use the given name'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Counted.java:[34,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the name of the counter.'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Counted.java:[39,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns if {@code true}, use the given name as an absolute name. If {@code false}, use the given name'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Counted.java:[45,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns if {@code false} (default), the counter is decremented when the annotated'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/ExceptionMetered.java:[50,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the name of the meter. If not specified, the meter will be given a name based on the method'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/ExceptionMetered.java:[56,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns if {@code true}, use the given name as an absolute name. If {@code false}, use the given name'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/ExceptionMetered.java:[62,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the type of exceptions that the meter will catch and count.'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Timed.java:[30,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the name of the timer.'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/Timed.java:[35,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns if {@code true}, use the given name as an absolute name. If {@code false}, use the given name'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/ResponseMetered.java:[30,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the name of the meter.'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/ResponseMetered.java:[35,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns if {@code true}, use the given name as an absolute name. If {@code false}, use the given name'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/CachedGauge.java:[33,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the name of the counter.'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/CachedGauge.java:[38,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns if {@code true}, use the given name as an absolute name. If {@code false}, use the given name'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/CachedGauge.java:[44,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the amount of time to cache the result.'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/main/java/com/codahale/metrics/annotation/CachedGauge.java:[49,8] [MissingSummary] A summary fragment is required; consider using the value of the @return block as a summary fragment instead.
+    (see https://google.github.io/styleguide/javaguide.html#s7.2-summary-fragment)
+  Did you mean '*Returns the unit of timeout.'?
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ metrics-annotation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-annotation/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ metrics-annotation ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ metrics-annotation ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-bundle-plugin:5.1.2:bundle (default-bundle) @ metrics-annotation ---
+[WARNING] Bundle io.dropwizard.metrics:metrics-annotation:bundle:4.1.22 : Unused Import-Package instructions: [javax.servlet*, org.slf4j*, sun.misc.*, com.sun.management.*] 
+[INFO] 
+[INFO] -----------------< io.dropwizard.metrics:metrics-core >-----------------
+[INFO] Building Metrics Core 4.1.22                                      [5/27]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ metrics-core ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ metrics-core ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (prepare-agent) @ metrics-core ---
+[INFO] argLine set to -javaagent:/Users/michaelseger/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ metrics-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ metrics-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 44 source files to /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/src/main/java/com/codahale/metrics/WeightedSnapshot.java:[81,21] [UnnecessaryParentheses] These grouping parentheses are unnecessary; it is unlikely the code will be misinterpreted without them
+    (see https://errorprone.info/bugpattern/UnnecessaryParentheses)
+  Did you mean 'posx = (-posx - 1) - 1;'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/src/main/java/com/codahale/metrics/MovingAverages.java:[24,8] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/src/main/java/com/codahale/metrics/ConsoleReporter.java:[231,51] [JavaUtilDate] Date has a bad API that leads to bugs; prefer java.time.Instant or LocalDate.
+    (see https://errorprone.info/bugpattern/JavaUtilDate)
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/src/main/java/com/codahale/metrics/ScheduledReporter.java:[50,30] [ThreadPriorityCheck] Relying on the thread scheduler is discouraged.
+    (see https://errorprone.info/bugpattern/ThreadPriorityCheck)
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/src/main/java/com/codahale/metrics/InstrumentedExecutorService.java:[179,32] auto-closeable resource durationContext is never referenced in body of corresponding try statement
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/src/main/java/com/codahale/metrics/InstrumentedExecutorService.java:[201,32] auto-closeable resource context is never referenced in body of corresponding try statement
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/src/main/java/com/codahale/metrics/Slf4jReporter.java:[177,34] [InvalidInlineTag] Curly braces should be used for inline Javadoc tags: {@link ...}
+    (see https://errorprone.info/bugpattern/InvalidInlineTag)
+  Did you mean '* @param loggingLevel a {@link Slf4jReporter.LoggingLevel}'?
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ metrics-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ metrics-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 33 source files to /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/src/test/java/com/codahale/metrics/SharedMetricRegistriesTest.java:[14,59] none() in org.junit.rules.ExpectedException has been deprecated
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/src/test/java/com/codahale/metrics/TimerTest.java:[124,9] verifyZeroInteractions(java.lang.Object...) in org.mockito.Mockito has been deprecated
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/src/test/java/com/codahale/metrics/TimerTest.java:[142,9] verifyZeroInteractions(java.lang.Object...) in org.mockito.Mockito has been deprecated
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/src/test/java/com/codahale/metrics/MetricRegistryListenerTest.java:[28,9] verifyZeroInteractions(java.lang.Object...) in org.mockito.Mockito has been deprecated
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/src/test/java/com/codahale/metrics/MetricRegistryListenerTest.java:[35,9] verifyZeroInteractions(java.lang.Object...) in org.mockito.Mockito has been deprecated
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/src/test/java/com/codahale/metrics/MetricRegistryListenerTest.java:[42,9] verifyZeroInteractions(java.lang.Object...) in org.mockito.Mockito has been deprecated
+[WARNING] /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/src/test/java/com/codahale/metrics/MetricRegistryListenerTest.java:[49,9] verifyZeroInteractions(java.lang.Object...) in org.mockito.Mockito has been deprecated
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ metrics-core ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.codahale.metrics.MetricRegistryListenerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.51 s - in com.codahale.metrics.MetricRegistryListenerTest
+[INFO] Running com.codahale.metrics.ClockTest
+[ERROR] Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.219 s <<< FAILURE! - in com.codahale.metrics.ClockTest
+[ERROR] userTimeClock(com.codahale.metrics.ClockTest)  Time elapsed: 0.039 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting:
+  6.031887688037E12
+to be close to:
+  6.031890253756E12
+by less than 1000000.0 but difference was 2565719.0.
+(a difference of exactly 1000000.0 being considered valid)
+	at com.codahale.metrics.ClockTest.userTimeClock(ClockTest.java:19)
+
+[INFO] Running com.codahale.metrics.InstrumentedExecutorServiceTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.004 s - in com.codahale.metrics.InstrumentedExecutorServiceTest
+[INFO] Running com.codahale.metrics.SlidingWindowReservoirTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 s - in com.codahale.metrics.SlidingWindowReservoirTest
+[INFO] Running com.codahale.metrics.ConsoleReporterTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.004 s - in com.codahale.metrics.ConsoleReporterTest
+[INFO] Running com.codahale.metrics.UniformReservoirTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s - in com.codahale.metrics.UniformReservoirTest
+[INFO] Running com.codahale.metrics.DerivativeGaugeTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s - in com.codahale.metrics.DerivativeGaugeTest
+[INFO] Running com.codahale.metrics.MetricFilterTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s - in com.codahale.metrics.MetricFilterTest
+[INFO] Running com.codahale.metrics.CounterTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.004 s - in com.codahale.metrics.CounterTest
+[INFO] Running com.codahale.metrics.InstrumentedThreadFactoryTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 s - in com.codahale.metrics.InstrumentedThreadFactoryTest
+[INFO] Running com.codahale.metrics.FixedNameCsvFileProviderTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.008 s - in com.codahale.metrics.FixedNameCsvFileProviderTest
+[INFO] Running com.codahale.metrics.CsvReporterTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.007 s - in com.codahale.metrics.CsvReporterTest
+[INFO] Running com.codahale.metrics.Slf4jReporterTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.006 s - in com.codahale.metrics.Slf4jReporterTest
+[INFO] Running com.codahale.metrics.SlidingTimeWindowArrayReservoirTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s - in com.codahale.metrics.SlidingTimeWindowArrayReservoirTest
+[INFO] Running com.codahale.metrics.TimerTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.005 s - in com.codahale.metrics.TimerTest
+[INFO] Running com.codahale.metrics.ExponentiallyDecayingReservoirTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.003 s - in com.codahale.metrics.ExponentiallyDecayingReservoirTest
+[INFO] Running com.codahale.metrics.MetricRegistryTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.007 s - in com.codahale.metrics.MetricRegistryTest
+[INFO] Running com.codahale.metrics.EWMATest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s - in com.codahale.metrics.EWMATest
+[INFO] Running com.codahale.metrics.MeterApproximationTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.019 s - in com.codahale.metrics.MeterApproximationTest
+[INFO] Running com.codahale.metrics.InstrumentedScheduledExecutorServiceTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.007 s - in com.codahale.metrics.InstrumentedScheduledExecutorServiceTest
+[INFO] Running com.codahale.metrics.NoopMetricRegistryTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.004 s - in com.codahale.metrics.NoopMetricRegistryTest
+[INFO] Running com.codahale.metrics.CachedGaugeTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 s - in com.codahale.metrics.CachedGaugeTest
+[INFO] Running com.codahale.metrics.WeightedSnapshotTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.005 s - in com.codahale.metrics.WeightedSnapshotTest
+[INFO] Running com.codahale.metrics.RatioGaugeTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 s - in com.codahale.metrics.RatioGaugeTest
+[INFO] Running com.codahale.metrics.SharedMetricRegistriesTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.003 s - in com.codahale.metrics.SharedMetricRegistriesTest
+[INFO] Running com.codahale.metrics.HistogramTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 s - in com.codahale.metrics.HistogramTest
+[INFO] Running com.codahale.metrics.ScheduledReporterTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 s - in com.codahale.metrics.ScheduledReporterTest
+[INFO] Running com.codahale.metrics.MeterTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 s - in com.codahale.metrics.MeterTest
+[INFO] Running com.codahale.metrics.ChunkedAssociativeLongArrayTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 s - in com.codahale.metrics.ChunkedAssociativeLongArrayTest
+[INFO] Running com.codahale.metrics.UniformSnapshotTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 s - in com.codahale.metrics.UniformSnapshotTest
+[INFO] Running com.codahale.metrics.SlidingTimeWindowMovingAveragesTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.005 s - in com.codahale.metrics.SlidingTimeWindowMovingAveragesTest
+[INFO] Running com.codahale.metrics.SlidingTimeWindowReservoirTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 s - in com.codahale.metrics.SlidingTimeWindowReservoirTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   ClockTest.userTimeClock:19 
+Expecting:
+  6.031887688037E12
+to be close to:
+  6.031890253756E12
+by less than 1000000.0 but difference was 2565719.0.
+(a difference of exactly 1000000.0 being considered valid)
+[INFO] 
+[ERROR] Tests run: 38, Failures: 1, Errors: 0, Skipped: 30
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Metrics Parent 4.1.22:
+[INFO] 
+[INFO] Metrics Parent ..................................... SUCCESS [  0.669 s]
+[INFO] Metrics Documentation .............................. SUCCESS [  2.957 s]
+[INFO] Metrics BOM ........................................ SUCCESS [  0.036 s]
+[INFO] Annotations for Metrics ............................ SUCCESS [  4.262 s]
+[INFO] Metrics Core ....................................... FAILURE [ 15.678 s]
+[INFO] Benchmarks for Metrics ............................. SKIPPED
+[INFO] Metrics Integration for Caffeine ................... SKIPPED
+[INFO] Metrics Integration for Collectd ................... SKIPPED
+[INFO] Metrics Integration for Ehcache .................... SKIPPED
+[INFO] Graphite Integration for Metrics ................... SKIPPED
+[INFO] JVM Integration for Metrics ........................ SKIPPED
+[INFO] Metrics Health Checks .............................. SKIPPED
+[INFO] Metrics Integration for Apache HttpClient .......... SKIPPED
+[INFO] Metrics Integration for Apache HttpClient 5.x ...... SKIPPED
+[INFO] Metrics Integration for Apache HttpAsyncClient ..... SKIPPED
+[INFO] Metrics Integration for JCache ..................... SKIPPED
+[INFO] Metrics JCStress tests ............................. SKIPPED
+[INFO] Metrics Integration for JDBI ....................... SKIPPED
+[INFO] Metrics Integration for JDBI3 ...................... SKIPPED
+[INFO] Metrics Integration for Jersey 2.x ................. SKIPPED
+[INFO] Metrics Integration for Jetty 9.3 and higher ....... SKIPPED
+[INFO] Metrics Integration with JMX ....................... SKIPPED
+[INFO] Jackson Integration for Metrics .................... SKIPPED
+[INFO] Metrics Integration for Log4j 2.x .................. SKIPPED
+[INFO] Metrics Integration for Logback .................... SKIPPED
+[INFO] Metrics Integration for Servlets ................... SKIPPED
+[INFO] Metrics Utility Servlets ........................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  24.735 s
+[INFO] Finished at: 2021-11-14T17:52:26+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.2:test (default-test) on project metrics-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/michaelseger/git/build-bench/metrics-4.1.22/metrics-core/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :metrics-core
+20211114T165226
+ELAPSED TIME: 26 s

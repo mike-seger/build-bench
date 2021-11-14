@@ -1,0 +1,2066 @@
+20211114T163815
+darwin-20.5.0-x86-64-i386
+maven-maven-3.8.1
+./mvnw -Drat.skip=true clean test package -fail-fast -Dsurefire.skipAfterFailureCount=1
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Maven                                                       [pom]
+[INFO] Maven Model                                                        [jar]
+[INFO] Maven Artifact                                                     [jar]
+[INFO] Maven Plugin API                                                   [jar]
+[INFO] Maven Builder Support                                              [jar]
+[INFO] Maven Model Builder                                                [jar]
+[INFO] Maven Settings                                                     [jar]
+[INFO] Maven Settings Builder                                             [jar]
+[INFO] Maven Repository Metadata Model                                    [jar]
+[INFO] Maven Artifact Resolver Provider                                   [jar]
+[INFO] Maven Core                                                         [jar]
+[INFO] Maven SLF4J Simple Provider                                        [jar]
+[INFO] Maven Embedder                                                     [jar]
+[INFO] Maven Compat                                                       [jar]
+[INFO] Apache Maven Distribution                                          [pom]
+[INFO] 
+[INFO] -----------------------< org.apache.maven:maven >-----------------------
+[INFO] Building Apache Maven 3.8.1                                       [1/15]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ maven ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/maven-maven-3.8.1/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-site-plugin:3.7.1:attach-descriptor (attach-descriptor) @ maven ---
+[INFO] Attaching 'src/site/site.xml' site descriptor with classifier 'site'.
+[INFO] 
+[INFO] --------------------< org.apache.maven:maven-model >--------------------
+[INFO] Building Maven Model 3.8.1                                        [2/15]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ maven-model ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-model ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-model ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-model ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-model ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:java (modello) @ maven-model ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/maven.mdo
+[INFO] Generating current version: 4.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-reader (modello) @ maven-model ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/maven.mdo
+[INFO] Generating current version: 4.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-extended-reader (modello) @ maven-model ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/maven.mdo
+[INFO] Generating current version: 4.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-writer (modello) @ maven-model ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/maven.mdo
+[INFO] Generating current version: 4.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-extended-writer (modello) @ maven-model ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/maven.mdo
+[INFO] Generating current version: 4.0.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-model ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-model ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-model ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 54 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/target/classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello/org/apache/maven/model/ModelBase.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello/org/apache/maven/model/ModelBase.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-model ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-model ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-model ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 37 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-model ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.maven.model.ReportPluginTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s - in org.apache.maven.model.ReportPluginTest
+[INFO] Running org.apache.maven.model.ActivationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.ActivationTest
+[INFO] Running org.apache.maven.model.ProfileTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.maven.model.ProfileTest
+[INFO] Running org.apache.maven.model.ParentTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.maven.model.ParentTest
+[INFO] Running org.apache.maven.model.ActivationFileTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.maven.model.ActivationFileTest
+[INFO] Running org.apache.maven.model.ExclusionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.maven.model.ExclusionTest
+[INFO] Running org.apache.maven.model.ActivationOSTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.maven.model.ActivationOSTest
+[INFO] Running org.apache.maven.model.DeploymentRepositoryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.maven.model.DeploymentRepositoryTest
+[INFO] Running org.apache.maven.model.DistributionManagementTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.maven.model.DistributionManagementTest
+[INFO] Running org.apache.maven.model.PluginExecutionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.maven.model.PluginExecutionTest
+[INFO] Running org.apache.maven.model.DeveloperTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.maven.model.DeveloperTest
+[INFO] Running org.apache.maven.model.BuildTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.BuildTest
+[INFO] Running org.apache.maven.model.RepositoryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.apache.maven.model.RepositoryTest
+[INFO] Running org.apache.maven.model.MailingListTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.MailingListTest
+[INFO] Running org.apache.maven.model.CiManagementTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.CiManagementTest
+[INFO] Running org.apache.maven.model.ReportingTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.maven.model.ReportingTest
+[INFO] Running org.apache.maven.model.ScmTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.maven.model.ScmTest
+[INFO] Running org.apache.maven.model.PluginTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.PluginTest
+[INFO] Running org.apache.maven.model.PrerequisitesTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.PrerequisitesTest
+[INFO] Running org.apache.maven.model.PluginContainerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.PluginContainerTest
+[INFO] Running org.apache.maven.model.LicenseTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.LicenseTest
+[INFO] Running org.apache.maven.model.DependencyTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.maven.model.DependencyTest
+[INFO] Running org.apache.maven.model.OrganizationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.maven.model.OrganizationTest
+[INFO] Running org.apache.maven.model.NotifierTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.NotifierTest
+[INFO] Running org.apache.maven.model.RelocationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.RelocationTest
+[INFO] Running org.apache.maven.model.ReportSetTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.ReportSetTest
+[INFO] Running org.apache.maven.model.ContributorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.ContributorTest
+[INFO] Running org.apache.maven.model.ExtensionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.ExtensionTest
+[INFO] Running org.apache.maven.model.RepositoryPolicyTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.RepositoryPolicyTest
+[INFO] Running org.apache.maven.model.SiteTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.SiteTest
+[INFO] Running org.apache.maven.model.ModelTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.ModelTest
+[INFO] Running org.apache.maven.model.PluginManagementTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.PluginManagementTest
+[INFO] Running org.apache.maven.model.PluginConfigurationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.model.PluginConfigurationTest
+[INFO] Running org.apache.maven.model.ActivationPropertyTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.ActivationPropertyTest
+[INFO] Running org.apache.maven.model.IssueManagementTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.maven.model.IssueManagementTest
+[INFO] Running org.apache.maven.model.ResourceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.model.ResourceTest
+[INFO] Running org.apache.maven.model.DependencyManagementTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.maven.model.DependencyManagementTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 148, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-model ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-model ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-model ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-model ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:java (modello) @ maven-model ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/maven.mdo
+[INFO] Generating current version: 4.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-reader (modello) @ maven-model ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/maven.mdo
+[INFO] Generating current version: 4.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-extended-reader (modello) @ maven-model ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/maven.mdo
+[INFO] Generating current version: 4.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-writer (modello) @ maven-model ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/maven.mdo
+[INFO] Generating current version: 4.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-extended-writer (modello) @ maven-model ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/maven.mdo
+[INFO] Generating current version: 4.0.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-model ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-model ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-model ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 54 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/target/classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello/org/apache/maven/model/ModelBase.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/target/generated-sources/modello/org/apache/maven/model/ModelBase.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-model ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-model ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/src/test/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-model ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-model ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ maven-model ---
+[INFO] Building jar: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model/target/maven-model-3.8.1.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.7.1:attach-descriptor (attach-descriptor) @ maven-model ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] ------------------< org.apache.maven:maven-artifact >-------------------
+[INFO] Building Maven Artifact 3.8.1                                     [3/15]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ maven-artifact ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-artifact/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-artifact ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-artifact ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-artifact ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-artifact ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-artifact ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-artifact ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-artifact/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-artifact ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 27 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-artifact/target/classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-artifact/src/main/java/org/apache/maven/artifact/repository/ArtifactRepository.java: Some input files use or override a deprecated API.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-artifact/src/main/java/org/apache/maven/artifact/repository/ArtifactRepository.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-artifact ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-artifact ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-artifact/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-artifact ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-artifact/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-artifact ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.maven.artifact.DefaultArtifactTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 s - in org.apache.maven.artifact.DefaultArtifactTest
+[INFO] Running org.apache.maven.artifact.ArtifactUtilsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.artifact.ArtifactUtilsTest
+[INFO] Running org.apache.maven.artifact.versioning.VersionRangeTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.artifact.versioning.VersionRangeTest
+[INFO] Running org.apache.maven.artifact.versioning.ComparableVersionTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 s - in org.apache.maven.artifact.versioning.ComparableVersionTest
+[INFO] Running org.apache.maven.artifact.versioning.DefaultArtifactVersionTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in org.apache.maven.artifact.versioning.DefaultArtifactVersionTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 41, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-artifact ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-artifact ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-artifact ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-artifact ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-artifact ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-artifact ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-artifact/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-artifact ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-artifact ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-artifact ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-artifact/src/test/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-artifact ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-artifact ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ maven-artifact ---
+[INFO] Building jar: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-artifact/target/maven-artifact-3.8.1.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.7.1:attach-descriptor (attach-descriptor) @ maven-artifact ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] -----------------< org.apache.maven:maven-plugin-api >------------------
+[INFO] Building Maven Plugin API 3.8.1                                   [4/15]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ maven-plugin-api ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-plugin-api ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-plugin-api ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-plugin-api ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-plugin-api ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:java (modello) @ maven-plugin-api ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/lifecycle.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-reader (modello) @ maven-plugin-api ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/lifecycle.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-writer (modello) @ maven-plugin-api ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/lifecycle.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-plugin-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-plugin-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-plugin-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-plugin-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 25 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello/org/apache/maven/plugin/lifecycle/io/xpp3/LifecycleMappingsXpp3Reader.java: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello/org/apache/maven/plugin/lifecycle/io/xpp3/LifecycleMappingsXpp3Reader.java uses unchecked or unsafe operations.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello/org/apache/maven/plugin/lifecycle/io/xpp3/LifecycleMappingsXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-plugin-api ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-plugin-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-plugin-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-plugin-api ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.maven.plugin.lifecycle.LifecycleXpp3ReaderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in org.apache.maven.plugin.lifecycle.LifecycleXpp3ReaderTest
+[INFO] Running org.apache.maven.plugin.descriptor.PluginDescriptorBuilderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 s - in org.apache.maven.plugin.descriptor.PluginDescriptorBuilderTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-plugin-api ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-plugin-api ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-plugin-api ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-plugin-api ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:java (modello) @ maven-plugin-api ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/lifecycle.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-reader (modello) @ maven-plugin-api ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/lifecycle.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-writer (modello) @ maven-plugin-api ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/lifecycle.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-plugin-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-plugin-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-plugin-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-plugin-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 25 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello/org/apache/maven/plugin/lifecycle/io/xpp3/LifecycleMappingsXpp3Reader.java: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello/org/apache/maven/plugin/lifecycle/io/xpp3/LifecycleMappingsXpp3Reader.java uses unchecked or unsafe operations.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/generated-sources/modello/org/apache/maven/plugin/lifecycle/io/xpp3/LifecycleMappingsXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-plugin-api ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-plugin-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-plugin-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-plugin-api ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ maven-plugin-api ---
+[INFO] Building jar: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-plugin-api/target/maven-plugin-api-3.8.1.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.7.1:attach-descriptor (attach-descriptor) @ maven-plugin-api ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] ---------------< org.apache.maven:maven-builder-support >---------------
+[INFO] Building Maven Builder Support 3.8.1                              [5/15]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ maven-builder-support ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-builder-support/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-builder-support ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-builder-support ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-builder-support ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-builder-support ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-builder-support ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-builder-support ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-builder-support/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-builder-support ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-builder-support/target/classes
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-builder-support ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-builder-support ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-builder-support ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-builder-support/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-builder-support ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.maven.building.StringSourceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 s - in org.apache.maven.building.StringSourceTest
+[INFO] Running org.apache.maven.building.ProblemCollectorFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.maven.building.ProblemCollectorFactoryTest
+[INFO] Running org.apache.maven.building.DefaultProblemTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.maven.building.DefaultProblemTest
+[INFO] Running org.apache.maven.building.FileSourceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.maven.building.FileSourceTest
+[INFO] Running org.apache.maven.building.DefaultProblemCollectorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.building.DefaultProblemCollectorTest
+[INFO] Running org.apache.maven.building.UrlSourceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.maven.building.UrlSourceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-builder-support ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-builder-support ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-builder-support ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-builder-support ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-builder-support ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-builder-support ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-builder-support/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-builder-support ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-builder-support ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-builder-support ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-builder-support ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-builder-support ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ maven-builder-support ---
+[INFO] Building jar: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-builder-support/target/maven-builder-support-3.8.1.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.7.1:attach-descriptor (attach-descriptor) @ maven-builder-support ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] ----------------< org.apache.maven:maven-model-builder >----------------
+[INFO] Building Maven Model Builder 3.8.1                                [6/15]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ maven-model-builder ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model-builder/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-model-builder ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-model-builder ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-model-builder ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-model-builder ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-model-builder ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-model-builder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-model-builder ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 93 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model-builder/target/classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model-builder/src/main/java/org/apache/maven/model/resolution/ModelResolver.java: Some input files use or override a deprecated API.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model-builder/src/main/java/org/apache/maven/model/resolution/ModelResolver.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-model-builder ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- plexus-component-metadata:2.1.0:generate-metadata (default) @ maven-model-builder ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-model-builder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 96 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-model-builder ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 14 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model-builder/target/test-classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model-builder/src/test/java/org/apache/maven/model/interpolation/StringSearchModelInterpolatorTest.java: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model-builder/src/test/java/org/apache/maven/model/interpolation/StringSearchModelInterpolatorTest.java uses or overrides a deprecated API.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model-builder/src/test/java/org/apache/maven/model/interpolation/StringSearchModelInterpolatorTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model-builder/src/test/java/org/apache/maven/model/interpolation/StringSearchModelInterpolatorTest.java: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model-builder/src/test/java/org/apache/maven/model/interpolation/StringSearchModelInterpolatorTest.java uses unchecked or unsafe operations.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model-builder/src/test/java/org/apache/maven/model/interpolation/StringSearchModelInterpolatorTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- plexus-component-metadata:2.1.0:generate-test-metadata (default) @ maven-model-builder ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-model-builder ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.maven.model.merge.MavenModelMergerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.117 s - in org.apache.maven.model.merge.MavenModelMergerTest
+[INFO] Running org.apache.maven.model.path.DefaultUrlNormalizerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.maven.model.path.DefaultUrlNormalizerTest
+[INFO] Running org.apache.maven.model.inheritance.DefaultInheritanceAssemblerTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.255 s - in org.apache.maven.model.inheritance.DefaultInheritanceAssemblerTest
+[INFO] Running org.apache.maven.model.profile.activation.PropertyProfileActivatorTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.maven.model.profile.activation.PropertyProfileActivatorTest
+[INFO] Running org.apache.maven.model.profile.activation.JdkVersionProfileActivatorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.maven.model.profile.activation.JdkVersionProfileActivatorTest
+[INFO] Running org.apache.maven.model.interpolation.StringSearchModelInterpolatorTest
+[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 s - in org.apache.maven.model.interpolation.StringSearchModelInterpolatorTest
+[INFO] Running org.apache.maven.model.interpolation.MavenBuildTimestampTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.maven.model.interpolation.MavenBuildTimestampTest
+[INFO] Running org.apache.maven.model.validation.DefaultModelValidatorTest
+[INFO] Tests run: 61, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 s - in org.apache.maven.model.validation.DefaultModelValidatorTest
+[INFO] Running org.apache.maven.model.building.FileModelSourceTest
+[WARNING] Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.035 s - in org.apache.maven.model.building.FileModelSourceTest
+[INFO] Running org.apache.maven.model.building.ComplexActivationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 s - in org.apache.maven.model.building.ComplexActivationTest
+[INFO] Running org.apache.maven.model.building.DefaultModelBuilderFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.maven.model.building.DefaultModelBuilderFactoryTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 135, Failures: 0, Errors: 0, Skipped: 1
+[INFO] 
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-model-builder ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-model-builder ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-model-builder ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-model-builder ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-model-builder ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-model-builder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-model-builder ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-model-builder ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- plexus-component-metadata:2.1.0:generate-metadata (default) @ maven-model-builder ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-model-builder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 96 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-model-builder ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- plexus-component-metadata:2.1.0:generate-test-metadata (default) @ maven-model-builder ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-model-builder ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ maven-model-builder ---
+[INFO] Building jar: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-model-builder/target/maven-model-builder-3.8.1.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.7.1:attach-descriptor (attach-descriptor) @ maven-model-builder ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] ------------------< org.apache.maven:maven-settings >-------------------
+[INFO] Building Maven Settings 3.8.1                                     [7/15]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ maven-settings ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-settings ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-settings ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-settings ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-settings ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:java (modello) @ maven-settings ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/settings.mdo
+[INFO] Generating current version: 1.2.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-reader (modello) @ maven-settings ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/settings.mdo
+[INFO] Generating current version: 1.2.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-writer (modello) @ maven-settings ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/settings.mdo
+[INFO] Generating current version: 1.2.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-settings ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-settings ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-settings ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/target/classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello/org/apache/maven/settings/io/xpp3/SettingsXpp3Reader.java: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello/org/apache/maven/settings/io/xpp3/SettingsXpp3Reader.java uses unchecked or unsafe operations.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello/org/apache/maven/settings/io/xpp3/SettingsXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-settings ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-settings ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-settings ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-settings ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-settings ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-settings ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-settings ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-settings ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:java (modello) @ maven-settings ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/settings.mdo
+[INFO] Generating current version: 1.2.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-reader (modello) @ maven-settings ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/settings.mdo
+[INFO] Generating current version: 1.2.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-writer (modello) @ maven-settings ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/settings.mdo
+[INFO] Generating current version: 1.2.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-settings ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-settings ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-settings ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/target/classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello/org/apache/maven/settings/io/xpp3/SettingsXpp3Reader.java: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello/org/apache/maven/settings/io/xpp3/SettingsXpp3Reader.java uses unchecked or unsafe operations.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/target/generated-sources/modello/org/apache/maven/settings/io/xpp3/SettingsXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-settings ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-settings ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/src/test/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-settings ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-settings ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ maven-settings ---
+[INFO] Building jar: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings/target/maven-settings-3.8.1.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.7.1:attach-descriptor (attach-descriptor) @ maven-settings ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --------------< org.apache.maven:maven-settings-builder >---------------
+[INFO] Building Maven Settings Builder 3.8.1                             [8/15]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ maven-settings-builder ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings-builder/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-settings-builder ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-settings-builder ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-settings-builder ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-settings-builder ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-settings-builder ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-settings-builder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings-builder/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-settings-builder ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 30 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings-builder/target/classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings-builder/src/main/java/org/apache/maven/settings/building/DefaultSettingsBuildingRequest.java: Some input files use or override a deprecated API.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings-builder/src/main/java/org/apache/maven/settings/building/DefaultSettingsBuildingRequest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-settings-builder ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- sisu-maven-plugin:0.3.4:main-index (default) @ maven-settings-builder ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-settings-builder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-settings-builder ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings-builder/target/test-classes
+[INFO] 
+[INFO] --- sisu-maven-plugin:0.3.4:test-index (default) @ maven-settings-builder ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-settings-builder ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.maven.settings.validation.DefaultSettingsValidatorTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 s - in org.apache.maven.settings.validation.DefaultSettingsValidatorTest
+[INFO] Running org.apache.maven.settings.building.DefaultSettingsBuilderFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in org.apache.maven.settings.building.DefaultSettingsBuilderFactoryTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-settings-builder ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-settings-builder ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-settings-builder ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-settings-builder ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-settings-builder ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-settings-builder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings-builder/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-settings-builder ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-settings-builder ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- sisu-maven-plugin:0.3.4:main-index (default) @ maven-settings-builder ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-settings-builder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-settings-builder ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- sisu-maven-plugin:0.3.4:test-index (default) @ maven-settings-builder ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-settings-builder ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ maven-settings-builder ---
+[INFO] Building jar: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-settings-builder/target/maven-settings-builder-3.8.1.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.7.1:attach-descriptor (attach-descriptor) @ maven-settings-builder ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] -------------< org.apache.maven:maven-repository-metadata >-------------
+[INFO] Building Maven Repository Metadata Model 3.8.1                    [9/15]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ maven-repository-metadata ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-repository-metadata ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-repository-metadata ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-repository-metadata ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-repository-metadata ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:java (modello) @ maven-repository-metadata ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/metadata.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-reader (modello) @ maven-repository-metadata ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/metadata.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-writer (modello) @ maven-repository-metadata ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/metadata.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-repository-metadata ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-repository-metadata ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-repository-metadata ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello/org/apache/maven/artifact/repository/metadata/io/xpp3/MetadataXpp3Reader.java: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello/org/apache/maven/artifact/repository/metadata/io/xpp3/MetadataXpp3Reader.java uses unchecked or unsafe operations.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello/org/apache/maven/artifact/repository/metadata/io/xpp3/MetadataXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-repository-metadata ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-repository-metadata ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-repository-metadata ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-repository-metadata ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-repository-metadata ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-repository-metadata ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-repository-metadata ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-repository-metadata ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:java (modello) @ maven-repository-metadata ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/metadata.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-reader (modello) @ maven-repository-metadata ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/metadata.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-writer (modello) @ maven-repository-metadata ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/metadata.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-repository-metadata ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-repository-metadata ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-repository-metadata ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello/org/apache/maven/artifact/repository/metadata/io/xpp3/MetadataXpp3Reader.java: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello/org/apache/maven/artifact/repository/metadata/io/xpp3/MetadataXpp3Reader.java uses unchecked or unsafe operations.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/generated-sources/modello/org/apache/maven/artifact/repository/metadata/io/xpp3/MetadataXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-repository-metadata ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-repository-metadata ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/src/test/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-repository-metadata ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-repository-metadata ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ maven-repository-metadata ---
+[INFO] Building jar: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-repository-metadata/target/maven-repository-metadata-3.8.1.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.7.1:attach-descriptor (attach-descriptor) @ maven-repository-metadata ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --------------< org.apache.maven:maven-resolver-provider >--------------
+[INFO] Building Maven Artifact Resolver Provider 3.8.1                  [10/15]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ maven-resolver-provider ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-resolver-provider ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-resolver-provider ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-resolver-provider ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-resolver-provider ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-resolver-provider ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-resolver-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-resolver-provider ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 23 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/target/classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/src/main/java/org/apache/maven/repository/internal/MavenAetherModule.java: Some input files use or override a deprecated API.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/src/main/java/org/apache/maven/repository/internal/MavenAetherModule.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-resolver-provider ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- sisu-maven-plugin:0.3.4:main-index (default) @ maven-resolver-provider ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-resolver-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-resolver-provider ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/target/test-classes
+[INFO] 
+[INFO] --- sisu-maven-plugin:0.3.4:test-index (default) @ maven-resolver-provider ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-resolver-provider ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.maven.repository.internal.DefaultVersionResolverTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.053 s - in org.apache.maven.repository.internal.DefaultVersionResolverTest
+[INFO] Running org.apache.maven.repository.internal.MavenRepositorySystemUtilsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.maven.repository.internal.MavenRepositorySystemUtilsTest
+[INFO] Running org.apache.maven.repository.internal.RepositorySystemTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.889 s - in org.apache.maven.repository.internal.RepositorySystemTest
+[INFO] Running org.apache.maven.repository.internal.DefaultModelResolverTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.463 s - in org.apache.maven.repository.internal.DefaultModelResolverTest
+[INFO] Running org.apache.maven.repository.internal.DefaultArtifactDescriptorReaderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.696 s - in org.apache.maven.repository.internal.DefaultArtifactDescriptorReaderTest
+[INFO] Running org.apache.maven.repository.internal.RemoteSnapshotMetadataTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in org.apache.maven.repository.internal.RemoteSnapshotMetadataTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-resolver-provider ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-resolver-provider ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-resolver-provider ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-resolver-provider ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-resolver-provider ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-resolver-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-resolver-provider ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 23 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/target/classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/src/main/java/org/apache/maven/repository/internal/MavenAetherModule.java: Some input files use or override a deprecated API.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/src/main/java/org/apache/maven/repository/internal/MavenAetherModule.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-resolver-provider ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- sisu-maven-plugin:0.3.4:main-index (default) @ maven-resolver-provider ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-resolver-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-resolver-provider ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- sisu-maven-plugin:0.3.4:test-index (default) @ maven-resolver-provider ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-resolver-provider ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ maven-resolver-provider ---
+[INFO] Building jar: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-resolver-provider/target/maven-resolver-provider-3.8.1.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.7.1:attach-descriptor (attach-descriptor) @ maven-resolver-provider ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --------------------< org.apache.maven:maven-core >---------------------
+[INFO] Building Maven Core 3.8.1                                        [11/15]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ maven-core ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-core ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-core ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-core ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-core ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (create-noncanonicalrev) @ maven-core ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (create-buildnumber) @ maven-core ---
+[INFO] Executing: /bin/sh -c cd '/Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core
+[INFO] Storing buildNumber: a25bd4ec89943384832eb4cb3620cfe009c33473 at timestamp: 1636907939266
+[INFO] Storing buildScmBranch: master
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:java (modello) @ maven-core ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/toolchains.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-reader (modello) @ maven-core ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/toolchains.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-writer (modello) @ maven-core ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/toolchains.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 342 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/target/classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/src/main/java/org/apache/maven/project/MavenProject.java: Some input files use or override a deprecated API.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/src/main/java/org/apache/maven/project/MavenProject.java: Recompile with -Xlint:deprecation for details.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello/org/apache/maven/toolchain/model/io/xpp3/MavenToolchainsXpp3Reader.java: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello/org/apache/maven/toolchain/model/io/xpp3/MavenToolchainsXpp3Reader.java uses unchecked or unsafe operations.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello/org/apache/maven/toolchain/model/io/xpp3/MavenToolchainsXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-core ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- plexus-component-metadata:2.1.0:generate-metadata (default) @ maven-core ---
+[INFO] Discovered 58 component descriptors(s)
+[INFO] Merging 3 manually-crafted descriptor file(s)
+[INFO] 
+[INFO] --- sisu-maven-plugin:0.3.4:main-index (default) @ maven-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 237 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 87 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/target/test-classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/src/test/java/org/apache/maven/toolchain/DefaultToolchainManagerTest.java: Some input files use or override a deprecated API.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/src/test/java/org/apache/maven/toolchain/DefaultToolchainManagerTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- plexus-component-metadata:2.1.0:generate-test-metadata (default) @ maven-core ---
+[INFO] Discovered 4 component descriptors(s)
+[INFO] Merging 1 manually-crafted descriptor file(s)
+[INFO] 
+[INFO] --- sisu-maven-plugin:0.3.4:test-index (default) @ maven-core ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-core ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.maven.settings.SettingsUtilsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in org.apache.maven.settings.SettingsUtilsTest
+[INFO] Running org.apache.maven.settings.PomConstructionWithSettingsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.084 s - in org.apache.maven.settings.PomConstructionWithSettingsTest
+[INFO] Running org.apache.maven.configuration.DefaultBeanConfiguratorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 s - in org.apache.maven.configuration.DefaultBeanConfiguratorTest
+[INFO] Running org.apache.maven.ProjectDependenciesResolverTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.267 s - in org.apache.maven.ProjectDependenciesResolverTest
+[INFO] Running org.apache.maven.DefaultMavenTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 s - in org.apache.maven.DefaultMavenTest
+[INFO] Running org.apache.maven.graph.DefaultProjectDependencyGraphTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.apache.maven.graph.DefaultProjectDependencyGraphTest
+[INFO] Running org.apache.maven.plugin.PluginParameterExpressionEvaluatorTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.112 s - in org.apache.maven.plugin.PluginParameterExpressionEvaluatorTest
+[INFO] Running org.apache.maven.plugin.internal.DefaultLegacySupportTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.maven.plugin.internal.DefaultLegacySupportTest
+[INFO] Running org.apache.maven.plugin.PluginParameterExceptionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.maven.plugin.PluginParameterExceptionTest
+[INFO] Running org.apache.maven.plugin.PluginManagerTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.048 s - in org.apache.maven.plugin.PluginManagerTest
+[INFO] Running org.apache.maven.lifecycle.mapping.LifecyclePhaseTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in org.apache.maven.lifecycle.mapping.LifecyclePhaseTest
+[INFO] Running org.apache.maven.lifecycle.LifecycleExecutorSubModulesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 s - in org.apache.maven.lifecycle.LifecycleExecutorSubModulesTest
+[INFO] Running org.apache.maven.lifecycle.LifecycleExecutorTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.067 s - in org.apache.maven.lifecycle.LifecycleExecutorTest
+[INFO] Running org.apache.maven.lifecycle.DefaultLifecyclesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.apache.maven.lifecycle.DefaultLifecyclesTest
+[INFO] Running org.apache.maven.lifecycle.internal.ProjectBuildListTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.maven.lifecycle.internal.ProjectBuildListTest
+[INFO] Running org.apache.maven.lifecycle.internal.PhaseRecorderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.maven.lifecycle.internal.PhaseRecorderTest
+[INFO] Running org.apache.maven.lifecycle.internal.LifecycleTaskSegmentCalculatorImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.lifecycle.internal.LifecycleTaskSegmentCalculatorImplTest
+[INFO] Running org.apache.maven.lifecycle.internal.LifecycleDependencyResolverTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s - in org.apache.maven.lifecycle.internal.LifecycleDependencyResolverTest
+[INFO] Running org.apache.maven.lifecycle.internal.ConcurrencyDependencyGraphTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.maven.lifecycle.internal.ConcurrencyDependencyGraphTest
+[INFO] Running org.apache.maven.lifecycle.internal.BuildListCalculatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.lifecycle.internal.BuildListCalculatorTest
+[INFO] Running org.apache.maven.lifecycle.internal.BuilderCommonTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.lifecycle.internal.BuilderCommonTest
+[INFO] Running org.apache.maven.lifecycle.internal.stub.ProjectDependencyGraphStubTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.lifecycle.internal.stub.ProjectDependencyGraphStubTest
+[INFO] Running org.apache.maven.lifecycle.internal.LifecycleExecutionPlanCalculatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in org.apache.maven.lifecycle.internal.LifecycleExecutionPlanCalculatorTest
+[INFO] Running org.apache.maven.lifecycle.internal.builder.multithreaded.ThreadOutputMuxerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.243 s - in org.apache.maven.lifecycle.internal.builder.multithreaded.ThreadOutputMuxerTest
+[INFO] Running org.apache.maven.lifecycle.internal.builder.multithreaded.ConcurrencyDependencyGraphTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.lifecycle.internal.builder.multithreaded.ConcurrencyDependencyGraphTest
+[INFO] Running org.apache.maven.lifecycle.MavenExecutionPlanTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.maven.lifecycle.MavenExecutionPlanTest
+[INFO] Running org.apache.maven.MavenTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 s - in org.apache.maven.MavenTest
+[INFO] Running org.apache.maven.project.ProjectSorterTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.apache.maven.project.ProjectSorterTest
+[INFO] Running org.apache.maven.project.canonical.CanonicalProjectBuilderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 s - in org.apache.maven.project.canonical.CanonicalProjectBuilderTest
+[INFO] Running org.apache.maven.project.ExtensionDescriptorBuilderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.maven.project.ExtensionDescriptorBuilderTest
+[INFO] Running org.apache.maven.project.MavenProjectTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.638 s - in org.apache.maven.project.MavenProjectTest
+[INFO] Running org.apache.maven.project.PomConstructionTest
+[INFO] Tests run: 123, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.131 s - in org.apache.maven.project.PomConstructionTest
+[INFO] Running org.apache.maven.project.ProjectBuilderTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.549 s - in org.apache.maven.project.ProjectBuilderTest
+[INFO] Running org.apache.maven.project.ProjectModelResolverTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.455 s - in org.apache.maven.project.ProjectModelResolverTest
+[INFO] Running org.apache.maven.project.DefaultMavenProjectBuilderTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.771 s - in org.apache.maven.project.DefaultMavenProjectBuilderTest
+[INFO] Running org.apache.maven.project.artifact.MavenMetadataSourceTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 s - in org.apache.maven.project.artifact.MavenMetadataSourceTest
+[INFO] Running org.apache.maven.project.artifact.DefaultProjectArtifactsCacheTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.maven.project.artifact.DefaultProjectArtifactsCacheTest
+[INFO] Running org.apache.maven.project.artifact.DefaultMavenMetadataCacheTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.maven.project.artifact.DefaultMavenMetadataCacheTest
+[INFO] Running org.apache.maven.execution.scope.internal.MojoExecutionScopeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.maven.execution.scope.internal.MojoExecutionScopeTest
+[INFO] Running org.apache.maven.execution.DefaultMavenExecutionRequestPopulatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.733 s - in org.apache.maven.execution.DefaultMavenExecutionRequestPopulatorTest
+[INFO] Running org.apache.maven.execution.DefaultMavenExecutionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.execution.DefaultMavenExecutionTest
+[INFO] Running org.apache.maven.rtinfo.internal.DefaultRuntimeInformationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.apache.maven.rtinfo.internal.DefaultRuntimeInformationTest
+[INFO] Running org.apache.maven.artifact.handler.ArtifactHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in org.apache.maven.artifact.handler.ArtifactHandlerTest
+[INFO] Running org.apache.maven.artifact.resolver.filter.ExclusionArtifactFilterTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.565 s - in org.apache.maven.artifact.resolver.filter.ExclusionArtifactFilterTest
+[INFO] Running org.apache.maven.exception.DefaultExceptionHandlerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.maven.exception.DefaultExceptionHandlerTest
+[INFO] Running org.apache.maven.MavenLifecycleParticipantTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.18 s - in org.apache.maven.MavenLifecycleParticipantTest
+[INFO] Running org.apache.maven.toolchain.DefaultToolchainManagerPrivateTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.263 s - in org.apache.maven.toolchain.DefaultToolchainManagerPrivateTest
+[INFO] Running org.apache.maven.toolchain.merge.MavenToolchainMergerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.maven.toolchain.merge.MavenToolchainMergerTest
+[INFO] Running org.apache.maven.toolchain.DefaultToolchainManagerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.maven.toolchain.DefaultToolchainManagerTest
+[INFO] Running org.apache.maven.toolchain.RequirementMatcherFactoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.maven.toolchain.RequirementMatcherFactoryTest
+[INFO] Running org.apache.maven.toolchain.DefaultToolchainTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.maven.toolchain.DefaultToolchainTest
+[INFO] Running org.apache.maven.toolchain.building.DefaultToolchainsBuilderTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 s - in org.apache.maven.toolchain.building.DefaultToolchainsBuilderTest
+[INFO] Running org.apache.maven.toolchain.building.ToolchainsBuildingExceptionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.toolchain.building.ToolchainsBuildingExceptionTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 332, Failures: 0, Errors: 0, Skipped: 1
+[INFO] 
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-core ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-core ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-core ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-core ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (create-noncanonicalrev) @ maven-core ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (create-buildnumber) @ maven-core ---
+[INFO] Executing: /bin/sh -c cd '/Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core
+[INFO] Storing buildNumber: a25bd4ec89943384832eb4cb3620cfe009c33473 at timestamp: 1636907965286
+[INFO] Storing buildScmBranch: master
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:java (modello) @ maven-core ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/toolchains.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-reader (modello) @ maven-core ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/toolchains.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-writer (modello) @ maven-core ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/toolchains.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 342 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/target/classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/src/main/java/org/apache/maven/project/MavenProject.java: Some input files use or override a deprecated API.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/src/main/java/org/apache/maven/project/MavenProject.java: Recompile with -Xlint:deprecation for details.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello/org/apache/maven/toolchain/model/io/xpp3/MavenToolchainsXpp3Reader.java: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello/org/apache/maven/toolchain/model/io/xpp3/MavenToolchainsXpp3Reader.java uses unchecked or unsafe operations.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/target/generated-sources/modello/org/apache/maven/toolchain/model/io/xpp3/MavenToolchainsXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-core ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- plexus-component-metadata:2.1.0:generate-metadata (default) @ maven-core ---
+[INFO] Discovered 58 component descriptors(s)
+[INFO] Merging 3 manually-crafted descriptor file(s)
+[INFO] 
+[INFO] --- sisu-maven-plugin:0.3.4:main-index (default) @ maven-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 237 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- plexus-component-metadata:2.1.0:generate-test-metadata (default) @ maven-core ---
+[INFO] Discovered 4 component descriptors(s)
+[INFO] Merging 1 manually-crafted descriptor file(s)
+[INFO] 
+[INFO] --- sisu-maven-plugin:0.3.4:test-index (default) @ maven-core ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-core ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ maven-core ---
+[INFO] Building jar: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-core/target/maven-core-3.8.1.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.7.1:attach-descriptor (attach-descriptor) @ maven-core ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] ---------------< org.apache.maven:maven-slf4j-provider >----------------
+[INFO] Building Maven SLF4J Simple Provider 3.8.1                       [12/15]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ maven-slf4j-provider ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-slf4j-provider ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-slf4j-provider ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-slf4j-provider ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-slf4j-provider ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.12:add-source (add-slf4j-simple) @ maven-slf4j-provider ---
+[INFO] Source directory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/target/generated-sources/slf4j-simple added.
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:unpack (unzip-slf4j-simple) @ maven-slf4j-provider ---
+[INFO] Configured Artifact: org.slf4j:slf4j-simple:sources:1.7.29:jar
+[INFO] Unpacking /Users/michaelseger/.m2/repository/org/slf4j/slf4j-simple/1.7.29/slf4j-simple-1.7.29-sources.jar to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/target/generated-sources/slf4j-simple with includes "org/slf4j/impl/*.java" and excludes "org/slf4j/impl/StaticLoggerBinder*"
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-slf4j-provider ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-slf4j-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-slf4j-provider ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/target/classes
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-slf4j-provider ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-slf4j-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-slf4j-provider ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-slf4j-provider ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-slf4j-provider ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-slf4j-provider ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-slf4j-provider ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-slf4j-provider ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.12:add-source (add-slf4j-simple) @ maven-slf4j-provider ---
+[INFO] Source directory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/target/generated-sources/slf4j-simple added.
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:unpack (unzip-slf4j-simple) @ maven-slf4j-provider ---
+[INFO] Configured Artifact: org.slf4j:slf4j-simple:sources:1.7.29:jar
+[INFO] slf4j-simple-1.7.29-sources.jar already unpacked.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-slf4j-provider ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-slf4j-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-slf4j-provider ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-slf4j-provider ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-slf4j-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/src/test/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-slf4j-provider ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-slf4j-provider ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ maven-slf4j-provider ---
+[INFO] Building jar: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-slf4j-provider/target/maven-slf4j-provider-3.8.1.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.7.1:attach-descriptor (attach-descriptor) @ maven-slf4j-provider ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] ------------------< org.apache.maven:maven-embedder >-------------------
+[INFO] Building Maven Embedder 3.8.1                                    [13/15]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ maven-embedder ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-embedder ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-embedder ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-embedder ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-embedder ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:java (modello) @ maven-embedder ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/core-extensions.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-reader (modello) @ maven-embedder ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/core-extensions.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-writer (modello) @ maven-embedder ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/core-extensions.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-embedder ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-embedder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-embedder ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 32 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/target/classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/src/main/java/org/apache/maven/cli/CLIManager.java: Some input files use or override a deprecated API.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/src/main/java/org/apache/maven/cli/CLIManager.java: Recompile with -Xlint:deprecation for details.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello/org/apache/maven/cli/internal/extension/model/io/xpp3/CoreExtensionsXpp3Reader.java: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello/org/apache/maven/cli/internal/extension/model/io/xpp3/CoreExtensionsXpp3Reader.java uses unchecked or unsafe operations.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello/org/apache/maven/cli/internal/extension/model/io/xpp3/CoreExtensionsXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-embedder ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- sisu-maven-plugin:0.3.4:main-index (default) @ maven-embedder ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-embedder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-embedder ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/target/test-classes
+[INFO] 
+[INFO] --- sisu-maven-plugin:0.3.4:test-index (default) @ maven-embedder ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-embedder ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.maven.cli.CleanArgumentTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 s - in org.apache.maven.cli.CleanArgumentTest
+[INFO] Running org.apache.maven.cli.CLIManagerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.apache.maven.cli.CLIManagerTest
+[INFO] Running org.apache.maven.cli.MavenCliTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.613 s - in org.apache.maven.cli.MavenCliTest
+[INFO] Running org.apache.maven.cli.transfer.FileSizeFormatTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.maven.cli.transfer.FileSizeFormatTest
+[INFO] Running org.apache.maven.cli.CLIReportingUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.maven.cli.CLIReportingUtilsTest
+[INFO] Running org.apache.maven.cli.CLIManagerDocumentationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.maven.cli.CLIManagerDocumentationTest
+[INFO] Running org.apache.maven.cli.event.ExecutionEventLoggerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.901 s - in org.apache.maven.cli.event.ExecutionEventLoggerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-embedder ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-embedder ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-embedder ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-embedder ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:java (modello) @ maven-embedder ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/core-extensions.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-reader (modello) @ maven-embedder ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/core-extensions.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-writer (modello) @ maven-embedder ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/core-extensions.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-embedder ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-embedder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-embedder ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 32 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/target/classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/src/main/java/org/apache/maven/cli/CLIManager.java: Some input files use or override a deprecated API.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/src/main/java/org/apache/maven/cli/CLIManager.java: Recompile with -Xlint:deprecation for details.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello/org/apache/maven/cli/internal/extension/model/io/xpp3/CoreExtensionsXpp3Reader.java: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello/org/apache/maven/cli/internal/extension/model/io/xpp3/CoreExtensionsXpp3Reader.java uses unchecked or unsafe operations.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/target/generated-sources/modello/org/apache/maven/cli/internal/extension/model/io/xpp3/CoreExtensionsXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-embedder ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- sisu-maven-plugin:0.3.4:main-index (default) @ maven-embedder ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-embedder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-embedder ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- sisu-maven-plugin:0.3.4:test-index (default) @ maven-embedder ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-embedder ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ maven-embedder ---
+[INFO] Building jar: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-embedder/target/maven-embedder-3.8.1.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.7.1:attach-descriptor (attach-descriptor) @ maven-embedder ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] -------------------< org.apache.maven:maven-compat >--------------------
+[INFO] Building Maven Compat 3.8.1                                      [14/15]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ maven-compat ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-compat ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-compat ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-compat ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-compat ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:java (modello) @ maven-compat ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/profiles.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] Working on model: src/main/mdo/paramdoc.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-reader (modello) @ maven-compat ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/profiles.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] Working on model: src/main/mdo/paramdoc.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-writer (modello) @ maven-compat ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/profiles.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] Working on model: src/main/mdo/paramdoc.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-compat ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-compat ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-compat ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 146 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/target/classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/src/main/java/org/apache/maven/repository/legacy/WagonManager.java: Some input files use or override a deprecated API.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/src/main/java/org/apache/maven/repository/legacy/WagonManager.java: Recompile with -Xlint:deprecation for details.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello/org/apache/maven/profiles/io/xpp3/ProfilesXpp3Reader.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello/org/apache/maven/profiles/io/xpp3/ProfilesXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-compat ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- plexus-component-metadata:2.1.0:generate-metadata (default) @ maven-compat ---
+[INFO] Discovered 34 component descriptors(s)
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-compat ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 156 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-compat ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 68 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/target/test-classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/src/test/java/org/apache/maven/repository/legacy/DefaultWagonManagerTest.java: Some input files use or override a deprecated API.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/src/test/java/org/apache/maven/repository/legacy/DefaultWagonManagerTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/src/test/java/org/apache/maven/repository/legacy/resolver/DefaultArtifactCollectorTest.java: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/src/test/java/org/apache/maven/repository/legacy/resolver/DefaultArtifactCollectorTest.java uses unchecked or unsafe operations.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/src/test/java/org/apache/maven/repository/legacy/resolver/DefaultArtifactCollectorTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- plexus-component-metadata:2.1.0:generate-test-metadata (default) @ maven-compat ---
+[INFO] Discovered 12 component descriptors(s)
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-compat ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.maven.repository.legacy.LegacyRepositorySystemTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.38 s - in org.apache.maven.repository.legacy.LegacyRepositorySystemTest
+[INFO] Running org.apache.maven.repository.legacy.DefaultUpdateCheckManagerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.664 s - in org.apache.maven.repository.legacy.DefaultUpdateCheckManagerTest
+[INFO] Running org.apache.maven.repository.legacy.DefaultWagonManagerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.224 s - in org.apache.maven.repository.legacy.DefaultWagonManagerTest
+[INFO] Running org.apache.maven.repository.legacy.resolver.conflict.FarthestConflictResolverTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 s - in org.apache.maven.repository.legacy.resolver.conflict.FarthestConflictResolverTest
+[INFO] Running org.apache.maven.repository.legacy.resolver.conflict.NewestConflictResolverTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 s - in org.apache.maven.repository.legacy.resolver.conflict.NewestConflictResolverTest
+[INFO] Running org.apache.maven.repository.legacy.resolver.conflict.OldestConflictResolverTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 s - in org.apache.maven.repository.legacy.resolver.conflict.OldestConflictResolverTest
+[INFO] Running org.apache.maven.repository.legacy.resolver.conflict.NearestConflictResolverTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 s - in org.apache.maven.repository.legacy.resolver.conflict.NearestConflictResolverTest
+[INFO] Running org.apache.maven.repository.legacy.resolver.DefaultArtifactCollectorTest
+[INFO] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.785 s - in org.apache.maven.repository.legacy.resolver.DefaultArtifactCollectorTest
+[INFO] Running org.apache.maven.repository.LegacyRepositorySystemTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.286 s - in org.apache.maven.repository.LegacyRepositorySystemTest
+[INFO] Running org.apache.maven.repository.MirrorProcessorTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.226 s - in org.apache.maven.repository.MirrorProcessorTest
+[INFO] Running org.apache.maven.repository.DefaultMirrorSelectorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.repository.DefaultMirrorSelectorTest
+[INFO] Running org.apache.maven.repository.metadata.DefaultGraphConflictResolutionPolicyTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.apache.maven.repository.metadata.DefaultGraphConflictResolutionPolicyTest
+[INFO] Running org.apache.maven.repository.metadata.DefaultClasspathTransformationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 s - in org.apache.maven.repository.metadata.DefaultClasspathTransformationTest
+[INFO] Running org.apache.maven.repository.metadata.DefaultGraphConflictResolverTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s - in org.apache.maven.repository.metadata.DefaultGraphConflictResolverTest
+[INFO] Running org.apache.maven.project.path.DefaultPathTranslatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.maven.project.path.DefaultPathTranslatorTest
+[INFO] Running org.apache.maven.project.ProjectClasspathTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 s - in org.apache.maven.project.ProjectClasspathTest
+[INFO] Running org.apache.maven.project.inheritance.t11.ProjectInheritanceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 s - in org.apache.maven.project.inheritance.t11.ProjectInheritanceTest
+[INFO] Running org.apache.maven.project.inheritance.t10.ProjectInheritanceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 s - in org.apache.maven.project.inheritance.t10.ProjectInheritanceTest
+[INFO] Running org.apache.maven.project.inheritance.t03.ProjectInheritanceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 s - in org.apache.maven.project.inheritance.t03.ProjectInheritanceTest
+[INFO] Running org.apache.maven.project.inheritance.t04.ProjectInheritanceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 s - in org.apache.maven.project.inheritance.t04.ProjectInheritanceTest
+[INFO] Running org.apache.maven.project.inheritance.t05.ProjectInheritanceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 s - in org.apache.maven.project.inheritance.t05.ProjectInheritanceTest
+[INFO] Running org.apache.maven.project.inheritance.t02.ProjectInheritanceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 s - in org.apache.maven.project.inheritance.t02.ProjectInheritanceTest
+[INFO] Running org.apache.maven.project.inheritance.t12.ProjectInheritanceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 s - in org.apache.maven.project.inheritance.t12.ProjectInheritanceTest
+[INFO] Running org.apache.maven.project.inheritance.t12scm.ProjectInheritanceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 s - in org.apache.maven.project.inheritance.t12scm.ProjectInheritanceTest
+[INFO] Running org.apache.maven.project.inheritance.t07.ProjectInheritanceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s - in org.apache.maven.project.inheritance.t07.ProjectInheritanceTest
+[INFO] Running org.apache.maven.project.inheritance.t00.ProjectInheritanceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 s - in org.apache.maven.project.inheritance.t00.ProjectInheritanceTest
+[INFO] Running org.apache.maven.project.inheritance.t09.ProjectInheritanceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 s - in org.apache.maven.project.inheritance.t09.ProjectInheritanceTest
+[INFO] Running org.apache.maven.project.inheritance.t08.ProjectInheritanceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 s - in org.apache.maven.project.inheritance.t08.ProjectInheritanceTest
+[INFO] Running org.apache.maven.project.inheritance.t01.ProjectInheritanceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 s - in org.apache.maven.project.inheritance.t01.ProjectInheritanceTest
+[INFO] Running org.apache.maven.project.inheritance.t06.ProjectInheritanceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 s - in org.apache.maven.project.inheritance.t06.ProjectInheritanceTest
+[INFO] Running org.apache.maven.project.ModelUtilsTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.maven.project.ModelUtilsTest
+[INFO] Running org.apache.maven.artifact.deployer.ArtifactDeployerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 s - in org.apache.maven.artifact.deployer.ArtifactDeployerTest
+[INFO] Running org.apache.maven.artifact.repository.MavenArtifactRepositoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.artifact.repository.MavenArtifactRepositoryTest
+[INFO] Running org.apache.maven.artifact.installer.ArtifactInstallerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 s - in org.apache.maven.artifact.installer.ArtifactInstallerTest
+[INFO] Running org.apache.maven.artifact.transform.TransformationManagerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in org.apache.maven.artifact.transform.TransformationManagerTest
+[INFO] Running org.apache.maven.artifact.factory.DefaultArtifactFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in org.apache.maven.artifact.factory.DefaultArtifactFactoryTest
+[INFO] Running org.apache.maven.artifact.resolver.DefaultArtifactResolverTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.154 s - in org.apache.maven.artifact.resolver.DefaultArtifactResolverTest
+[INFO] Running org.apache.maven.artifact.resolver.ArtifactResolverTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.557 s - in org.apache.maven.artifact.resolver.ArtifactResolverTest
+[INFO] Running org.apache.maven.artifact.resolver.ArtifactResolutionExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.artifact.resolver.ArtifactResolutionExceptionTest
+[INFO] Running org.apache.maven.artifact.resolver.filter.ScopeArtifactFilterTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.artifact.resolver.filter.ScopeArtifactFilterTest
+[INFO] Running org.apache.maven.artifact.resolver.filter.FilterHashEqualsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.artifact.resolver.filter.FilterHashEqualsTest
+[INFO] Running org.apache.maven.artifact.resolver.filter.OrArtifactFilterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.maven.artifact.resolver.filter.OrArtifactFilterTest
+[INFO] Running org.apache.maven.artifact.resolver.filter.AndArtifactFilterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.maven.artifact.resolver.filter.AndArtifactFilterTest
+[INFO] Running org.apache.maven.profiles.manager.DefaultProfileManagerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.989 s - in org.apache.maven.profiles.manager.DefaultProfileManagerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 142, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ maven-compat ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ maven-compat ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ maven-compat ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ maven-compat ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:java (modello) @ maven-compat ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/profiles.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] Working on model: src/main/mdo/paramdoc.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-reader (modello) @ maven-compat ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/profiles.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] Working on model: src/main/mdo/paramdoc.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.11:xpp3-writer (modello) @ maven-compat ---
+[INFO] outputDirectory: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/profiles.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] Working on model: src/main/mdo/paramdoc.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ maven-compat ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ maven-compat ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ maven-compat ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 146 source files to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/target/classes
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/src/main/java/org/apache/maven/repository/legacy/WagonManager.java: Some input files use or override a deprecated API.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/src/main/java/org/apache/maven/repository/legacy/WagonManager.java: Recompile with -Xlint:deprecation for details.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello/org/apache/maven/profiles/io/xpp3/ProfilesXpp3Reader.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/target/generated-sources/modello/org/apache/maven/profiles/io/xpp3/ProfilesXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ maven-compat ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- plexus-component-metadata:2.1.0:generate-metadata (default) @ maven-compat ---
+[INFO] Discovered 34 component descriptors(s)
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ maven-compat ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 156 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ maven-compat ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- plexus-component-metadata:2.1.0:generate-test-metadata (default) @ maven-compat ---
+[INFO] Discovered 12 component descriptors(s)
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ maven-compat ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ maven-compat ---
+[INFO] Building jar: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/maven-compat/target/maven-compat-3.8.1.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.7.1:attach-descriptor (attach-descriptor) @ maven-compat ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] -------------------< org.apache.maven:apache-maven >--------------------
+[INFO] Building Apache Maven Distribution 3.8.1                         [15/15]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ apache-maven ---
+[INFO] Deleting /Users/michaelseger/git/build-bench/maven-maven-3.8.1/apache-maven/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ apache-maven ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ apache-maven ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ apache-maven ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ apache-maven ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:unpack-dependencies (unpack-jansi-native) @ apache-maven ---
+[INFO] Unpacking /Users/michaelseger/.m2/repository/org/fusesource/jansi/jansi/1.17.1/jansi-1.17.1.jar to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/apache-maven/target/dependency with includes "META-INF/native/**" and excludes ""
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ apache-maven ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ apache-maven ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (test-compile) @ apache-maven ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/michaelseger/git/build-bench/maven-maven-3.8.1/apache-maven/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (test) @ apache-maven ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.maven.settings.GlobalSettingsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 s - in org.apache.maven.settings.GlobalSettingsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ apache-maven ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ apache-maven ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-known-bad-maven-versions) @ apache-maven ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (rat-check) @ apache-maven ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:unpack-dependencies (unpack-jansi-native) @ apache-maven ---
+[INFO] org.fusesource.jansi:jansi:jar:1.17.1 already exists in destination.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ apache-maven ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.17:check (check-java-compat) @ apache-maven ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (test-compile) @ apache-maven ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (test) @ apache-maven ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-site-plugin:3.7.1:attach-descriptor (attach-descriptor) @ apache-maven ---
+[INFO] Attaching 'src/site/site.xml' site descriptor with classifier 'site'.
+[INFO] 
+[INFO] --- maven-assembly-plugin:3.2.0:single (create-distro-packages) @ apache-maven ---
+[INFO] Reading assembly descriptor: src/main/assembly/bin.xml
+[INFO] Building zip: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/apache-maven/target/apache-maven-3.8.1-bin.zip
+[INFO] Building tar: /Users/michaelseger/git/build-bench/maven-maven-3.8.1/apache-maven/target/apache-maven-3.8.1-bin.tar.gz
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Apache Maven 3.8.1:
+[INFO] 
+[INFO] Apache Maven ....................................... SUCCESS [  3.560 s]
+[INFO] Maven Model ........................................ SUCCESS [  9.500 s]
+[INFO] Maven Artifact ..................................... SUCCESS [  2.793 s]
+[INFO] Maven Plugin API ................................... SUCCESS [  3.216 s]
+[INFO] Maven Builder Support .............................. SUCCESS [  1.888 s]
+[INFO] Maven Model Builder ................................ SUCCESS [  7.289 s]
+[INFO] Maven Settings ..................................... SUCCESS [  1.423 s]
+[INFO] Maven Settings Builder ............................. SUCCESS [  2.385 s]
+[INFO] Maven Repository Metadata Model .................... SUCCESS [  1.201 s]
+[INFO] Maven Artifact Resolver Provider ................... SUCCESS [  7.521 s]
+[INFO] Maven Core ......................................... SUCCESS [ 31.693 s]
+[INFO] Maven SLF4J Simple Provider ........................ SUCCESS [  1.601 s]
+[INFO] Maven Embedder ..................................... SUCCESS [  7.431 s]
+[INFO] Maven Compat ....................................... SUCCESS [ 16.242 s]
+[INFO] Apache Maven Distribution .......................... SUCCESS [  8.995 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:47 min
+[INFO] Finished at: 2021-11-14T17:40:04+01:00
+[INFO] ------------------------------------------------------------------------
+20211114T164004
+ELAPSED TIME: 109 s
