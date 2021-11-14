@@ -11,7 +11,7 @@ Multiple iterations of the benchmark can be run in a pre-defined order calling:
 
 The projects included in the benchmark is defined at the end of the main benchmark script: ```run.sh```
 
-The logs from the benchmark are recored in the directory: *reports*
+The logs from the benchmark are recorded in the directory: *reports*
 
 Calling ```./stats.sh```  
 extracts the timitng statistics from all log files in *reports*.
