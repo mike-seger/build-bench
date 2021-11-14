@@ -17,9 +17,14 @@ function runIt() {
         local maven="./mvnw"
 	(
 	if [[ "$OS" == *Windows*  ]] ; then
-		export JAVA_HOME=$(cygpath -w $JAVA_HOME)
-		maven="./mvnw.cmd"
-		buildcmd="${buildcmd/mvnw/mvnw.cmd}"
+		if [[ -x $(which cygpath) && "$JAVA_HOME" == /cygdrive/*  ]] ; then
+			export JAVA_HOME=$(cygpath -w $JAVA_HOME)
+		fi
+		#maven="./mvnw.cmd"
+		#buildcmd="${buildcmd/mvnw/mvnw.cmd}"
+	fi
+	if [[ -z "$JAVA_HOME" ]] ; then
+		export JAVA_HOME=$(cd $(dirname "$(which java)")/.. >/dev/null; pwd)
 	fi
 	cd "${workdir}"
 	git checkout . # restore original source because of rogue build projects like spring-boot
@@ -91,3 +96,6 @@ runIt spring-data-jdbc-2.2.1 "./mvnw clean test package"
 
 # fix old names
 # rename "s/_(c[01])_(.*).txt/_\2_\1_.txt/" *.txt
+
+# Count DL
+# ls reports/run* | while read f ; do echo -n "$f: " ; grep -i download "$f"| wc -l; done
