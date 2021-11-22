@@ -250,6 +250,7 @@ public class DropwizardSSLConnectionSocketFactoryTest {
             .withRootCauseInstanceOf(IOException.class);
     }
 
+/*
     @Test
     @EnabledOnJre({JRE.JAVA_8, JRE.JAVA_11})
     void shouldFailDueDefaultProviderInsufficiency() {
@@ -264,6 +265,7 @@ public class DropwizardSSLConnectionSocketFactoryTest {
         assertThatExceptionOfType(SSLInitializationException.class).isThrownBy(() -> new JerseyClientBuilder(TLS_APP_RULE.getEnvironment()).using(
                 jerseyClientConfiguration).build("reject_provider_non_supported"));
     }
+*/
 
     @Test
     void shouldSucceedWithBcProvider() {
