@@ -9,7 +9,7 @@ Multiple iterations of the benchmark can be run in a pre-defined order calling:
 ./multirun.sh
 ```
 
-The projects included in the benchmark is defined at the end of the main benchmark script: ```run.sh```
+The projects included in the benchmark are defined at the end of the main benchmark script: ```run.sh```
 
 The logs from the benchmark are recorded in the directory: *reports*
 
