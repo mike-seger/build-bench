@@ -6,3 +6,5 @@ sh ./run.sh
 sh ./run.sh
 sh ./run.sh
 sh ./run.sh
+
+sh stats.sh >reports/stats.txt
