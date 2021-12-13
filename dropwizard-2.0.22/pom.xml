@@ -52,6 +52,9 @@
     </modules>
 
     <properties>
+        <gpg.skip>true</gpg.skip>
+        <pgpverify.skip>true</pgpverify.skip>
+
         <dropwizard.url>http://www.dropwizard.io/${project.version}</dropwizard.url>
 
         <project.build.outputTimestamp>2011-01-18T18:12:03Z</project.build.outputTimestamp>
