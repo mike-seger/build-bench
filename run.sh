@@ -1,6 +1,9 @@
 #!/bin/bash
 
 dldeps=0
+#export maven=./mvnw
+export maven=mvn
+
 if [ "$1" == "dl" ] ; then
 	dldeps=1
 fi
@@ -14,7 +17,6 @@ function runIt() {
 	local workdir=$(dirname "$0")/$project
 	local buildcmd=$2
 	local gb_opts=""
-        local maven="./mvnw"
 	(
 	if [[ "$OS" == *Windows*  ]] ; then
 		if [[ -x $(which cygpath) && "$JAVA_HOME" == /cygdrive/*  ]] ; then
@@ -56,7 +58,7 @@ function runIt() {
 					xargs kill -9 >/dev/null 2>&1
 			fi
 			rm -fR ~/.gradle/cache ~/.gradle/wrapper .gradle/cache gradlecache 
-		elif [[ "$buildcmd" ==  *"./mvnw"* ]] ; then
+		elif [[ "$buildcmd" ==  *"mvn"* ]] ; then
 			buildcmd="$buildcmd -U --fail-fast -Dsurefire.skipAfterFailureCount=1"
 			$maven dependency:purge-local-repository
 			rm -fR ~/.m2/repository .m2/repository
@@ -85,10 +87,10 @@ function runIt() {
 	)
 }
 
-runIt maven-maven-3.8.1 "./mvnw -Drat.skip=true clean test package"
-runIt dropwizard-2.0.22 "./mvnw clean test package"
-runIt metrics-4.1.22 "./mvnw clean test package"
-runIt spring-data-jdbc-2.2.1 "./mvnw clean test package"
+runIt maven-maven-3.8.1 "$maven -Drat.skip=true clean test package"
+runIt dropwizard-2.0.22 "$maven clean test package"
+runIt metrics-4.1.22 "$maven clean test package"
+runIt spring-data-jdbc-2.2.1 "$maven clean test package"
 #runIt testng-7.4.0 "./gradlew clean test build"
 #runIt micronaut-core-2.5.5-master "./gradlew clean test build"
 #runIt spring-boot-2.4.6 "./gradlew clean test build"
