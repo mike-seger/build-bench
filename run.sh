@@ -6,6 +6,12 @@ export maven=mvn
 
 if [ "$1" == "dl" ] ; then
 	dldeps=1
+	shift
+fi
+
+if [ "$1" == "p" ] ; then
+	parallel=1
+	shift
 fi
 
 function isodate() {
@@ -17,6 +23,7 @@ function runIt() {
 	local workdir=$(dirname "$0")/$project
 	local buildcmd=$2
 	local gb_opts=""
+	sleep 1
 	(
 	if [[ "$OS" == *Windows*  ]] ; then
 		if [[ -x $(which cygpath) && "$JAVA_HOME" == /cygdrive/*  ]] ; then
@@ -87,10 +94,47 @@ function runIt() {
 	)
 }
 
-runIt maven-maven-3.8.1 "$maven -Drat.skip=true clean test package"
-runIt dropwizard-2.0.22 "$maven clean test package"
-runIt metrics-4.1.22 "$maven clean test package"
-runIt spring-data-jdbc-2.2.1 "$maven clean test package"
+MY_OPTS="-T 8"
+
+function runMavenMaven() {
+	runIt maven-maven-3.8.1 "$maven $MY_OPTS -Drat.skip=true clean test package"
+}
+
+function runDropWizard() { 
+	runIt dropwizard-2.0.22 "$maven $MY_OPTS clean test package"
+}
+
+function runMetrics() {
+	runIt metrics-4.1.22 "$maven clean test package"
+}
+
+function runSpringData() {
+	runIt spring-data-jdbc-2.2.1 "$maven clean test package"
+}
+
+function runSingle() {
+	runMavenMaven
+	runDropWizard
+	runMetrics
+	runSpringData
+}
+
+function runParallel() {
+	(for i in {1..8} ; do runMavenMaven || break; done) &
+	(for i in {1..1} ; do runDropWizard || break; done) &
+	(for i in {1..2} ; do runMetrics || break; done) &
+	(for i in {1..10} ; do runSpringData || break; done) &
+}
+
+if [ "$parallel" != "1" ] ; then
+	runSingle
+else
+	runParallel
+	wait
+fi
+
+wait
+
 #runIt testng-7.4.0 "./gradlew clean test build"
 #runIt micronaut-core-2.5.5-master "./gradlew clean test build"
 #runIt spring-boot-2.4.6 "./gradlew clean test build"
