@@ -35,7 +35,6 @@
         <module>dropwizard-jackson</module>
         <module>dropwizard-validation</module>
         <module>dropwizard-configuration</module>
-        <module>dropwizard-logging</module>
         <module>dropwizard-metrics</module>
         <module>dropwizard-metrics-graphite</module>
         <module>dropwizard-jersey</module>
