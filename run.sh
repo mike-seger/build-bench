@@ -120,10 +120,10 @@ function runSingle() {
 }
 
 function runParallel() {
-#	(for i in {1..8} ; do runMavenMaven || break; done) &
+	(for i in {1..8} ; do runMavenMaven || break; done) &
 	(for i in {1..1} ; do runDropWizard || break; done) &
-#	(for i in {1..2} ; do runMetrics || break; done) &
-#	(for i in {1..10} ; do runSpringData || break; done) &
+	(for i in {1..2} ; do runMetrics || break; done) &
+	(for i in {1..10} ; do runSpringData || break; done) &
 }
 
 if [ "$parallel" != "1" ] ; then
