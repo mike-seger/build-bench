@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  build-bench: 
+    image: maven:3.8.4-openjdk-11
+    container_name: build-bench
+    volumes:
+      - ./:/app/
