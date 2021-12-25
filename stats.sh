@@ -1,6 +1,13 @@
 #!/bin/bash
 
+export full=0
+if [ "$1" == "-f" ]; then
+	export full=1
+	shift
+fi
+
 (
+	
 	if [ "$1" == "n"  ]; then
 		git status shared-reports |grep shared-reports/run | tr -d " \t"
 	elif [ "$1" == "o"  ]; then
@@ -16,4 +23,10 @@
 		sed -E "s/.*(BUILD )//;s/(SUCCESS|FAILED|FAILURE).*/\1/" |\
 		sed -e "s/ELAPSED TIME//"| tr "\n" " "|tr -s " "
 	echo
-done
+done | (
+	if [ "$full" == "0" ] ; then
+		tr "_" "\t" |cut -f3,5- |sed -e "s/_.*\.txt://"
+	else
+		grep ".*"
+	fi
+)

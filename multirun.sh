@@ -15,4 +15,4 @@ mkdir -p reports
 ./run.sh $parallel
 ./run.sh $parallel
 
-./stats.sh >reports/stats.txt
+./stats.sh -f >reports/stats.txt
