@@ -95,7 +95,9 @@ function runIt() {
 }
 
 MY_OPTS="-T 8"
-MY_OPTS="-T 8 -o"
+if [ "$dldeps" != "1" ] ; then
+	MY_OPTS="$MY_OPTS -o"
+fi
 
 function runMavenMaven() {
 	runIt maven-maven-3.8.1 "$maven $MY_OPTS -Drat.skip=true clean test package"

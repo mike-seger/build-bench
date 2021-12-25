@@ -25,7 +25,7 @@ fi
 	echo
 done | (
 	if [ "$full" == "0" ] ; then
-		tr "_" "\t" |cut -f3,5- |sed -e "s/_.*\.txt://"
+		tr "_" "\t" |cut -f3,5- |sed -e "s/..\.txt://" | tr -s " "
 	else
 		grep ".*"
 	fi
