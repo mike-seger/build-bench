@@ -95,6 +95,7 @@ function runIt() {
 }
 
 MY_OPTS="-T 8"
+MY_OPTS="-T 8 -o"
 
 function runMavenMaven() {
 	runIt maven-maven-3.8.1 "$maven $MY_OPTS -Drat.skip=true clean test package"
@@ -105,11 +106,11 @@ function runDropWizard() {
 }
 
 function runMetrics() {
-	runIt metrics-4.1.22 "$maven clean test package"
+	runIt metrics-4.1.22 "$maven $MY_OPTS clean test package"
 }
 
 function runSpringData() {
-	runIt spring-data-jdbc-2.2.1 "$maven clean test package"
+	runIt spring-data-jdbc-2.2.1 "$maven $MY_OPTS clean test package"
 }
 
 function runSingle() {

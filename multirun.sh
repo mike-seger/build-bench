@@ -7,7 +7,8 @@ cd $(dirname "$0")
 
 mkdir -p reports
 
-./run.sh dl $parallel
+#./run.sh dl $parallel
+./run.sh $parallel
 ./run.sh $parallel
 ./run.sh $parallel
 ./run.sh $parallel
