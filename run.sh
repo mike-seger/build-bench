@@ -14,12 +14,16 @@ if [ "$1" == "p" ] ; then
 	shift
 fi
 
-localrepo=~/.m2/repository
-if [ -d /mnt/ramdisk ] ; then
-	localrepo=/mnt/ramdisk/.m2/repository
+function prep_rd() {
+	echo "Using ramdisk: $1"
+	localrepo=$1/.m2/repository
 	mkdir -p $localrepo 
-	export HOME=/mnt/ramdisk
-fi
+	export HOME=$1
+}
+
+localrepo=~/.m2/repository
+if [ -d /mnt/ramdisk ] ; then prep_rd /mnt/ramdisk; fi
+if [ -d /Volumes/ramdisk ] ; then prep_rd /Volumes/ramdisk; fi
 mkdir -p $localrepo 
 echo "Local repository: $localrepo"
 

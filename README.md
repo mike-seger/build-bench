@@ -15,3 +15,9 @@ The logs from the benchmark are recorded in the directory: *reports*
 
 Calling ```./stats.sh```  
 extracts the timitng statistics from all log files in *reports*.
+
+# Create ramdisk
+## OSX
+```
+diskutil erasevolume HFS+ 'ramdisk' $(hdiutil attach -nobrowse -nomount ram://4194304)
+```
