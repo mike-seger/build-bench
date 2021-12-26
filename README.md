@@ -23,6 +23,14 @@ diskutil erasevolume HFS+ 'ramdisk' $(hdiutil attach -nobrowse -nomount ram://41
 ```
 
 ## Linux
+
+fstab:
 ```
 tmpfs  /mnt/ramdisk  tmpfs  rw,size=25%  0   0
+```
+
+or:
+```
+mkdir -p /mnt/ramdisk
+mount -t tmpfs -o rw,size=25%
 ```
