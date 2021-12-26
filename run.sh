@@ -98,6 +98,11 @@ MY_OPTS="-T 8"
 if [ "$dldeps" != "1" ] ; then
 	MY_OPTS="$MY_OPTS -o"
 fi
+if [ -d /mnt/ramdisk ] ; then
+	local repo=/mnt/ramdisk/.m2/repository
+	mkdir -p $repo 
+	MY_OPTS="$MY_OPTS -Dmaven.repo.local=$repo"
+fi
 
 function runMavenMaven() {
 	runIt maven-maven-3.8.1 "$maven $MY_OPTS -Drat.skip=true clean test package"
