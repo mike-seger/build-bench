@@ -1,7 +1,14 @@
 #!/bin/bash
 
+reportsdir=$1
+if [ ! -d "$reportsdir" ] ; then
+	echo "Usage: $0 <reportsdir>"
+	echo "<reportsdir> must contain report directories with a stats.txt in each"
+	exit 1
+fi
+
 showtitle=1
-for f in $(find ./reports/ -name stats.txt); do
+for f in $(find "$reportsdir" -name stats.txt); do
 	tim=$(cat $f | grep SUCCESS |\
 		sed -e "s/run_//;s/^[^_]*_//;
 			s/_.*.txt://;s/ SUCCESS : /\t/;s/ *s *$//"
