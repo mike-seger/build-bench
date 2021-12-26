@@ -14,6 +14,15 @@ if [ "$1" == "p" ] ; then
 	shift
 fi
 
+localrepo=~/.m2/repository
+if [ -d /mnt/ramdisk ] ; then
+	localrepo=/mnt/ramdisk/.m2/repository
+	mkdir -p $localrepo 
+	export HOME=/mnt/ramdisk
+fi
+mkdir -p $localrepo 
+echo "Local repository: $localrepo"
+
 function isodate() {
 	date -u +"%Y-%m-%dT%H:%M:%SZ" | tr -d ":-"|sed -e "s/[+Z].*//"
 }
@@ -94,15 +103,10 @@ function runIt() {
 	)
 }
 
-MY_OPTS="-T 8"
-if [ "$dldeps" != "1" ] ; then
-	MY_OPTS="$MY_OPTS -o"
-fi
-if [ -d /mnt/ramdisk ] ; then
-	local repo=/mnt/ramdisk/.m2/repository
-	mkdir -p $repo 
-	MY_OPTS="$MY_OPTS -Dmaven.repo.local=$repo"
-fi
+MY_OPTS="-Dmaven.repo.local=$localrepo -T 8"
+#if [ "$dldeps" != "1" ] ; then
+#	MY_OPTS="$MY_OPTS -o"
+#fi
 
 function runMavenMaven() {
 	runIt maven-maven-3.8.1 "$maven $MY_OPTS -Drat.skip=true clean test package"
