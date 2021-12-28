@@ -107,7 +107,7 @@ function runIt() {
 	)
 }
 
-MY_OPTS="-Dmaven.repo.local=$localrepo -T 8"
+MY_OPTS="-Dmaven.repo.local=$localrepo -T ${M_T:-8}"
 #if [ "$dldeps" != "1" ] ; then
 #	MY_OPTS="$MY_OPTS -o"
 #fi
