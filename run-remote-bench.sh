@@ -14,4 +14,4 @@ rmdir $reportname
 ssh $server rm -fR git/build-bench/reports
 ssh $server git/build-bench/run-bench.sh
 scp -r $server:git/build-bench/reports $reportname
-ssh $server shutdown -h now
+ssh $server sudo shutdown -h now
