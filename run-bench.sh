@@ -5,6 +5,7 @@ set -e
 trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM EXIT
 
 export TERM=xterm-256color
+source "~/.sdkman/bin/sdkman-init.sh"
 
 cd ~/git/build-bench
 ./multirun.sh >/tmp/1 & 
