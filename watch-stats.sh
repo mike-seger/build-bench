@@ -1,5 +1,9 @@
+#!/bin/bash
+
 while [ 1==1 ]; do 
-	ps auxwww | grep multirun.sh >/dev/null || break
+	if [[ $# == 1 && ! -e /proc/$1/status ]]; then
+	    break
+	fi
 	page=$(date; echo./stats.sh;)
 	clear
 	printf "%s\n" "$page"
