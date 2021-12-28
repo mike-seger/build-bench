@@ -6,7 +6,7 @@ trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM EXIT
 
 export TERM=xterm-256color
 HH=$(cd; pwd)
-source $HH/sdkman/bin/sdkman-init.sh
+source $HH/.sdkman/bin/sdkman-init.sh
 
 cd ~/git/build-bench
 ./multirun.sh >/tmp/1 & 
