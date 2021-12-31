@@ -38,4 +38,14 @@ mount -t tmpfs -o rw,size=25%
 
 ## Windows
 
-There exist several tools to create a ramdisk. If using *Hiren's Boot CD* the X drive is a ramdisk.
+There exist several tools to create a ramdisk. If using *Hiren's Boot CD* the X drive is
+already a ramdisk.
+
+# Run using docker
+```
+openssl s_client -showcerts -connect repo1.maven.org:443 < /dev/null > certs.txt
+openssl x509 -in certs.txt -out certs.der -outform DER
+keytool -importcert -file certs.der -keystore ./cacerts
+
+docker run --rm -it -v $(pwd):/home/docker openjdk:11-jdk bash
+```
