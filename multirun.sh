@@ -17,7 +17,7 @@ function versionInfo() {
 	echo "# Maven Version"
 	mvn -version
 	echo "# CPU Info"
-	cat /prroc/cpuinfo
+	cat /proc/cpuinfo
 	echo "# Memory Info"
 	cat /proc/meminfo
 	echo "# Disk Free"
