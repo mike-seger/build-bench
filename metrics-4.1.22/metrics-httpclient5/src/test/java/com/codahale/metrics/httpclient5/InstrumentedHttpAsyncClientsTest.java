@@ -103,7 +103,7 @@ public class InstrumentedHttpAsyncClientsTest {
                 fail();
             }
         });
-        responseFuture.get(1L, TimeUnit.SECONDS);
+        responseFuture.get(10L, TimeUnit.SECONDS);
 
         verify(registryListener).onTimerAdded(eq(metricName), any(Timer.class));
     }
