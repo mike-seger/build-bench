@@ -30,6 +30,10 @@ echo "Java Version"
 java -version
 echo "Maven Version"
 mvn -version
+echo "CPU Info"
+cat /prroc/cpuinfo
+echo "Memory Info"
+cat /proc/meminfo
 
 function isodate() {
 	date -u +"%Y-%m-%dT%H:%M:%SZ" | tr -d ":-"|sed -e "s/[+Z].*//"
