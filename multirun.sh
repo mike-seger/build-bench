@@ -12,16 +12,17 @@ fi
 mkdir -p reports
 
 function versionInfo() {
-	echo "Java Version"
+	echo "# Java Version"
 	java -version
-	echo "Maven Version"
+	echo "# Maven Version"
 	mvn -version
-	echo "CPU Info"
+	echo "# CPU Info"
 	cat /prroc/cpuinfo
-	echo "Memory Info"
+	echo "# Memory Info"
 	cat /proc/meminfo
-	echo "Disk Free"
+	echo "# Disk Free"
 	df -h .
+	echo "#"
 }
 
 versionInfo | tee -a reports/version.txt
