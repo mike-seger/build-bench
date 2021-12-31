@@ -22,7 +22,7 @@ function versionInfo() {
 	cat /proc/meminfo
 }
 
-versioninfo | tee -a reports/version.txt
+versionInfo | tee -a reports/version.txt
 
 ./run.sh dl $parallel
 ./run.sh $parallel
