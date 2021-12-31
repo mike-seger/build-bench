@@ -20,6 +20,8 @@ function versionInfo() {
 	cat /prroc/cpuinfo
 	echo "Memory Info"
 	cat /proc/meminfo
+	echo "Disk Free"
+	df -h .
 }
 
 versionInfo | tee -a reports/version.txt
