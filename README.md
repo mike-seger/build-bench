@@ -1,20 +1,13 @@
 # build-bench
 
-A few bash scripts performing a real-world JVM benchmark. The benchmark utilizes a set of snapshots from major maven and gradle projects on github.
+A few bash scripts performing a real-world JVM benchmark. The benchmark utilizes major maven and gradle projects from github.
 
-The benchmark can be run with caches enabled or disabled.
-
-Multiple iterations of the benchmark can be run in a pre-defined order calling:
+The benchmark can be run by issuing the following command:
 ```
-./multirun.sh
+./run-bench.sh
 ```
 
-The projects included in the benchmark are defined at the end of the main benchmark script: ```run.sh```
-
-The logs from the benchmark are recorded in the directory: *reports*
-
-Calling ```./stats.sh```  
-extracts the timitng statistics from all log files in *reports*.
+The benchmark creates a **reports** directory containing the results.
 
 # ramdisk
 ## OSX
