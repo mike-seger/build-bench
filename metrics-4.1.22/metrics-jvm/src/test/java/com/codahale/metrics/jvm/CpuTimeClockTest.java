@@ -1,6 +1,7 @@
 package com.codahale.metrics.jvm;
 
 import org.junit.Test;
+import org.junit.Ignore;
 
 import java.lang.management.ManagementFactory;
 
@@ -10,6 +11,7 @@ import static org.assertj.core.api.Assertions.offset;
 public class CpuTimeClockTest {
 
     @Test
+    @Ignore
     public void cpuTimeClock() {
         final CpuTimeClock clock = new CpuTimeClock();
 
