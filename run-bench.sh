@@ -18,6 +18,6 @@ if [ -d /x/ ] ; then # Hiren's PE Boot CD
 fi
 
 cd ~/git/build-bench
-./multirun.sh >/tmp/1 & 
+./multirun.sh >/dev/null & 
 PID=$!
 ./watch-stats.sh $PID
