@@ -11,6 +11,19 @@ fi
 
 mkdir -p reports
 
+function versionInfo() {
+	echo "Java Version"
+	java -version
+	echo "Maven Version"
+	mvn -version
+	echo "CPU Info"
+	cat /prroc/cpuinfo
+	echo "Memory Info"
+	cat /proc/meminfo
+}
+
+versioninfo | tee -a reports/version.txt
+
 ./run.sh dl $parallel
 ./run.sh $parallel
 ./run.sh $parallel

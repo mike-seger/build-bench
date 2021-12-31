@@ -26,14 +26,6 @@ if [ -d /mnt/ramdisk ] ; then prep_rd /mnt/ramdisk; fi
 if [ -d /Volumes/ramdisk ] ; then prep_rd /Volumes/ramdisk; fi
 mkdir -p $localrepo 
 echo "Local repository: $localrepo"
-echo "Java Version"
-java -version
-echo "Maven Version"
-mvn -version
-echo "CPU Info"
-cat /prroc/cpuinfo
-echo "Memory Info"
-cat /proc/meminfo
 
 function isodate() {
 	date -u +"%Y-%m-%dT%H:%M:%SZ" | tr -d ":-"|sed -e "s/[+Z].*//"
