@@ -3,7 +3,7 @@
 A few bash scripts performing a real-world JVM benchmark. The benchmark utilizes major maven and gradle projects from github.
 
 ## Prerequisites
-- an installed java 11 version
+- an installed java jdk 11 version
 - an installed maven 3.8.x version
 
 The benchmark can be run by issuing the following command:
