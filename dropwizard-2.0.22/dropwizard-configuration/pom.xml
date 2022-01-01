@@ -93,6 +93,7 @@
                 <configuration>
                     <forkCount>1</forkCount>
                     <reuseForks>false</reuseForks>
+                    <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
                     <environmentVariables>
                         <TEST>test_value</TEST>
                         <TEST_SUFFIX>2</TEST_SUFFIX>
