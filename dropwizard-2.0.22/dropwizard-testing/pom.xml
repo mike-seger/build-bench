@@ -229,6 +229,9 @@
         <plugins>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+                </configuration>
                 <dependencies>
                     <dependency>
                         <groupId>org.junit.vintage</groupId>

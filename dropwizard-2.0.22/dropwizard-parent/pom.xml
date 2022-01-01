@@ -28,7 +28,7 @@
         <pgpverify.keyserver>hkps://keys.openpgp.org;hkp://pool.sks-keyservers.net;hkps://keyserver.ubuntu.com</pgpverify.keyserver>
         <pgpverify.verifyPomFiles>false</pgpverify.verifyPomFiles>
 
-        <surefire.argLine>-Duser.language=en -Duser.region=US -Duser.timezone=UTC</surefire.argLine>
+        <surefire.argLine>-Xmx1024m -XX:MaxPermSize=256m -Duser.language=en -Duser.region=US -Duser.timezone=UTC</surefire.argLine>
         <argLine>${surefire.argLine}</argLine>
     </properties>
 
