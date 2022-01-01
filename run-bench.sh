@@ -4,6 +4,8 @@ set -e
 
 trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM EXIT
 
+cd $(dirname $0)
+
 export TERM=xterm-256color
 if [[ ! -x "$(which javac 2>/dev/null)" || ! -x "$(which mvn 2>/dev/null)" ]]; then
   if [ -d "$(cd; pwd)/.sdkman" ] ; then
@@ -17,7 +19,6 @@ if [ -d /x/ ] ; then # Hiren's PE Boot CD
   export HOME=/x
 fi
 
-cd ~/git/build-bench
 ./multirun.sh >/dev/null & 
 
 PID=$!
