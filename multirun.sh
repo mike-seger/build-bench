@@ -8,7 +8,6 @@ cd $(dirname "$0")
 if [ -d /mnt/ramdisk ] ; then
 	export HOME=/mnt/ramdisk
 fi
-
 mkdir -p reports
 
 function versionInfo() {
@@ -17,9 +16,9 @@ function versionInfo() {
 	echo "# Maven Version"
 	mvn -version
 	echo "# CPU Info"
-	cat /proc/cpuinfo
+	[ -d /proc ] && cat /proc/cpuinfo || (sysctl -a | grep machdep.cpu)
 	echo "# Memory Info"
-	cat /proc/meminfo
+	[ -d /proc ] && cat /proc/meminfo || (sysctl -a | grep hw.memsize)
 	echo "# Disk Free"
 	df -h .
 	echo "#"
@@ -36,3 +35,5 @@ versionInfo | tee -a reports/version.txt
 #./run.sh $parallel
 
 ./stats.sh -f >reports/stats.txt
+
+echo "Multirun complete"

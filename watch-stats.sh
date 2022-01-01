@@ -1,8 +1,15 @@
 #!/bin/bash
 
 while [ 1==1 ]; do 
-	if [[ $# == 1 && ! -e /proc/$1/status ]]; then
-	    break
+	if [ -d /proc ] ; then
+		if [[ $# == 1 && ! -e /proc/$1/status ]]; then
+		    break
+		fi
+	else
+		ps -p $(cat something.pid) > /dev/null 2>&1
+		if [ $! != 0 ] ; then
+			break
+		fi
 	fi
 	page=$(date; echo; ./stats.sh)
 	clear

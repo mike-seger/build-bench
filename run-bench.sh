@@ -19,5 +19,6 @@ fi
 
 cd ~/git/build-bench
 ./multirun.sh >/dev/null & 
+
 PID=$!
 ./watch-stats.sh $PID
