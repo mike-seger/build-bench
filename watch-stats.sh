@@ -7,7 +7,7 @@ while [ 1==1 ]; do
 		fi
 	else
 		ps -p $1 > /dev/null 2>&1
-		if [ $! != 0 ] ; then
+		if [ $? != 0 ] ; then
 			break
 		fi
 	fi
