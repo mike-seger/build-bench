@@ -16,7 +16,7 @@ function versionInfo() {
 	echo "# Maven Version"
 	mvn -version
 	echo "# CPU Info"
-	[ -d /proc ] && cat /proc/cpuinfo || (sysctl -a | grep machdep.cpu)
+	[ -d /proc ] && cat /proc/cpuinfo || (sysctl -a | grep machdep.cpu.brand_string)
 	echo "# Memory Info"
 	[ -d /proc ] && cat /proc/meminfo || (sysctl -a | grep hw.memsize)
 	echo "# Disk Free"
