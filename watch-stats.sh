@@ -6,7 +6,7 @@ while [ 1==1 ]; do
 		    break
 		fi
 	else
-		ps -p $(cat something.pid) > /dev/null 2>&1
+		ps -p $1 > /dev/null 2>&1
 		if [ $! != 0 ] ; then
 			break
 		fi

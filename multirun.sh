@@ -26,13 +26,13 @@ function versionInfo() {
 
 versionInfo | tee -a reports/version.txt
 
-./run.sh dl $parallel
+#./run.sh dl $parallel
 ./run.sh $parallel
 ./run.sh $parallel
 ./run.sh $parallel
 ./run.sh $parallel
 ./run.sh $parallel
-#./run.sh $parallel
+./run.sh $parallel
 
 ./stats.sh -f >reports/stats.txt
 
