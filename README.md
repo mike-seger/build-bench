@@ -17,7 +17,7 @@ The benchmark can be run by issuing the following command:
 
 The benchmark creates a *reports* directory containing the results.
 
-# ramdisk
+# RAM Disk
 
 A RAM disk can help git operations and downloads on slow disks, such as USB drives.
 The benchmark results are not affected after the third (of 6) iteration of the benchmark.
