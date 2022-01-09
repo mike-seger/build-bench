@@ -6,6 +6,10 @@ A few bash scripts performing a real-world JVM benchmark. The benchmark utilizes
 - an installed java jdk 11 version
 - an installed maven 3.8.x version
 
+### Installin g prerequisites
+If installing sdkman, jdk and maven is an option for you, here's how:
+- https://gist.github.com/mike-seger/330a9ce984027253f1e9840da6b68351
+
 The benchmark can be run by issuing the following command:
 ```
 ./run-bench.sh
