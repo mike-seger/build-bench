@@ -1,10 +1,10 @@
 # build-bench
 
-A few bash scripts performing a real-world JVM benchmark. The benchmark utilizes major maven and gradle projects from github.
+A few bash scripts performing a real-world JVM benchmark. 
+The benchmark measure build times of common maven and gradle projects from github.
 
 ## Prerequisites
 - an installed java jdk 11 version
-- an installed maven 3.8.x version
 
 ### Installing prerequisites
 If installing sdkman, jdk and maven is an option for you, here's how:
