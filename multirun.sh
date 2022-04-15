@@ -14,7 +14,7 @@ function versionInfo() {
 	echo "# Java Version"
 	java -version
 	echo "# Maven Version"
-	mvn -version
+	(cd metrics*;  ./mvnw -version)
 	echo "# CPU Info"
 	[ -d /proc ] && (cat /proc/cpuinfo |grep "model name"|uniq) || (sysctl -a | grep machdep.cpu.brand_string)
 	echo "# Memory Info"
