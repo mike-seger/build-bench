@@ -6,6 +6,10 @@ A few bash scripts performing a real-world JVM benchmark. The benchmark utilizes
 - an installed java jdk 11 version
 - an installed maven 3.8.x version
 
+### Installing prerequisites
+If installing sdkman, jdk and maven is an option for you, here's how:
+- https://gist.github.com/mike-seger/330a9ce984027253f1e9840da6b68351#install-java-and-maven
+
 The benchmark can be run by issuing the following command:
 ```
 ./run-bench.sh
@@ -13,7 +17,7 @@ The benchmark can be run by issuing the following command:
 
 The benchmark creates a *reports* directory containing the results.
 
-# ramdisk
+# RAM Disk
 
 A RAM disk can help git operations and downloads on slow disks, such as USB drives.
 The benchmark results are not affected after the third (of 6) iteration of the benchmark.
