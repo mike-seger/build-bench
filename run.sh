@@ -1,8 +1,8 @@
 #!/bin/bash
 
 dldeps=0
-#export maven=./mvnw
-export maven=mvn
+export maven=./mvnw
+#export maven=mvn
 
 if [ "$1" == "dl" ] ; then
 	dldeps=1
