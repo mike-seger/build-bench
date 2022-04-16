@@ -7,7 +7,7 @@ The benchmark measure build times of common maven and gradle projects from githu
 - an installed java jdk version 11
 
 ### Installing prerequisites
-If installing sdkman, jdk and maven is an option for you, here's how:
+If installing sdkman is an option for you, here's how:
 - https://gist.github.com/mike-seger/330a9ce984027253f1e9840da6b68351#install-java-and-maven
 
 The benchmark can be run by issuing the following command:
