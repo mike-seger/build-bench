@@ -37,7 +37,7 @@ tmpfs  /mnt/ramdisk  tmpfs  rw,size=25%  0   0
 or:
 ```
 mkdir -p /mnt/ramdisk
-mount -t tmpfs -o rw,size=25%
+mount -t tmpfs -o rw,size=25% tmpfs /mnt/ramdisk
 ```
 
 ## Windows
