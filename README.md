@@ -10,12 +10,18 @@ The benchmark measure build times of common maven and gradle projects from githu
 If installing sdkman is an option for you, here's how:
 - https://gist.github.com/mike-seger/330a9ce984027253f1e9840da6b68351#install-java-and-maven
 
+## Running
 The benchmark can be run by issuing the following command:
 ```
 ./run-bench.sh
 ```
 
 The benchmark creates a *reports* directory containing the results.
+
+## Compare results
+Using this project: https://github.com/mike-seger/bb-reports  
+any results can be compared by simply copying the *reports* directory over to the above project and following the instructions.
+
 
 # RAM Disk
 
